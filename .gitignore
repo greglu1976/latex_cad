@@ -10,6 +10,8 @@ __pycache__/
 venv/
 .env
 
+output/
+
 # Distribution / packaging
 .Python
 build/
