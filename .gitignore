@@ -11,6 +11,8 @@ __pycache__/
 *.tex
 *.pdf
 *.dxf
+*.docx
+*.txt
 
 # Файлы конфигурации для venv
 venv/
