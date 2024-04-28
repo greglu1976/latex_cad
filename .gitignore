@@ -9,6 +9,8 @@ __pycache__/
 *.log
 *.xlsx
 *.tex
+*.pdf
+*.dxf
 
 # Файлы конфигурации для venv
 venv/
