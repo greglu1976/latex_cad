@@ -13,7 +13,8 @@ services:
     ports:
       - "8090:8090"
     volumes:
-      - home_data:/var/confluence
+      #- home_data:/var/confluence
+      - e:/temp/confluence:/var/confluence
     restart: always
     networks:
       - network-bridge
@@ -29,7 +30,8 @@ services:
       - MYSQL_PASSWORD=123123
     command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_bin', '--transaction-isolation=READ-COMMITTED', '--innodb_log_file_size=256M', '--max_allowed_packet=256M','--log_bin_trust_function_creators=1']
     volumes:
-      - mysql_data:/var/lib/mysql
+      #- mysql_data:/var/lib/mysql
+      - e:/temp/mysql_data:/var/lib/mysql
     restart: always
     networks:
       - network-bridge
