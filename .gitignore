@@ -13,7 +13,7 @@ __pycache__/
 *.dxf
 *.docx
 *.txt
-
+docker-compose.yml
 # Файлы конфигурации для venv
 venv/
 .env
