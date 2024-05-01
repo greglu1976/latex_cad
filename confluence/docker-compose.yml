@@ -15,8 +15,8 @@ services:
       - "8090:8090"
     volumes:
       #- home_data:/var/confluence
-      - e:/temp/confluence:/var/confluence
-      #- /home/greglu/confluence/confluence:/var/confluence
+      #- e:/temp/confluence:/var/confluence
+      - /home/greglu/confluence/confluence:/var/confluence
     restart: always
     networks:
       - network-bridge
@@ -28,9 +28,10 @@ services:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=root
     ports:
-    - "5432:5432"
+    - "9000:5432"
     volumes:
-      - e:/temp/psql_data:/var/lib/postgresql/data
+      #- e:/temp/psql_data:/var/lib/postgresql/data
+      - /home/greglu/confluence/psql_data:/var/lib/postgresql/data
     restart: always
     networks:
       - network-bridge
