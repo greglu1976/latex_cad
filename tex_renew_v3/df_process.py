@@ -22,13 +22,16 @@ def df_finder(ln, path):
 
     print(xlsx_files)
 
-    
+    tex_str = []
     if ln+'.xlsx' in xlsx_files:
-        tex_str = []
         df = pd.read_excel(path+folders[0]+'/'+ln+'.xlsx')
 
         for index, row in df.iterrows():
-            print(parse_row(row))
+            row_done = parse_row(row)
+            if not row_done:
+                continue
+            temp = f'\centering {row_done[0]} & \centering {row_done[1]} & \centering {row_done[2]} & \centering {row_done[3]} & \centering\\arraybackslash {row_done[4]} \\\\'
+            tex_str.append(temp)
+            tex_str.append('\hline')
 
-
-    return []
+    return tex_str

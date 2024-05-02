@@ -17,7 +17,6 @@ def parse_note(note, default):
         if str(default).strip()==result_def:
             str_default = result_psd
         res_list.append(result_psd)
-    #print(res_list, str_default)
     ret_str = ''
     for res in res_list:
         ret_str += res + r'/\\'
@@ -25,8 +24,10 @@ def parse_note(note, default):
     #print(ret_str)
     return (ret_str, str_default)
 
-
 def parse_row(row):
+    category = row['Категория (group)']
+    if category!='setting':
+        return ()
     full_desc = row['FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)']
     short_desc = row['ShortDescription'].replace("_", r"\_")
     applied_desc = row['AppliedDescription'].replace("_", r"\_")

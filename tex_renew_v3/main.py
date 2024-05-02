@@ -3,9 +3,6 @@
 # пути к к функциям находятся в списке function_paths
 # 27/04/24 change reporter - add check '%' in fbpath, line 29
 
-import os
-import re
-
 from logger import logger
 from reporter import handler_paths, find_paths
 from process_path import process_path
@@ -23,7 +20,5 @@ work_func_paths = handler_paths(function_paths)
 for path in work_func_paths:
     logger.info(path)
     process_path(path)
-
-
 
 logger.info("Штатный останов скрипта...")
