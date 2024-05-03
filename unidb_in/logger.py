@@ -1,4 +1,3 @@
-# logger_setup.py
 import logging
 
 def setup_logger():

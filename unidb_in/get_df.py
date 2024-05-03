@@ -1,5 +1,3 @@
-# sqlite
-
 import pandas as pd
 
 from prepare_df import prepare_df

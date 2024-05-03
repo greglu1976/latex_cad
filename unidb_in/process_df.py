@@ -2,7 +2,6 @@ import pandas as pd
 
 from logger import logger
 
-
 def get_dfs(df):
     
     grouped_df = df.groupby("NodeName (рус)")

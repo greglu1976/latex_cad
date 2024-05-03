@@ -1,6 +1,5 @@
 import hashlib
 import pandas as pd
-import openpyxl
 import os
 
 from db_main import handle_df
