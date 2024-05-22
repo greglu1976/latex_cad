@@ -25,7 +25,7 @@ def start_renew_tables(path):
     for path in function_paths:
         logger.info(path)
 
-    work_func_paths = handler_paths(function_paths)
+    work_func_paths = handler_paths(function_paths) # возвращаем только те пути, где есть папки _latex и _xlsx
     for path in work_func_paths:
         logger.info(path)
         process_path(path)

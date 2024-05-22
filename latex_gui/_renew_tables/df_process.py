@@ -34,5 +34,6 @@ def df_finder(ln, path):
             temp = f'\centering {row_done[0]} & \centering {row_done[1]} & \centering {row_done[2]} & \centering {row_done[3]} & \centering\\arraybackslash {row_done[4]} \\\\'
             tex_str.append(temp)
             tex_str.append('\hline')
-
+    else:
+        return ['noxlsx',]
     return tex_str
