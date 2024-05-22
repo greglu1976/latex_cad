@@ -16,13 +16,16 @@ def parse_note(note, default):
         result_def = result_def.strip()
         if str(default).strip()==result_def:
             str_default = result_psd
-        res_list.append(result_psd)
-    #print(res_list, str_default)
+        #res_list.append(result_psd) # здесь включение без строк 1 - ххххх, 0 - и т.д. просто строка обозначающая значение
+        result = result.replace("\n", "") # строка 1 для вывода в виде 0 = Недоступно и пр.
+        res_list.append(result.replace("-", "=")) # строка 2 для вывода в виде 0 = Недоступно и пр.
+
     ret_str = ''
     for res in res_list:
-        ret_str += res + r'/\\'
-    ret_str = ret_str[:-3]
-    #print(ret_str)
+        #ret_str += res + r'/\\' # собираем со слешем
+        ret_str += res + r'\\' # собираем без слеша
+    #ret_str = ret_str[:-3] # собираем со слешем
+    ret_str = ret_str[:-2] # собираем без слеша
     return (ret_str, str_default)
 
 
@@ -42,7 +45,8 @@ def parse_row(row):
     default = row['DefaultValue']
     note = row['Note (Справочная информация)']
 
-    if units == 'мс' and max_value>1000:
+    #if units == 'мс' and max_value>1000: # с контролем диапазона от 0 до 1000 мс не преобразовывать
+    if units == 'мс':  # без контроля диапазона от 0 до 1000 мс - все преобразум
         max_value = max_value/1000
         min_value = min_value/1000
         step = step/1000
