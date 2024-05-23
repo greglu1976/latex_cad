@@ -6,7 +6,7 @@ from .df_process import df_finder
 
 def process_path(path):
     work_path = path + '/_latex/'
-    print('work_path>>> ',work_path)
+    #print('work_path>>> ',work_path)
     # Получить список всех файлов в указанной директории
     files = os.listdir(work_path)
     # Отфильтровать только файлы с расширением .tex
@@ -34,8 +34,8 @@ def process_path(path):
                     line = parsed_line[0]
                 ln = line.split('*')[1].strip()
 
-
                 str_work = df_finder(ln, path)
+
                 if str_work[0] != 'noxlsx':
                     is_passing = True
                     if custom_header != '': # проверяем нужен ли заголовок

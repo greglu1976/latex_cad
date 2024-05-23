@@ -16,7 +16,7 @@ from .process_path import process_path
 
 def start_renew_tables(path):
 
-    logger.info("Запуск скрипта обновления таблиц в РЭ")
+    logger.info("Запуск скрипта обновления таблиц в РЭ...")
 
     file_name = path + "/general.tex"
 
@@ -30,5 +30,5 @@ def start_renew_tables(path):
         logger.info(path)
         process_path(path)
 
-    logger.info("Штатный останов скрипта обновления таблиц в РЭ")
+    logger.info("Штатный останов скрипта обновления таблиц в РЭ...")
     return 'ok'

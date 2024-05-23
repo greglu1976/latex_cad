@@ -18,6 +18,8 @@ sys.path.append(os.path.dirname(SCRIPT_DIR))
 
 from _get_abbrs.main import start_abbr
 from _renew_tables.main import start_renew_tables
+from _blanc_maker.main import start_renew_tables_blanc
+from _renew_sum_table.main import start_renew_sum_table
 
 from add_scripts import rebuild, tex_opener, pdf_opener
 
@@ -135,7 +137,7 @@ class BackMeUp(ttk.Frame):
         _func = lambda: get_abbrs(self.getvar('folder-path'))
         bus_prop_btn = ttk.Button(
             master=bus_frm, 
-            text='Обновить перечень сокращений', 
+            text='Обновить перечень сокращений (РЭ)', 
             image='renew-abbrs', 
             compound=LEFT,
             command=_func, 
@@ -147,7 +149,7 @@ class BackMeUp(ttk.Frame):
         _func = lambda: _renew_tables(self.getvar('folder-path'))
         add_btn = ttk.Button(
             master=bus_frm, 
-            text='Обновить таблицы в РЭ', 
+            text='Обновить таблицы (РЭ)', 
             image='renew-tables', 
             compound=LEFT,
             command=_func, 
@@ -156,16 +158,29 @@ class BackMeUp(ttk.Frame):
         add_btn.grid(row=5, column=0, columnspan=2, sticky=W)
 
         ## properties button
-        _func = lambda: Messagebox.ok(message='Changing properties')
+        _func = lambda: _renew_sum_table(self.getvar('folder-path'))
         run_newA_btn = ttk.Button(
             master=bus_frm, 
-            text='Обновить перечень сигналов (Прил.А)', 
+            text='Обновить суммарную таблицу сигналов (РЭ, Прил.А)', 
             image='reports', 
             compound=LEFT,
             command=_func, 
             bootstyle=LINK
         )
         run_newA_btn.grid(row=6, column=0, columnspan=2, sticky=W)
+
+        ## add to backup button
+        _func = lambda: _renew_tables_blanc(self.getvar('folder-path'))
+        add_btn = ttk.Button(
+            master=bus_frm, 
+            text='Обновить таблицы (бланк уставок)', 
+            image='renew-tables', 
+            compound=LEFT,
+            command=_func, 
+            bootstyle=LINK
+        )
+        add_btn.grid(row=7, column=0, columnspan=2, sticky=W)
+
 
         ## properties button
         _func = lambda: Messagebox.ok(message='Changing properties')
@@ -177,42 +192,34 @@ class BackMeUp(ttk.Frame):
             command=_func, 
             bootstyle=LINK
         )
-        run_newB_btn.grid(row=7, column=0, columnspan=2, sticky=W)
+        run_newB_btn.grid(row=8, column=0, columnspan=2, sticky=W)
 
 
         ## properties button
         _func = lambda: open_pdf(self.getvar('folder-path'))
         open_pdf_btn = ttk.Button(
             master=bus_frm, 
-            text='Открыть pdf', 
+            text='Открыть PDF', 
             image='open-pdf', 
-            compound=LEFT,
-            command=_func, 
-            bootstyle=LINK
-        )
-        open_pdf_btn.grid(row=8, column=0, columnspan=2, sticky=W)
-
-        ## properties button
-        _func = lambda: open_tex(self.getvar('folder-path'))
-        open_pdf_btn = ttk.Button(
-            master=bus_frm, 
-            text='Открыть tex', 
-            image='open-tex', 
             compound=LEFT,
             command=_func, 
             bootstyle=LINK
         )
         open_pdf_btn.grid(row=9, column=0, columnspan=2, sticky=W)
 
-
-        ## progress bar
-        pb1 = ttk.Progressbar(
+        ## properties button
+        _func = lambda: open_tex(self.getvar('folder-path'))
+        open_pdf_btn = ttk.Button(
             master=bus_frm, 
-            variable='prog-value', 
-            bootstyle=SUCCESS
+            text='Открыть TEX', 
+            image='open-tex', 
+            compound=LEFT,
+            command=_func, 
+            bootstyle=LINK
         )
-        pb1.grid(row=10, column=0, columnspan=2, sticky=EW, pady=(10, 5))
-        self.setvar('prog-value', 71)
+        open_pdf_btn.grid(row=10, column=0, columnspan=2, sticky=W)
+
+
 
 #----------------------------------RIGHT PANEL ----------------------------------------
         # right panel
@@ -269,7 +276,7 @@ class BackMeUp(ttk.Frame):
             print('let us go!!')
 
 
-################################## ЗАПУСК ПОИСКА АББРЕВИАТУР №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+################################## ЗАПУСК ПОИСКА АББРЕВИАТУР #################################################
         def get_abbrs(filepath):
             """Open dialogue to get filename and update variable"""
             if filepath == '':
@@ -286,8 +293,8 @@ class BackMeUp(ttk.Frame):
                 Messagebox.show_info(message='Успешная генерация файла аббревиатур toa_general.tex', title="Информация")
                 return             
             return
-################################## КОНЕЦ ПОИСКА АББРЕВИАТУР №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
-################################## ОБНОВЛЯЕМ ТАБЛИЦЫ №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+################################## КОНЕЦ ПОИСКА АББРЕВИАТУР ###############################################
+################################## ОБНОВЛЯЕМ ТАБЛИЦЫ РЭ ##################################################
         def _renew_tables(filepath):
             """Open dialogue to get filename and update variable"""
             if filepath == '':
@@ -300,8 +307,54 @@ class BackMeUp(ttk.Frame):
             if result=='ok':
                 Messagebox.show_info(message='Успешное обновление таблиц РЭ', title="Информация")
                 return                         
-################################## ОБНОВЛЯЕМ ТАБЛИЦЫ №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
-################################## ОТКРЫВАЕМ PDF  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+################################## КОНЕЦ ОБНОВЛЯЕМ ТАБЛИЦЫ РЭ ##############################################
+################################## НАЧАЛО ОБНОВЛЯЕМ ТАБЛИЦЫ БУ ##############################################
+        def _renew_tables_blanc(filepath):
+            """Open dialogue to get filename and update variable"""
+            if filepath == '':
+                Messagebox.show_error(message='Выберите рабочую папку проекта бланка уставок (где файл general.tex)', title="Ошибка")
+                return            
+            if not os.path.isfile(filepath+'/general.tex'):
+                Messagebox.show_error(message='В указанной папке нет файла general.tex', title="Ошибка")
+                return
+            result = start_renew_tables_blanc(filepath)
+            if result == 'noblancdoc':
+                Messagebox.show_error(message='В файле general.tex нет строки определения пути для РЭ', title="Ошибка")
+                return
+            if result == 'nofile':
+                Messagebox.show_error(message='Файл не найден в текущем каталоге', title="Ошибка")
+                return                              
+            if result=='ok':
+                Messagebox.show_info(message='Успешное обновление таблиц бланка уставок', title="Информация")
+                return                         
+################################## КОНЕЦ ОБНОВЛЯЕМ ТАБЛИЦЫ БУ ##############################################
+
+################################## НАЧАЛО ОБНОВЛЯЕМ СУММАРНУЮ ТАБЛИЦУ ##############################################
+        def _renew_sum_table(filepath):
+            """Open dialogue to get filename and update variable"""
+            if filepath == '':
+                Messagebox.show_error(message='Выберите рабочую папку проекта (где файл general.tex)', title="Ошибка")
+                return            
+            if not os.path.isfile(filepath+'/general.tex'):
+                Messagebox.show_error(message='В указанной папке нет файла general.tex', title="Ошибка")
+                return
+            result = start_renew_sum_table(filepath)
+            if result == 'noblancdoc':
+                Messagebox.show_error(message='В файле general.tex нет строки определения пути для РЭ', title="Ошибка")
+                return
+            if result == 'nofile':
+                Messagebox.show_error(message='Файл не найден в текущем каталоге', title="Ошибка")
+                return                              
+            if result=='ok':
+                Messagebox.show_info(message='Успешное обновление таблиц бланка уставок', title="Информация")
+                return                         
+################################## КОНЕЦ ОБНОВЛЯЕМ СУММАРНУЮ ТАБЛИЦУ ##############################################
+
+
+
+
+
+################################## ОТКРЫВАЕМ PDF  ###############################################
         def open_pdf(filepath):
             if filepath == '':
                 Messagebox.show_error(message='Выберите рабочую папку проекта (где файл general.tex)', title="Ошибка")
@@ -311,8 +364,8 @@ class BackMeUp(ttk.Frame):
                 return             
             result = pdf_opener(filepath)
             return
-################################## ОТКРЫВАЕМ PDF  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
-################################## ОТКРЫВАЕМ TEX  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+################################## ОТКРЫВАЕМ PDF  ###################################################
+################################## ОТКРЫВАЕМ TEX  ###################################################
         def open_tex(filepath):
             if not os.path.isfile(filepath+'/general.tex'):
                 Messagebox.show_error(message='В указанной папке нет основного файла проекта general.tex', title="Ошибка")
@@ -322,10 +375,13 @@ class BackMeUp(ttk.Frame):
                 return
             result = tex_opener(filepath)
             return
-################################## ОТКРЫВАЕМ TEX  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
-################################## ПЕРЕСОБИРАЕМ ПРОЕКТ  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+################################## ОТКРЫВАЕМ TEX  ####################################################
+################################## ПЕРЕСОБИРАЕМ ПРОЕКТ  ###############################################
         def rebuild_tex(filepath):
-            print(filepath)
+            #print(filepath)
+            ans = Messagebox.okcancel(message='Пересобрать проект?', title="Информация")
+            if ans == "Cancel":
+                return            
             if not os.path.isfile(filepath+'/general.tex'):
                 Messagebox.show_error(message='В указанной папке нет основного файла проекта general.tex', title="Ошибка")
                 return                
@@ -335,7 +391,8 @@ class BackMeUp(ttk.Frame):
             result = rebuild(filepath)
             if result=='ok':
                 Messagebox.show_info(message='Успешное пересборка проекта', title="Информация")                        
-################################## ПЕРЕСОБИРАЕМ ПРОЕКТ  №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№
+################################## ПЕРЕСОБИРАЕМ ПРОЕКТ ################################################
+
 
            
     def get_directory(self):

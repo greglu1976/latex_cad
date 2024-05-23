@@ -5,12 +5,8 @@ from .row_parser import parse_row
 
 def df_finder(ln, path):
     path = path + '/_xlsx/'
-    if os.path.isdir(path):
-        folders = [folder for folder in os.listdir(path) if os.path.isdir(os.path.join(path, folder))]
-        print(path+folders[0])
-    else:
-        logger.warning(f"Путь {path} указывает на файл, а не на директорию.")
-        return []
+    folders = [folder for folder in os.listdir(path) if os.path.isdir(os.path.join(path, folder))]
+    #print(ln, '===++>>>', folders)
     
     # Получить список всех файлов в указанной директории
     files = os.listdir(path+folders[0])
@@ -18,10 +14,9 @@ def df_finder(ln, path):
     xlsx_files = [file for file in files if file.endswith(".xlsx")]
     if not xlsx_files:
         logger.warning(f'По пути {path+folders[0]} отсутствуют файлы описания функции .xlsx')
-        return []
+        return ['noxlsx',]
 
-    print(xlsx_files)
-
+    #print(xlsx_files)
 
     tex_str = []
     if ln+'.xlsx' in xlsx_files:

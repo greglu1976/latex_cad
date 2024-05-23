@@ -1,38 +1,32 @@
+# функция ищет в текущей папке файл general.tex - основной файл проекта latex
+# затем собирает пути, где расположены описания функций и приложения
+# пути к к функциям находятся в списке function_paths
+
 import os
 import re
 
 from logger import logger
+from reporter import handler_paths
 
-def handler_paths(paths):
-    work_dirs = []
-    for path in paths:
-        if not os.path.isdir(path + '/_xlsx'):
-            logger.warning(f'Функция по пути {path} не будет обработана, т.к. нет директории _xlsx')
-            continue
-        if not os.listdir(path + '/_xlsx'):
-            logger.warning(f'Директория {path}/_xlsx существует, но является пустой и не будет обработана')
-            continue        
-        if not os.path.isdir(path + '/_latex'):
-            logger.warning(f'Функция по пути {path} не будет обработана, т.к. нет директории _latex')
-            continue
-        if not os.listdir(path + '/_latex'):
-            logger.warning(f'Директория {path}/_latex существует, но является пустой и не будет обработана')
-            continue         
-        work_dirs.append(path)
-    return work_dirs
+def start_renew_sum_table(path):
 
-def find_paths(filename):
+    path_to_write = path
+    logger.info("Запуск скрипта обновления таблицы всех сигналов устройства...")
+
+    file_name = "general.tex"
+
     function_paths = []
+
     # Проверяем наличие файла в текущем каталоге
-    if os.path.isfile(filename):
-        with open(filename, 'r', encoding='utf-8') as file:
+    if os.path.isfile(path +''+ file_name):
+        with open(path +''+ file_name, 'r', encoding='utf-8') as file:
             inside_func_tag = False
             current_func = []
             fbpath=''
             isFoundFbPath = False
     # ИЩЕМ ПУТИ К ФУНКЦИЯМ
             for line in file:
-                if 'fbpath' in line and not '%' in line and not isFoundFbPath:
+                if 'fbpath' in line and not isFoundFbPath:
                     isFoundFbPath = True
                     fbparts = line.split('{')
                     fb_content = fbparts[-1].strip()
@@ -54,6 +48,17 @@ def find_paths(filename):
                     if line.strip() == "%===f":
                         inside_func_tag = True
 
+
+        # Выводим содержимое списка function_paths
+        logger.info('В файле general.tex руководства по эксплуатации обнаружены следующие пути к функциям')
+        for path in function_paths:
+            logger.info(path)
+
+        #handler_paths(function_paths, path_to_write)
+
     else:
-        logger.error(f"Файл '{filename}' не найден в текущем каталоге")
-    return function_paths
+        logger.error(f"Файл '{file_name}' не найден в текущем каталоге")
+        return 'nofile'
+
+    logger.info("Штатный останов скрипта обновления таблицы всех сигналов устройства...")
+    return 'ok'
