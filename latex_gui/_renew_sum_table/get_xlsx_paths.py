@@ -57,9 +57,14 @@ def get_func_names(path_to_tex):
         return func_names      
 
 def get_xlsx_paths(function_paths):
+    work_list = []
     for function_path in function_paths:
         result = find_tex(function_path)
         if result[0] == 'error':
             continue
         func_names = get_func_names(function_path +'/_latex/'+ result[0])
-    
+        if func_names:
+            t = (function_path, func_names)
+            work_list.append(t)
+    #print(work_list)
+    return work_list

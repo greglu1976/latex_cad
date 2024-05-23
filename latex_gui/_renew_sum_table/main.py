@@ -6,9 +6,9 @@ import os
 import re
 
 from logger import logger
-from .reporter import handler_paths
+#from .reporter import handler_paths
 from .get_xlsx_paths import get_xlsx_paths
-
+from .collect_df import collect_df
 
 def start_renew_sum_table(path):
 
@@ -57,7 +57,9 @@ def start_renew_sum_table(path):
             logger.info(path)
 
         #handler_paths(function_paths, path_to_write)
-        get_xlsx_paths(function_paths)
+        xlsx_paths = get_xlsx_paths(function_paths) # собираем из тех файлов перечень необходимых функций в виде списка туплов [(path1, [list1]), (path2, [list2])]
+        gen_df = collect_df(xlsx_paths)
+
     else:
         logger.error(f"Файл '{file_name}' не найден в текущем каталоге")
         return 'nofile'
