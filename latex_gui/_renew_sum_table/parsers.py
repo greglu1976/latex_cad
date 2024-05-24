@@ -12,7 +12,7 @@ def parse_func_paths(lines):
             isFoundFbPath = True
             fbparts = line.split('{')
             fb_content = fbparts[-1].strip()
-            fbpath = fb_content.rstrip('}')
+            fbpath = fb_content.rstrip('}')+'/'
         if inside_func_tag:
             if line.strip() == "%===f":
                 inside_func_tag = False
@@ -42,7 +42,7 @@ def parse_app_path(lines):
             isFoundPath = True
             fbparts = line.split('{')
             fb_content = fbparts[-1].strip()
-            apppath = fb_content.rstrip('}')
+            apppath = fb_content.rstrip('}')+'/'
         if inside_app_tag:
             if line.strip() == "%===a1":
                 inside_app_tag = False

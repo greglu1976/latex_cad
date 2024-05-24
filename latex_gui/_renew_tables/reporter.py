@@ -36,7 +36,7 @@ def find_paths(filename):
                     isFoundFbPath = True
                     fbparts = line.split('{')
                     fb_content = fbparts[-1].strip()
-                    fbpath = fb_content.rstrip('}')
+                    fbpath = fb_content.rstrip('}')+'/'
                 if inside_func_tag:
                     if line.strip() == "%===f":
                         inside_func_tag = False

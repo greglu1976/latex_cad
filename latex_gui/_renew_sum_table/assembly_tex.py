@@ -1,4 +1,5 @@
 import os
+import shutil
 
 from logger import logger
 
@@ -30,8 +31,13 @@ def assembly_tex(final_tex, app_path):
         if not is_inside:
             gen_tex.append(line)
     #print(app_path +'/app2.tex')
-    with open(app_path +'/_latex/app2.tex', 'w', encoding='utf-8') as file:
+
+    if os.path.isfile(app_path +'/_latex/app1.tex'):
+        shutil.copy(app_path +'/_latex/app1.tex', app_path +'/_latex/app1.bac')
+
+    with open(app_path +'/_latex/app1.tex', 'w', encoding='utf-8') as file:
         for line in gen_tex:
-            file.write(line)    
+            file.write(line)  
+
 
     return ('ok', '')

@@ -62,13 +62,13 @@ def start_renew_sum_table(path):
     if not general_signals:
         logger.warning('Не найдено ни одной строчки по статусам общих функций для суммарной таблицы.')
     else:
-        final_tex.append('\multicolumn{9}{|c|}{Системные сигналы} \\'+'\n')
+        final_tex.append('\multicolumn{9}{|c|}{Системные сигналы} \\\\'+'\n')
         final_tex.append('\hline'+'\n')
         final_tex += general_signals
     if not funcs_tex:
         logger.warning('Не найдено ни одной строчки по статусам функций защиты и автоматики для суммарной таблицы.')
     else:
-        final_tex.append('\multicolumn{9}{|c|}{Сигналы функциональной логики} \\'+'\n')
+        final_tex.append('\multicolumn{9}{|c|}{Сигналы функциональной логики} \\\\'+'\n')
         final_tex.append('\hline'+'\n')
         final_tex += funcs_tex        
 

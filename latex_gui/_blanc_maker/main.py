@@ -29,7 +29,7 @@ def start_renew_tables_blanc(path):
         logger.error("В выбранном файле general.tex нет задания пути к проекту РЭ manualpath")
         logger.info("Останов скрипта обновления таблиц для бланка уставок с ОШИБКАМИ...")
         return 'noblancdoc'
-    path_to_re = desired_content+file_name
+    path_to_re = desired_content+'/'+file_name
     print('>>>', path_to_re)
     print('================')
     function_paths = []
@@ -50,7 +50,7 @@ def start_renew_tables_blanc(path):
                     isFoundFbPath = True
                     fbparts = line.split('{')
                     fb_content = fbparts[-1].strip()
-                    fbpath = fb_content.rstrip('}')
+                    fbpath = fb_content.rstrip('}')+'/'
 
                 if inside_func_tag:
                     if line.strip() == "%===f":

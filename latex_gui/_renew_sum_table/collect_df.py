@@ -42,7 +42,7 @@ def make_tex(df_data, df_info):
         ' & \centering ' + row_parsed[8] +  
         ' & \centering \\arraybackslash ' + row_parsed[9] + r' \\' + '\n'                       
         )
-        tex_list.append('\hline')
+        tex_list.append('\hline'+ '\n')
     return tex_list
 
 
