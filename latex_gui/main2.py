@@ -339,14 +339,11 @@ class BackMeUp(ttk.Frame):
                 Messagebox.show_error(message='В указанной папке нет файла general.tex', title="Ошибка")
                 return
             result = start_renew_sum_table(filepath)
-            if result == 'noblancdoc':
-                Messagebox.show_error(message='В файле general.tex нет строки определения пути для РЭ', title="Ошибка")
-                return
-            if result == 'nofile':
+            if result[0] == 'error':
                 Messagebox.show_error(message='Файл не найден в текущем каталоге', title="Ошибка")
                 return                              
-            if result=='ok':
-                Messagebox.show_info(message='Успешное обновление таблиц бланка уставок', title="Информация")
+            if result[0]=='ok':
+                Messagebox.show_info(message='Успешное обновление суммарной таблицы', title="Информация")
                 return                         
 ################################## КОНЕЦ ОБНОВЛЯЕМ СУММАРНУЮ ТАБЛИЦУ ##############################################
 

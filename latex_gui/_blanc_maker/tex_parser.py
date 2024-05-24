@@ -16,7 +16,7 @@ def parse_to_tex(paths):
     for path in paths:
         if path[1] == 'LLN0':
             df_info = pd.read_excel(path[0]+path[1]+path[2], sheet_name='Info')
-            df_LLN0 = pd.read_excel(path[0]+path[1]+path[2], sheet_name='LLN0')
+            df_LLN0 = pd.read_excel(path[0]+path[1]+path[2], sheet_name='Signals')
             break
     IEC61850Name = '*empty*'
     RussianName = '*empty*'
@@ -50,7 +50,7 @@ def parse_to_tex(paths):
 
     for path in paths:
         if path[1] != 'LLN0':
-            df = pd.read_excel(path[0]+path[1]+path[2], sheet_name=path[1])
+            df = pd.read_excel(path[0]+path[1]+path[2], sheet_name='Signals')
             df = df.drop(df[df['Категория (group)'] != 'setting'].index)
             if df.empty:
                 continue
