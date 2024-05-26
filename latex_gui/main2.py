@@ -1,3 +1,6 @@
+# сборка под ubuntu
+#pyinstaller --noconfirm --onefile --windowed --hidden-import='PIL._tkinter_finder' --add-data "/home/greglu/www2/latex_cad/latex_gui/assets:assets/" main2.py
+
 from datetime import datetime
 from random import choices
 import ttkbootstrap as ttk
@@ -489,6 +492,6 @@ class CollapsingFrame(ttk.Frame):
 if __name__ == '__main__':
 
     app = ttk.Window("GUI Latex")
-    app.iconbitmap(os.path.join(PATH, 'icon.ico'))
+    #app.iconbitmap(os.path.join(PATH, 'icon.ico')) # для убунты не нужна эта строка
     BackMeUp(app)
     app.mainloop()
