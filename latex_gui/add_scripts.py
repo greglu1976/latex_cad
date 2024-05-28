@@ -9,21 +9,23 @@ def rebuild(tex_dir):
     if result.returncode == 0:
         return 'ok'
     return ''
-'''
+
 def tex_opener(filepath):
     os.startfile(filepath+'/general.tex')
     return 'ok'
+
 '''
 def tex_opener(filepath):
     subprocess.run(filepath+'/general.tex')
     return 'ok'
-
-
 '''
+
 def pdf_opener(filepath):
     os.startfile(filepath+'/general.pdf')
     return 'ok'
+
 '''
 def pdf_opener(filepath):
     subprocess.run(filepath+'/general.pdf')
     return 'ok'
+'''

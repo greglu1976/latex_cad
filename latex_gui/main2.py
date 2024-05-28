@@ -1,5 +1,7 @@
 # сборка под ubuntu
 #pyinstaller --noconfirm --onefile --windowed --hidden-import='PIL._tkinter_finder' --add-data "/home/greglu/www2/latex_cad/latex_gui/assets:assets/" main2.py
+# Версия 0.2 от 28.05.24 - вроде все работает
+# 
 
 from datetime import datetime
 from random import choices
