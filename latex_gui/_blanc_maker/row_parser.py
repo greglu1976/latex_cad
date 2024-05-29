@@ -6,6 +6,16 @@ def process_num(num, step):
     formatted_v = formatted_v.replace('.', ',')  # Заменяем символ "." на ","
     return formatted_v  
 
+def process_num_check(num, step):
+    if '(' in str(num):
+        s1, s2 = num.split("(")
+        s2 = s2.replace(")", "") # удаляем скобку ')' из второй строки
+        s1_f = process_num(float(s1.replace(',', '.')), step)
+        s2_f = process_num(float(s2.replace(',', '.')), step)
+        return (s1_f+'('+ s2_f +')*', True)
+    else:
+        return (process_num(num, step), False)
+
 def parse_note(note, default):
     result_list = note.split(",")
     res_list = []
@@ -46,10 +56,11 @@ def parse_row(row):
         default = default/1000
         units = 'с'
 
+    isInfoStr = False # булева переменная, которая фиксирует двойное значение в строке , предполагаем что это для токов 1 и 5 А
     if isinstance(step, (int, float)) and step<1:
-        max_value = process_num(max_value, step)
-        min_value = process_num(min_value, step)
-        default = process_num(default, step)
+        max_value, isInfoStr = process_num_check(max_value, step)
+        min_value = process_num_check(min_value, step)[0]
+        default = process_num_check(default, step)[0]
     else:
         max_value = str(max_value).replace('.', ',')  # Заменяем символ "." на ","
         min_value = str(min_value).replace('.', ',')  # Заменяем символ "." на ","
@@ -58,8 +69,6 @@ def parse_row(row):
 
     if note != '-': # Здесь убираем шаг у программных переключателей 
         step = '-'
-
-    
 
     diap = min_value +' ... '+ max_value
     if note !='-':
@@ -70,4 +79,4 @@ def parse_row(row):
     applied_desc = dict_default.get(applied_desc.strip(), applied_desc)
 
 
-    return (full_desc + ' (' + short_desc +')', applied_desc, diap, units, step, default)
+    return ((full_desc + ' (' + short_desc +')', applied_desc, diap, units, step, default), isInfoStr)
