@@ -14,21 +14,24 @@ def df_finder(ln, path):
     xlsx_files = [file for file in files if file.endswith(".xlsx")]
     if not xlsx_files:
         logger.warning(f'По пути {path+folders[0]} отсутствуют файлы описания функции .xlsx')
-        return ['noxlsx',]
+        return (['noxlsx',], False)
 
     #print(xlsx_files)
 
     tex_str = []
+    isInfo = False
     if ln+'.xlsx' in xlsx_files:
         df = pd.read_excel(path+folders[0]+'/'+ln+'.xlsx')
 
         for index, row in df.iterrows():
-            row_done = parse_row(row)
+            row_done, isInfoStr = parse_row(row)
+            if isInfoStr:
+                isInfo = True
             if not row_done:
                 continue
             temp = f'\centering {row_done[0]} & \centering {row_done[1]} & \centering {row_done[2]} & \centering {row_done[3]} & \centering\\arraybackslash {row_done[4]} \\\\'
             tex_str.append(temp)
             tex_str.append('\hline')
     else:
-        return ['noxlsx',]
-    return tex_str
+        return (['noxlsx',], False)
+    return (tex_str, isInfo)

@@ -34,7 +34,8 @@ def process_path(path):
                     line = parsed_line[0]
                 ln = line.split('*')[1].strip()
 
-                str_work = df_finder(ln, path)
+                str_work, isInfoStr = df_finder(ln, path)
+                #print(isInfoStr)
 
                 if str_work[0] != 'noxlsx':
                     is_passing = True
@@ -44,6 +45,8 @@ def process_path(path):
                     if str_work:
                         for add_line in str_work:
                             tex_final.append(add_line + '\n')
+                        if isInfoStr:
+                            tex_final.append("\\multicolumn{5}{|l|}{" + "* - Для устройств с номинальным током 1 А (5 А)"  + "} \\\\"+"\n")
                 else:
                     is_passing = False
                 continue
