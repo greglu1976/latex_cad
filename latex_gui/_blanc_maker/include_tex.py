@@ -11,6 +11,7 @@ dict_func = {
     'ТЗНП':  '(токовая защита нулевой последовательности)',
     'ЛО ГЗоткл':  '(логика отключения при срабатывании отключающего контакта газового реле)',
     'ЛО ГЗсигн':  '(логика отключения при срабатывании сигнального контакта газового реле)',
+    'ЗПО':  '(защита от потери охлаждения)',    
 }
 
 long_table_header_desc = '\\begin{longtable}[l]{|>{\centering\\arraybackslash}m{0.3cm}|>{\centering\\arraybackslash}m{4cm}|>{\centering\\arraybackslash}m{1.7cm}|>{\centering\\arraybackslash}m{3cm}|>{\centering\\arraybackslash}m{1cm}|>{\centering\\arraybackslash}m{1.5cm}|>{\centering\\arraybackslash}m{1.6cm}|>{\centering\\arraybackslash}m{1.5cm}|}'
