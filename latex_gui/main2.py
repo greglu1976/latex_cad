@@ -488,9 +488,6 @@ class CollapsingFrame(ttk.Frame):
 
 
 
-
-
-
 if __name__ == '__main__':
 
     app = ttk.Window("GUI Latex v0.3 29.05.24")
