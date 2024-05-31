@@ -41,10 +41,11 @@ def parse_to_tex(paths, x, tex_func_list, isOneInstance):
         desc_func = desc_func.replace('x', str(x))  
 
 
-    tex_list.append('\\needspace{4\\baselineskip}')
-    tex_list.append('\color{uniblue}{\section {' + f'{RussianName} {desc_func}' +'}}')
+    tex_list.append('\\needspace{3\\baselineskip}')
+    tex_list.append('\color{uniblue}{\section {' + f'{RussianName}' +'}}')
     tex_list.append('\color{black}')
-    tex_list.append('\\nopagebreak')
+    tex_list.append('\par\large\\noindent {' + f'{desc_func}'+'} \small')    
+    #tex_list.append('\\nopagebreak')
 
     df_LLN0 = df_LLN0.drop(df_LLN0[df_LLN0['Категория (group)'] != 'setting'].index)
     if not df_LLN0.empty:
