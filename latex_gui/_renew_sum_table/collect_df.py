@@ -22,6 +22,9 @@ def make_tex(df_data, RussianName, x):
 
         first = RussianName.replace('x', str(x)) + '/ ' + row_parsed[0] + ': ' + row_parsed[1].replace('x', str(x))
 
+        if 'Индикация поведения' in row_parsed[1] or 'Индикация исправности' in row_parsed[1]: # Здесь исключаем МЭК сигналы Beh и Health из списка
+            continue
+
         tex_list.append(
         '\centering ' + first + 
         ' & \centering ' + row_parsed[2].replace('x', str(x)) + 
