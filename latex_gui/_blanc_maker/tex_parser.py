@@ -13,8 +13,9 @@ def parse_to_tex(paths, x, tex_func_list, isOneInstance):
     #tex_list.append('\\fontsize{10pt}{11pt}\selectfont')
     #tex_list.append('')
     # ищем БУ LLN0 для начальной инициализации переменных
-    
+
     df_info = pd.DataFrame()
+    df_LLN0 = pd.DataFrame()    
     for path in paths:
         if path[1] == 'LLN0':
             df_info = pd.read_excel(path[0]+path[1]+path[2], sheet_name='Info')
@@ -24,12 +25,14 @@ def parse_to_tex(paths, x, tex_func_list, isOneInstance):
     RussianName = '*empty*'
     if df_info.empty:
         logger.warning("Нет LLN0 в составе функционального блока")
-    else:
-        for index, row in df_info.iterrows():
-            if row['Parameter'] == 'RussianName':
-                RussianName = row['Value']
-            if row['Parameter'] == 'IEC61850Name':
-                IEC61850Name = row['Value']  
+        print(paths[0][0]+paths[0][1]+paths[0][2])
+        df_info = pd.read_excel(paths[0][0]+paths[0][1]+paths[0][2], sheet_name='Info')
+
+    for index, row in df_info.iterrows():
+        if row['Parameter'] == 'RussianName':
+            RussianName = row['Value']
+        if row['Parameter'] == 'IEC61850Name':
+            IEC61850Name = row['Value']  
     # Начинаем собирать tex файл
     desc_func = dict_func.get(RussianName,'')
 
@@ -46,8 +49,8 @@ def parse_to_tex(paths, x, tex_func_list, isOneInstance):
     tex_list.append('\color{black}')
     tex_list.append('\par\large\\noindent {' + f'{desc_func}'+'} \small')    
     #tex_list.append('\\nopagebreak')
-
-    df_LLN0 = df_LLN0.drop(df_LLN0[df_LLN0['Категория (group)'] != 'setting'].index)
+    if not df_LLN0.empty:
+        df_LLN0 = df_LLN0.drop(df_LLN0[df_LLN0['Категория (group)'] != 'setting'].index)
     if not df_LLN0.empty:
         
         tex_list.append(long_table_header_desc)

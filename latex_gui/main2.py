@@ -2,6 +2,8 @@
 #pyinstaller --noconfirm --onefile --windowed --hidden-import='PIL._tkinter_finder' --add-data "/home/greglu/www2/latex_cad/latex_gui/assets:assets/" main2.py
 # Версия 0.2 от 28.05.24 - вроде все работает
 # Версия 0.3 от 29.05.24 - добавлен парсинг строк типв 1(5) в xlsx
+# Версия 0.42 от 3.06.24 - добавлен пропуск LLN0 в скрипте генерации отчета по уставкам
+
 
 from datetime import datetime
 from random import choices
@@ -490,7 +492,7 @@ class CollapsingFrame(ttk.Frame):
 
 if __name__ == '__main__':
 
-    app = ttk.Window("GUI Latex v0.4 30.05.24")
+    app = ttk.Window("GUI Latex v0.42 03.06.24")
     #app.iconbitmap(os.path.join(PATH, 'icon.ico')) # для убунты не нужна эта строка
     BackMeUp(app)
     app.mainloop()
