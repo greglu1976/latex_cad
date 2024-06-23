@@ -1,5 +1,7 @@
 import subprocess
 import os
+import sys
+
 
 def rebuild(tex_dir):
     command = 'lualatex'
@@ -11,21 +13,19 @@ def rebuild(tex_dir):
     return ''
 
 def tex_opener(filepath):
-    os.startfile(filepath+'/general.tex')
+    if sys.platform.startswith('win'):
+        os.startfile(filepath+'/general.tex')
+        return 'ok'
+    
+    subprocess.run(['xdg-open', filepath+'/general.tex'], check=True)
+    #subprocess.run(filepath+'/general.tex')
     return 'ok'
 
-'''
-def tex_opener(filepath):
-    subprocess.run(filepath+'/general.tex')
-    return 'ok'
-'''
 
 def pdf_opener(filepath):
-    os.startfile(filepath+'/general.pdf')
+    if sys.platform.startswith('win'):    
+        os.startfile(filepath+'/general.pdf')
+        return 'ok'
+    subprocess.run(['xdg-open', filepath+'/general.pdf'], check=True)
+    #subprocess.run(filepath+'/general.tex')
     return 'ok'
-
-'''
-def pdf_opener(filepath):
-    subprocess.run(filepath+'/general.pdf')
-    return 'ok'
-'''
