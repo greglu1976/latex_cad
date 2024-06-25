@@ -22,7 +22,6 @@ def parse_note(note, default):
     # строка снизу исправлена 25.06.24
     #result_list = note.split(",") # спотыкается на строках, где есть запятая, например 0 - Не предусмотрено, 1 - ЭМВ и ЭМО1, 2 - ЭМВ, ЭМО1 и ЭМО2
     result_list = re.split(r',\s*(?=\d\s-\s)', note)
-    print(result_list)
        
     res_list = []
     str_default = str(default)

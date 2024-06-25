@@ -34,9 +34,10 @@ def handler_paths(paths, path_to_write):
                             break
                 if file_str:
                     file_str = file_str.replace('%===s', '')
+                    file_str = file_str.replace('\n', '')                    
                     logger.info(f'Найдены следующие имена функций {file_str} в tex файле описания')                                       
                     file_str = file_str.replace(' ', '')                   
-                    file_str = file_str.replace('\n', '')
+                    #file_str = file_str.replace('\n', '')
                     tex_func_list = file_str.split(',')
                 #print('>>',tex_func_list) # теперь в tex_func_list - список имен файлов последовательный
             ############################################ ПОЛУЧИЛИ ПЕРВОЕ НЕОБХОДИМОЕ ЗНАЧЕНИЕ tex_func_list
