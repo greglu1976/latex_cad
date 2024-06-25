@@ -1,3 +1,5 @@
+import re
+
 from .include_tex import dict_default
 
 def process_num(num, step):
@@ -17,7 +19,13 @@ def process_num_check(num, step):
         return (process_num(num, step), False)
 
 def parse_note(note, default):
-    result_list = note.split(",")
+    # строка снизу исправлена 24.06.24
+    #result_list = note.split(",") # спотыкается на строках, где есть запятая, например 0 - Не предусмотрено, 1 - ЭМВ и ЭМО1, 2 - ЭМВ, ЭМО1 и ЭМО2
+    # Регулярное выражение для поиска соответствий
+    pattern = r'(\d+ - .+)'
+    # Используем findall для получения списка соответствий
+    result_list = re.findall(pattern, note)
+        
     res_list = []
     str_default = str(default)
     for result in result_list:
