@@ -60,6 +60,14 @@ def parse_row(row):
     default = row['DefaultValue']
     note = row['Note (Справочная информация)']
 
+    # меняем тире на длинное тире в таблицах
+    if units =='-':
+        units = '--'
+    if step =='-':
+        step = '--'
+    if applied_desc =='-':
+        applied_desc = '--'
+
     #if units == 'мс' and max_value>1000: # с контролем диапазона от 0 до 1000 мс не преобразовывать
     if units == 'мс':  # без контроля диапазона от 0 до 1000 мс - все преобразум
         max_value = max_value/1000
@@ -80,7 +88,7 @@ def parse_row(row):
     step = str(step).replace('.', ',')
 
     if note != '-': # Здесь убираем шаг у программных переключателей 
-        step = '-'
+        step = '--'
 
     diap = min_value +' ... '+ max_value
     if note !='-':

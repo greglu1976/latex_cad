@@ -8,7 +8,7 @@ def parse_func_paths(lines):
     isFoundFbPath = False
 # ИЩЕМ ПУТИ К ФУНКЦИЯМ
     for line in lines:
-        if 'fbpath' in line and not isFoundFbPath:
+        if 'fbpath' in line and not isFoundFbPath and not line.strip().startswith('%'):
             isFoundFbPath = True
             fbparts = line.split('{')
             fb_content = fbparts[-1].strip()
@@ -38,7 +38,7 @@ def parse_app_path(lines):
     isFoundPath = False
 # ИЩЕМ ПУТЬ К ПРИЛОЖЕНИЮ А
     for line in lines:
-        if 'apppath' in line and not isFoundPath:
+        if 'apppath' in line and not isFoundPath and not line.strip().startswith('%'):
             isFoundPath = True
             fbparts = line.split('{')
             fb_content = fbparts[-1].strip()
