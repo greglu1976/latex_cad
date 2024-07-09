@@ -492,7 +492,7 @@ class CollapsingFrame(ttk.Frame):
 
 if __name__ == '__main__':
 
-    app = ttk.Window("GUI Latex v0.46 01.07.24")
+    app = ttk.Window("GUI Latex v0.47 09.07.24")
     #app.iconbitmap(os.path.join(PATH, 'icon.ico')) # для убунты не нужна эта строка
     BackMeUp(app)
     app.mainloop()

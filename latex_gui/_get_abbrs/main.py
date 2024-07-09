@@ -39,11 +39,11 @@ def extract_words_from_pdf(pdf_path):
         if 'Перечень принятых сокращений' in text:
             inside_toa = True
             continue
-        if inside_toa and 'Устройство и работа' in text:
+        if inside_toa and '<ABBRS>' in text:
             inside_toa = False
             words += text.split()  # Добавляем слова в список
             continue
-        if inside_toa and not 'Устройство и работа' in text:
+        if inside_toa and not '<ABBRS>' in text:
             continue
         words += text.split()  # Добавляем слова в список
     return words  # Возвращаем список слов
