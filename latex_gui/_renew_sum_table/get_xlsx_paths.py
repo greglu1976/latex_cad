@@ -20,7 +20,8 @@ def find_tex(function_path):
     else:
         for file in files:
             if file.endswith('.tex'):
-                tex_files.append(file)
+                if file!='settings.tex':
+                    tex_files.append(file)
         if not tex_files:
             logger.warning(f"В папке {path} нет tex файла описания функции")
             return ['error', f'В папке {path} нет tex файла описания функции']
