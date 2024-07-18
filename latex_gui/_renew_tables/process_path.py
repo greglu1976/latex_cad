@@ -10,13 +10,14 @@ def process_path(path):
     # Получить список всех файлов в указанной директории
     files = os.listdir(work_path)
     # Отфильтровать только файлы с расширением .tex
-    tex_files = [file for file in files if file.endswith(".tex")]
+    tex_files = [file for file in files if file.endswith(".tex") and file != "settings.tex"]
 
     if not tex_files:
         logger.warning(f'По пути {work_path} отсутствуют файлы описания функции .tex')
         return
 
     full_path = work_path + tex_files[0]
+    print('full>>', full_path)
     is_inside = False
     is_passing = False
     tex_final = [] # сюда собирать будем выходной файл
