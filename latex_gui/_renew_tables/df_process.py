@@ -34,4 +34,9 @@ def df_finder(ln, path):
             tex_str.append('\hline')
     else:
         return (['noxlsx',], False)
+    if not tex_str:
+        insred = '\\textcolor{red}{ПУСТАЯ ФУНКЦИЯ!!!}'
+        err = f'\centering {insred} & \centering {ln} & \centering -- & \centering -- & \centering\\arraybackslash -- \\\\'
+        logger.warning(f'Пустая функция {ln}')
+        return ([err,], False)   
     return (tex_str, isInfo)

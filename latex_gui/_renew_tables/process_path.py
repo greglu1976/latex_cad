@@ -36,7 +36,7 @@ def process_path(path):
                 ln = line.split('*')[1].strip()
 
                 str_work, isInfoStr = df_finder(ln, path)
-                #print(isInfoStr)
+                print('str_work>>>', str_work)
 
                 if str_work[0] != 'noxlsx':
                     is_passing = True
