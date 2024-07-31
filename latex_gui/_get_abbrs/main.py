@@ -121,7 +121,12 @@ def start_abbr(filepath):
             value = data[word]
             #value = value[0].lower() + value[1:] # с маленькой буквы ?
             # Формируем строку tex и добавляем ее в tex_list
-            tex_list.append(f'{word} & -- & {value}; \\\\'+'\n')
+            if value.startswith('!'):
+                value = value[1:]
+                temp = '\\textcolor{red}{'+value+'}'
+                tex_list.append(f'{word} & -- & {temp}; \\\\'+'\n')
+            else:
+                tex_list.append(f'{word} & -- & {value}; \\\\'+'\n')
             doc_list.append(f'{word} - {value}')
 
     # Меняем в последней строке ; на точку
