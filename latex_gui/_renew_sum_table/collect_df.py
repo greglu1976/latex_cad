@@ -19,9 +19,7 @@ def make_tex(df_data, RussianName, x):
 
     for index, row in df_data.iterrows():
         row_parsed = parse_row(row)
-
         first = RussianName.replace('x', str(x)) + '/ ' + row_parsed[0] + ': ' + row_parsed[1].replace('x', str(x))
-
         if 'Индикация поведения' in row_parsed[1] or 'Индикация исправности' in row_parsed[1]: # Здесь исключаем МЭК сигналы Beh и Health из списка
             continue
 

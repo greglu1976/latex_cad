@@ -9,7 +9,7 @@ def make_plus(value):
 def parse_row(row):
     full_desc = row['FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)']
     short_desc = row['ShortDescription'].replace("_", r"\_")
-    node_name = row['NodeName (рус)']
+    node_name = row['NodeName (рус)'].replace("_", r"\_") # экранируем подчеркивание в имени узла
     digital_input = make_plus(row['DigitalInput'])
     digital_output = make_plus(row['DigitalOutput'])
     func_button = make_plus(row['FunctionalButton'])
