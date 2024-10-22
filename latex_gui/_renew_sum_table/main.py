@@ -68,8 +68,8 @@ def start_renew_sum_table(path):
     if not funcs_tex:
         logger.warning('Не найдено ни одной строчки по статусам функций защиты и автоматики для суммарной таблицы.')
     else:
-        final_tex.append('\multicolumn{9}{|c|}{Сигналы функциональной логики} \\\\'+'\n')
-        final_tex.append('\hline'+'\n')
+        #final_tex.append('\multicolumn{9}{|c|}{Сигналы функциональной логики} \\\\'+'\n')
+        #final_tex.append('\hline'+'\n')
         final_tex += funcs_tex        
 
     app1_file = assembly_tex(final_tex, app_path)
