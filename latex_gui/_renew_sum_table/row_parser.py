@@ -1,5 +1,3 @@
-
-
 def make_plus(value):
     if value == '0' or value == 0 or value == '':
         return '--'
