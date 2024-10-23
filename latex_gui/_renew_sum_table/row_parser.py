@@ -16,6 +16,6 @@ def parse_row_new(row):
     disturber = make_plus(row['Disturber'])  
     start_disturber = make_plus(row['StartDisturber'])
     russ_name = row['RussianName'].replace("_", r"\_") # экранируем подчеркивание в имени узла
-    type = row['type']
+    sig_type = row['type']
     
-    return (node_name, full_desc, short_desc, digital_input, digital_output, led, func_button, event_log, disturber, start_disturber, russ_name, type)
+    return (node_name, full_desc, short_desc, digital_input, digital_output, led, func_button, event_log, disturber, start_disturber, russ_name, sig_type)
