@@ -9,11 +9,14 @@ from .include_tex import dict_func
 from .row_parser import parse_row_new
 
 def generate_tex(df):
+    print(df.columns)
     tex_list=[]
     for index, row in df.iterrows():
         row_parsed = parse_row_new(row)
-        if 'Индикация поведения' in row_parsed[1] or 'Индикация исправности' in row_parsed[1]: # Здесь исключаем МЭК сигналы Beh и Health из списка
-            continue
+        #if 'Индикация поведения' in row_parsed[1] or 'Индикация исправности' in row_parsed[1]: # Здесь исключаем МЭК сигналы Beh и Health из списка
+            #continue
+        if row_parsed[11] !='BOOL':  #Здесь исключаем НЕ булевые сигналы из списка
+            continue   
         if row_parsed[0] == 'control':
             first = row_parsed[1]
         else:    
