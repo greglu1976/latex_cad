@@ -55,6 +55,12 @@ def make_tex_all(all_dfs): # новые строки
 ################################################## ВЫШЕ СОБРАЛИ ОБЩИЙ ДАТАФРЕЙМ ################################
     tex_list = []
     #print(summ_df)
+    df_sys = summ_df[summ_df['RussianName'] == 'СИСТ'] # Датафрейм с системными сигналами
+    if not df_sys.empty:
+        tex_list.append('\multicolumn{9}{|c|}{Системные сигналы} \\\\'+'\n')
+        tex_list.append('\hline'+'\n')
+        tex_list +=generate_tex(df_sys)        
+    summ_df = summ_df[summ_df['RussianName'] != 'СИСТ'] # убрали системные узлы из суммарного датафрейма = датафрейм с остальными сигналами 
     df_ctrl = summ_df[summ_df['Категория (group)'].isin(['control'])]
     if not df_ctrl.empty:
         df_buttons = df_ctrl[df_ctrl['reserved1'] == 'button']
