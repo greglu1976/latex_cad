@@ -57,7 +57,7 @@ def make_tex_all(all_dfs): # новые строки
     #print(summ_df)
     df_sys = summ_df[summ_df['RussianName'] == 'СИСТ'] # Датафрейм с системными сигналами
     if not df_sys.empty:
-        tex_list.append('\multicolumn{9}{|c|}{Системные сигналы} \\\\'+'\n')
+        tex_list.append('\multicolumn{9}{c|}{Системные сигналы} \\\\'+'\n')
         tex_list.append('\hline'+'\n')
         tex_list +=generate_tex(df_sys)        
     summ_df = summ_df[summ_df['RussianName'] != 'СИСТ'] # убрали системные узлы из суммарного датафрейма = датафрейм с остальными сигналами 
@@ -66,12 +66,12 @@ def make_tex_all(all_dfs): # новые строки
         df_buttons = df_ctrl[df_ctrl['reserved1'] == 'button']
         df_switches = df_ctrl[df_ctrl['reserved1'] != 'button']
         if not df_switches.empty:
-            tex_list.append('\multicolumn{9}{|c|}{Виртуальные ключи} \\\\'+'\n')
+            tex_list.append('\multicolumn{9}{c|}{Виртуальные ключи} \\\\'+'\n')
             tex_list.append('\hline'+'\n')
             tex_list +=generate_tex(df_switches)
         if not df_buttons.empty:
             df_buttons = df_buttons.drop_duplicates(subset=['FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)'])
-            tex_list.append('\multicolumn{9}{|c|}{Виртуальные кнопки} \\\\'+'\n')
+            tex_list.append('\multicolumn{9}{c|}{Виртуальные кнопки} \\\\'+'\n')
             tex_list.append('\hline'+'\n')
             tex_list +=generate_tex(df_buttons)            
     df_status = summ_df[summ_df['Категория (group)'].isin(['status'])]

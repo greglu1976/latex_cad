@@ -17,7 +17,7 @@ def process_path(path):
         return
 
     full_path = work_path + tex_files[0]
-    print('full>>', full_path)
+    #print('full>>', full_path)
     is_inside = False
     is_passing = False
     tex_final = [] # сюда собирать будем выходной файл
