@@ -76,7 +76,7 @@ def make_tex_all(all_dfs): # новые строки
             tex_list +=generate_tex(df_buttons)            
     df_status = summ_df[summ_df['Категория (group)'].isin(['status'])]
     if not df_status.empty:
-        tex_list.append('\multicolumn{9}{|c|}{Сигналы функциональной логики} \\\\'+'\n')
+        tex_list.append('\multicolumn{9}{c|}{Сигналы функциональной логики} \\\\'+'\n')
         tex_list.append('\hline'+'\n')
         tex_list +=generate_tex(df_status)
 
