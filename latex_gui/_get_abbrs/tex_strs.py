@@ -1,6 +1,8 @@
 
 intro_strs = []
 
+intro_strs.append("\phantomsection"+"\n") # чтобы правильно генерировать ссылку
+
 intro_strs.append("\color{uniblue}\section*{Перечень принятых сокращений}"+"\n")
 
 intro_strs.append("\\addcontentsline{toc}{section}{Перечень принятых сокращений}"+"\n") # строка для включения в содержание
