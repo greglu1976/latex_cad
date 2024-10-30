@@ -12,6 +12,31 @@ sys.path.append(parent_dir)
 from .dict1 import abbrs
 from .tex_strs import intro_strs, outro_strs
 
+# Определяем словарь аббревиатур
+def load_dict(abbrs):
+    data = abbrs
+    # Ищем файл со словарем
+    path_to_dict = os.getcwd()+'/dictionary.json'
+    if os.path.isfile(path_to_dict):
+        with open(path_to_dict, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            logger.info("Найден внешний словарь аббревиатур dictionary.json")
+            return data
+    logger.warning("Не найден внешний словарь аббревиатур dictionary.json, будет использоваться пустой внутренний словарь!")
+    return data
+
+def get_abbrs_new(word_list, abbr_dict):
+    abbr_set = set(abbr_dict.keys())
+    new_list = []
+    #print(word_list)
+    for word in word_list:
+        for abbr in abbr_set:
+            if abbr in word:
+                new_list.append(abbr)
+    word_set = set(new_list)
+    word_list = sorted(list(word_set))    
+    return word_list
+
 def get_abbrs(word_list):
     # оставляем только слова по шаблону - первые две бкувы заглавные - остальные любые
     new_word_list = []
@@ -19,6 +44,7 @@ def get_abbrs(word_list):
         cleaned_string = re.sub(r'^[\(]', '', word)
         cleaned_string = re.sub(r'[\)\»]*$', '', cleaned_string)
         cleaned_string = re.sub(r'\d+$', '', cleaned_string)
+        
         if re.match('^[A-ZА-Я]{2}[A-Za-zА-Яа-я]*$', cleaned_string):
             new_word_list.append(cleaned_string)
     #print(new_word_list)
@@ -45,6 +71,8 @@ def extract_words_from_pdf(pdf_path):
             continue
         if inside_toa and not '<ABBRS>' in text:
             continue
+        if 'АСУ ТП' in text:
+            words.append('АСУ ТП')
         words += text.split()  # Добавляем слова в список
     return words  # Возвращаем список слов
 
@@ -61,37 +89,65 @@ def replace_pdf_with_attrs_txt(path):
     new_doc_path = os.path.join(base_path, new_doc_filename)
     return (path, os.path.abspath(new_txt_path), os.path.abspath(new_attrs_path), os.path.abspath(new_doc_path))
 
+def parse_tex(new_word_list, data):
+    used_keys = []
+    tex_list = []
+    doc_list = []
+    for word in new_word_list:
+        # Проверяем, встречается ли ключ словаря в списке слов и не использовался ли уже
+        if word in data.keys() and word not in used_keys:
+            used_keys.append(word)
+            value = data[word]
+            #value = value[0].lower() + value[1:] # с маленькой буквы ?
+            # Формируем строку tex и добавляем ее в tex_list
+            if value.startswith('!'):
+                value = value[1:]
+                temp = '\\textcolor{red}{'+value+'}'
+                tex_list.append(f'{word} & -- & {temp}; \\\\'+'\n')
+            else:
+                tex_list.append(f'{word} & -- & {value}; \\\\'+'\n')
+            doc_list.append(f'{word} - {value}')
+    # Меняем в последней строке ; на точку
+    if tex_list:
+            last_element_index = len(tex_list) - 1
+            last_element = tex_list[last_element_index]
+            updated_last_element = last_element.replace('; \\\\\n', '. \\\\\n')
+            tex_list[last_element_index] = updated_last_element
+    return tex_list 
+
+def parse_tex_new(new_word_list, dict):
+    tex_list = []
+    for key in new_word_list:
+        if key in dict:
+            val = dict[key] 
+            if val.startswith('!'):
+                val = val[1:]
+                temp = '\\textcolor{red}{'+val+'}'
+                tex_list.append(f'{key} & -- & {temp}; \\\\'+'\n')
+            else:
+                tex_list.append(f'{key} & -- & {val}; \\\\'+'\n')
+    # Меняем в последней строке ; на точку
+    if tex_list:
+            last_element_index = len(tex_list) - 1
+            last_element = tex_list[last_element_index]
+            updated_last_element = last_element.replace('; \\\\\n', '. \\\\\n')
+            tex_list[last_element_index] = updated_last_element
+    return tex_list
+
+########################## ТОЧКА ВХОДА ###################################
 def start_abbr(filepath):
 
     logger.info("Запуск скрипта обновления аббревиатур...")
 
     pdf_path = filepath+'/general.pdf'
-    # Configure logging
-    #logging.basicConfig(filename='abbrs.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-    #logging.info("Запуск скрипта поиска аббревиатур...")
-    # Ищем файл со словарем
-    path_to_dict = os.getcwd()+'/dictionary.json'
-    if os.path.isfile(path_to_dict):
-        with open(path_to_dict, 'r', encoding='utf-8') as file:
-            data = json.load(file)
-            #print('found dictionary.json')
-            logger.info("Найден внешний словарь аббревиатур dictionary.json")
-    else:
-        # Использование словаря "abbrs" в случае отсутствия файла "dict.json"
-        data = abbrs
-        logger.warning("Не найден внешний словарь аббревиатур dictionary.json, будет использоваться пустой внутренний словарь!")
-
-
-    #paths_to_pdfs = search_pdf()
     path_to_pdf = replace_pdf_with_attrs_txt(pdf_path)
 
     logger.info(f"Обработка {path_to_pdf[0]}")
-    word_list = extract_words_from_pdf(path_to_pdf[0])
+    word_list_origin = extract_words_from_pdf(path_to_pdf[0])
 
     # убираем повторяющиеся слова
-    word_set = set(word_list)
+    word_set = set(word_list_origin)
     word_list = sorted(list(word_set))
-
     # вытаскиваем абревиатуры
     new_word_list = get_abbrs(word_list)
 
@@ -110,48 +166,19 @@ def start_abbr(filepath):
             file.write(line + ', ')
     ####################################################
 
-    used_keys = []
-    tex_list = []
-    doc_list = []
-
-    for word in new_word_list:
-        # Проверяем, встречается ли ключ словаря в списке слов и не использовался ли уже
-        if word in data.keys() and word not in used_keys:
-            used_keys.append(word)
-            value = data[word]
-            #value = value[0].lower() + value[1:] # с маленькой буквы ?
-            # Формируем строку tex и добавляем ее в tex_list
-            if value.startswith('!'):
-                value = value[1:]
-                temp = '\\textcolor{red}{'+value+'}'
-                tex_list.append(f'{word} & -- & {temp}; \\\\'+'\n')
-            else:
-                tex_list.append(f'{word} & -- & {value}; \\\\'+'\n')
-            doc_list.append(f'{word} - {value}')
-
-    # Меняем в последней строке ; на точку
-    if tex_list:
-            last_element_index = len(tex_list) - 1
-            last_element = tex_list[last_element_index]
-            updated_last_element = last_element.replace('; \\\\\n', '. \\\\\n')
-            tex_list[last_element_index] = updated_last_element   
-
-    '''
-        for word in new_word_list:
-            # Проверка вхождения ключа словаря в строку
-            for key, value in data.items():
-                if key == word and key not in used_keys:
-                    #print(f"Ключ '{key}' найден в строке, соответствующее значение: '{value}'.")
-                    used_keys.append(key)
-                    tex_list.append(f'{key} & -- & {value} \\\\'+'\n')
-    '''
+    # Ищем файл со словарем
+    dict = load_dict(abbrs)
+    # старое решение
+    #tex_list = parse_tex(new_word_list, dict) 
+    # новое решение
+    abbrs_got = get_abbrs_new(word_list, dict) # получили все аббревиатуры , причем только те, что в словаре
+    tex_list = parse_tex_new(abbrs_got, dict)
     final_tex = intro_strs + tex_list + outro_strs
 
     # Открываем файл для записи в UTF-8
     with open(path_to_pdf[1], 'w', encoding='utf-8') as file:
         for line in final_tex:
             file.write(line)  # Добавляем символ новой строки после каждой строки
-
 
     logger.info("Останов скрипта поиска аббревиатур...")
     return 'ok'
