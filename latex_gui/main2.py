@@ -3,7 +3,7 @@
 # Версия 0.2 от 28.05.24 - вроде все работает
 # Версия 0.3 от 29.05.24 - добавлен парсинг строк типв 1(5) в xlsx
 # Версия 0.42 от 3.06.24 - добавлен пропуск LLN0 в скрипте генерации отчета по уставкам
-
+# pip install openpyxl,ttkbootstrap, pandas, PyMuPDF
 
 from datetime import datetime
 from random import choices

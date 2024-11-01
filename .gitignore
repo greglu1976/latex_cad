@@ -17,6 +17,7 @@ docker-compose.yml
 # Файлы конфигурации для venv
 venv/
 .env
+.venv
 
 output/
 
