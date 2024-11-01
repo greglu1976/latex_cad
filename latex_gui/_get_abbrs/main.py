@@ -44,9 +44,9 @@ def get_abbrs(word_list):
         cleaned_string = re.sub(r'^[\(]', '', word)
         cleaned_string = re.sub(r'[\)\»]*$', '', cleaned_string)
         cleaned_string = re.sub(r'\d+$', '', cleaned_string)
-        
-        if re.match('^[A-ZА-Я]{2}[A-Za-zА-Яа-я]*$', cleaned_string):
+        if re.match('^[A-ZА-Я]{2}[A-Za-zА-Яа-я~\s]*$', cleaned_string): #^[A-ZА-Я]{2}[A-Za-zА-Яа-я~\s]*$ # ^[A-ZА-Я]{2}[A-Za-zА-Яа-я]*$
             new_word_list.append(cleaned_string)
+        
     #print(new_word_list)
     abbrs = []
     for word in new_word_list:
@@ -72,7 +72,7 @@ def extract_words_from_pdf(pdf_path):
         if inside_toa and not '<ABBRS>' in text:
             continue
         if 'АСУ ТП' in text:
-            words.append('АСУ ТП')
+            words.append('АСУ~ТП')
         words += text.split()  # Добавляем слова в список
     return words  # Возвращаем список слов
 
@@ -150,6 +150,7 @@ def start_abbr(filepath):
     word_list = sorted(list(word_set))
     # вытаскиваем абревиатуры
     new_word_list = get_abbrs(word_list)
+    print(new_word_list)
 
     # если список пустой возвращаемся
     if not new_word_list:
@@ -169,10 +170,11 @@ def start_abbr(filepath):
     # Ищем файл со словарем
     dict = load_dict(abbrs)
     # старое решение
-    #tex_list = parse_tex(new_word_list, dict) 
+    tex_list = parse_tex(new_word_list, dict) 
     # новое решение
-    abbrs_got = get_abbrs_new(word_list, dict) # получили все аббревиатуры , причем только те, что в словаре
-    tex_list = parse_tex_new(abbrs_got, dict)
+
+    #abbrs_got = get_abbrs_new(word_list, dict) # получили все аббревиатуры , причем только те, что в словаре
+    #tex_list = parse_tex_new(abbrs_got, dict)
     final_tex = intro_strs + tex_list + outro_strs
 
     # Открываем файл для записи в UTF-8
