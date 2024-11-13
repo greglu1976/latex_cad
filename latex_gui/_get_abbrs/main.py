@@ -62,7 +62,7 @@ def extract_words_from_pdf(pdf_path):
     for page_number in range(doc.page_count):  # Перебираем все страницы
         page = doc.load_page(page_number)  # Загружаем страницу
         text = page.get_text("text")  # Получаем текст со страницы
-        if 'Перечень принятых сокращений' in text:
+        if '<BEGABBRS>' in text:
             inside_toa = True
             continue
         if inside_toa and '<ABBRS>' in text:
