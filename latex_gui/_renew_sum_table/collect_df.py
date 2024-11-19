@@ -23,7 +23,7 @@ def generate_tex(df):
             first = row_parsed[10] + '/ ' + row_parsed[0] + ': ' + row_parsed[1]
 
         tex_list.append(
-        '\centering ' + first + 
+        '\\raggedright ' + first + 
         ' & \centering ' + row_parsed[2] + 
         ' & \centering ' + row_parsed[3] + 
         ' & \centering ' + row_parsed[4] +  
