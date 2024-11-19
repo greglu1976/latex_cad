@@ -17,7 +17,7 @@ def generate_tex(df):
             #continue
         if row_parsed[11] !='BOOL':  #Здесь исключаем НЕ булевые сигналы из списка
             continue   
-        if row_parsed[0] == 'control':
+        if row_parsed[12] == 'control':
             first = row_parsed[1]
         else:    
             first = row_parsed[10] + '/ ' + row_parsed[0] + ': ' + row_parsed[1]
@@ -54,7 +54,7 @@ def make_tex_all(all_dfs): # новые строки
         return []
 ################################################## ВЫШЕ СОБРАЛИ ОБЩИЙ ДАТАФРЕЙМ ################################
     tex_list = []
-    #print(summ_df)
+    #summ_df = summ_df[summ_df['reserved1'] != 'ignore'] # отбрасываем игнорируемые сигналы,если вдруг потребуется
     df_ctrl = summ_df[summ_df['Категория (group)'].isin(['control'])]
     summ_df = summ_df[summ_df['Категория (group)'] != 'control']
     df_sys = summ_df[summ_df['RussianName'] == 'СИСТ'] # Датафрейм с системными сигналами

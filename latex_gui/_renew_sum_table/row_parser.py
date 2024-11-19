@@ -17,5 +17,7 @@ def parse_row_new(row):
     start_disturber = make_plus(row['StartDisturber'])
     russ_name = row['RussianName'].replace("_", r"\_") # экранируем подчеркивание в имени узла
     sig_type = row['type']
+
+    category = row['Категория (group)'] # вводим категорию чтобы правильно парсить виртуальные ключи и кнопки 19.11.24
     
-    return (node_name, full_desc, short_desc, digital_input, digital_output, led, func_button, event_log, disturber, start_disturber, russ_name, sig_type)
+    return (node_name, full_desc, short_desc, digital_input, digital_output, led, func_button, event_log, disturber, start_disturber, russ_name, sig_type, category)
