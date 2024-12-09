@@ -11,7 +11,7 @@ __pycache__/
 *.tex
 *.pdf
 *.dxf
-*.docx
+# *.docx
 *.txt
 docker-compose.yml
 # Файлы конфигурации для venv
