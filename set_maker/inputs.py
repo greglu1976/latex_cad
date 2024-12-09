@@ -5,7 +5,7 @@ properties = {
         'description': 'Статус ДВ',
         'name_in_software': 'Статус',
         'name_in_fsu': '-',
-        'value_range': '0 = Не активен\n 1 = Активен',
+        'value_range': '0 = Не активен\n1 = Активен',
         'unit': '-',
         'step': '-',
         'default_value': '0',
@@ -15,7 +15,7 @@ properties = {
         'description': 'Режим работы ДВ',
         'name_in_software': 'Режим',
         'name_in_fsu': '-',
-        'value_range': '0 = Не активен\n 1 = Активен',
+        'value_range': '0 = Не активен\n1 = Активен',
         'unit': '-',
         'step': '-',
         'default_value': '0',
@@ -35,7 +35,7 @@ properties = {
         'description': 'Режим инверсии ДВ',
         'name_in_software': 'Инверсия',
         'name_in_fsu': '-',
-        'value_range': '0 = Не предусмотрено\n 1 = Предусмотрено',
+        'value_range': '0 = Не предусмотрено\n1 = Предусмотрено',
         'unit': '-',
         'step': '-',
         'default_value': '0',
@@ -53,7 +53,7 @@ properties = {
     },      
 }
 
-input1 = BinInput(properties)
-input2 = BinInput(properties)
-input3 = BinInput(properties)
-input4 = BinInput(properties)
+input1 = BinInput(properties, 'Дискретный вход 1')
+input2 = BinInput(properties, 'Дискретный вход 2')
+input3 = BinInput(properties, 'Дискретный вход 3')
+input4 = BinInput(properties, 'Дискретный вход 4')
