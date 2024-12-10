@@ -1,6 +1,6 @@
 import os
 
-from finder2 import process_xlsx_files
+from finder import process_xlsx_files
 # Укажите путь к корневой папке
 path_to_fbs = r'H:\www\latex_cad\set_former\01. Разработка ФБ'
 
@@ -20,6 +20,6 @@ print("Папки, содержащие папку 'xlsx':")
 for folder in xlsx_folders:
     print(folder)
 
-df = process_xlsx_files(xlsx_folders)
+print(process_xlsx_files(xlsx_folders))
 
-print(df)
+
