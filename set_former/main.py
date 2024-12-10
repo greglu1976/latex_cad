@@ -20,6 +20,6 @@ print("Папки, содержащие папку 'xlsx':")
 for folder in xlsx_folders:
     print(folder)
 
-print(process_xlsx_files(xlsx_folders))
+df = process_xlsx_files(xlsx_folders)
 
 
