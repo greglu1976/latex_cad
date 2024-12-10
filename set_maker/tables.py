@@ -12,6 +12,8 @@ from docx.table import _Cell
 from docx.oxml.ns import nsdecls
 from docx.oxml import parse_xml
 
+from dropdowns import add_formatted_dropdown2
+
 def set_vertical_cell_direction(cell: _Cell, direction: str):
     # direction: tbRl -- top to bottom, btLr -- bottom to top
     assert direction in ("tbRl", "btLr")
@@ -78,9 +80,9 @@ def set_cell_border(cell: _Cell, **kwargs):
                     element.set(qn('w:{}'.format(key)), str(edge_data[key]))
 
 
-#
-# ТАБЛИЦА ДЛЯ УСТАВОК
-#
+####################################################################################
+################################ ТАБЛИЦА ДЛЯ УСТАВОК ##############################
+####################################################################################
 
 table_settings = (Inches(0.28), Inches(1.23), Inches(0.9), Inches(0.4), Inches(1.6), Inches(0.55), Inches(0.45), Inches(0.9), Inches(1.05))  #задаем ширину столбцов таблицы вывода репортов
 
@@ -93,8 +95,6 @@ def add_table_settings(doc, unique_key): # новая таблица исход�
     table._tbl.xpath('./w:tblPr')[0].append(
         parse_xml(r'<w:tblLayout xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:type="fixed"/>')
     )
-
-
     hdr_cells = table.rows[0].cells
     hdr_cells[0].text = '№'
     hdr_cells[1].text = 'Описание'
@@ -146,7 +146,6 @@ def add_table_settings(doc, unique_key): # новая таблица исход�
     hdr_cells = table.rows[4].cells
     hdr_cells[0].text = '{%tr endfor %}'
 
-
     set_repeat_table_header(table.rows[1])  # повторение заголовка на след странице
     for i in range(0,9):
         p = hdr_cells[i].paragraphs[0]
@@ -163,7 +162,6 @@ def add_table_settings(doc, unique_key): # новая таблица исход�
     table.cell(0, 7).merge(table.cell(1, 7))
     table.cell(0, 8).merge(table.cell(1, 8))
 
-
     table.cell(2, 0).merge(table.cell(2, 8))
     table.cell(4, 0).merge(table.cell(4, 8))
 
@@ -172,6 +170,119 @@ def add_table_settings(doc, unique_key): # новая таблица исход�
             row.cells[idx].width = width
     #add_row_table_reports(table, ('','','','','','')) # добавляем пустую строчку, чтобы двойное подчеркивание сохранить
     return table
+
+####################################################################################
+################################ КОНЕЦ ТАБЛИЦА ДЛЯ УСТАВОК #########################
+####################################################################################
+
+####################################################################################
+################################ ТАБЛИЦА ДЛЯ РЕГИСТРАЦИИ ##############################
+####################################################################################
+
+
+table_reg = (Inches(4.5), Inches(1.5), Inches(1.6), Inches(1.6), Inches(1.6))  #задаем ширину столбцов таблицы вывода репортов
+
+def add_table_reg(doc): # новая таблица исходящих отчетов
+    table = doc.add_table(rows=5, cols=5)
+    table.style = 'Стиль6'
+    table.allow_autofit = False
+
+    # Устанавливаем фиксированный макет таблицы с правильным пространством имен
+    table._tbl.xpath('./w:tblPr')[0].append(
+        parse_xml(r'<w:tblLayout xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:type="fixed"/>')
+    )
+
+    hdr_cells = table.rows[0].cells
+    hdr_cells[0].text = 'Параметр'
+    hdr_cells[2].text = 'Журнал событий регистрация (Не выполняется /По переднему фронту/ По заднему фронту/ По любому изменению)'
+    hdr_cells[3].text = 'Осциллограф Пуск (Не выполняется/ По переднему фронту/ По заднему фронту/ По любому изменению)'
+    hdr_cells[4].text = 'Осциллограф регистрация (Выведено/ Введено)'
+    for i in range(0,5):
+        p = hdr_cells[i].paragraphs[0]
+        p.style = 'ДОК Таблица Заголовок'
+        set_cell_vertical_alignment(hdr_cells[i], align="center")
+        p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    set_repeat_table_header(table.rows[0]) # повторение заголовка на след странице
+
+
+    hdr_cells = table.rows[1].cells # вторая строка заголовка таблицы
+    hdr_cells[0].text = 'Наименование'
+    hdr_cells[1].text = 'Обозначение ФСУ'
+    hdr_cells[0].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    hdr_cells[1].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    hdr_cells = table.rows[2].cells
+    tag = f'for param_name, param_data in regs.properties.items()'
+    hdr_cells[2].text = '{%tr '+ tag + ' %}'
+
+    # четвертая строка со служебными тегами
+    hdr_cells = table.rows[3].cells
+    hdr_cells[0].text = '{{ param_data.name }}'
+    hdr_cells[1].text = '{{ param_data.fsu }}'
+
+    #hdr_cells[2].text = '{{ param_data.log }}'
+    choices_start = ["Не выполняется", "По переднему фронту", "По заднему фронту", "По любому изменению"]
+    par3 = hdr_cells[2].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par3,
+        choices=choices_start,
+        #alias= f"DropDown_{i}",
+        #instruction_text=f"Выберите ",
+    )
+    hdr_cells[2].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    #hdr_cells[3].text = '{{ param_data.oscill_start }}'
+    par2 = hdr_cells[3].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par2,
+        choices=choices_start,
+        #alias= f"DropDown_{i}",
+        #instruction_text=f"Выберите ",
+    )
+    hdr_cells[3].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    #hdr_cells[4].text = '+'
+    choices_reg = ["Выведено", "Введено"]
+    par1 = hdr_cells[4].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par1,
+        choices=choices_reg,
+        #alias= f"DropDown_{i}",
+        #instruction_text=f"Выберите ",
+    )
+    hdr_cells[4].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    # пятая строка со служебными тегами
+    hdr_cells = table.rows[4].cells
+    hdr_cells[0].text = '{%tr endfor %}'
+
+    set_repeat_table_header(table.rows[1])  # повторение заголовка на след странице
+    for i in range(0,5):
+        p = hdr_cells[i].paragraphs[0]
+        p.style = 'ДОК Таблица Заголовок'
+        #set_cell_border(hdr_cells[i], bottom={"val": "double"}) # подчеркиваем заголовок двойной чертой
+
+    # формируем финальный заголок слияниями ячеек
+    table.cell(0, 0).merge(table.cell(0, 1))
+    table.cell(0, 2).merge(table.cell(1, 2))
+    table.cell(0, 3).merge(table.cell(1, 3))
+    table.cell(0, 4).merge(table.cell(1, 4))
+
+    table.cell(2, 0).merge(table.cell(2, 4))
+    table.cell(4, 0).merge(table.cell(4, 4))
+
+    for row in table.rows:
+        for idx, width in enumerate(table_reg):
+            row.cells[idx].width = width
+    #add_row_table_reports(table, ('','','','','','')) # добавляем пустую строчку, чтобы двойное подчеркивание сохранить
+    return table    
+
+
+
+
+
+
+
+
+
+
 
 
 

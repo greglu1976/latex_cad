@@ -1,8 +1,15 @@
-from models.BinInput import BinInput
-from models.BinModule import BinModule, BinModules, Prot
+# Временное решение для тестирования устройства
 
-from docxtpl import DocxTemplate
-from general import general_data
+from models.BinInput import BinInput
+from models.BinModule import BinModule, BinModules
+
+general_data = {
+    'title_name_1': 'МИКРОПРОЦЕССОРНОЕ УСТРОЙСТВО',
+    'title_name_2': 'ЗАЩИТЫ И АВТОМАТИКИ ТРАНСФОРМАТОРА',
+    'title_name_3': '«ЮНИТ-М300-ДЗТ2»',
+    'code': 'ЮТКБ.656122.609 БУ6',
+    'terminal_name': 'ЮНИТ-М300-ДЗТ2'
+}
 
 def create_relay():
     properties = {
@@ -54,3 +61,83 @@ def create_relay():
     module_dict = bin_modules.to_dict()
 
     return module_dict
+
+def create_binary():
+    properties = {
+        'Status': {
+            'description': 'Статус ДВ',
+            'name_in_software': 'Статус',
+            'name_in_fsu': '-',
+            'value_range': '0 = Не активен\n1 = Активен',
+            'unit': '-',
+            'step': '-',
+            'default_value': '0',
+            'setpoint': '',
+        },
+        'Mode': {
+            'description': 'Режим работы ДВ',
+            'name_in_software': 'Режим',
+            'name_in_fsu': '-',
+            'value_range': '0 = Не активен\n1 = Активен',
+            'unit': '-',
+            'step': '-',
+            'default_value': '0',
+            'setpoint': '',
+        },
+        'Filtr_Time': {
+            'description': 'Время фильтрации ДВ',
+            'name_in_software': 'Время фильтрации',
+            'name_in_fsu': '-',
+            'value_range': '0...20',
+            'unit': 'мс',
+            'step': '1',
+            'default_value': '20',
+            'setpoint': '',
+        },
+            'Inversion': {
+            'description': 'Режим инверсии ДВ',
+            'name_in_software': 'Инверсия',
+            'name_in_fsu': '-',
+            'value_range': '0 = Не предусмотрено\n1 = Предусмотрено',
+            'unit': '-',
+            'step': '-',
+            'default_value': '0',
+            'setpoint': '',
+        },
+            'Appointment': {
+            'description': 'Назначение ДВ',
+            'name_in_software': 'Описание',
+            'name_in_fsu': '-',
+            'value_range': '0...31',
+            'unit': 'Символ',
+            'step': '-',
+            'default_value': '',
+            'setpoint': '',
+        },      
+    }
+
+    input1 = BinInput(properties, 'Дискретный вход 1')
+    input2 = BinInput(properties, 'Дискретный вход 2')
+    input3 = BinInput(properties, 'Дискретный вход 3')
+    input4 = BinInput(properties, 'Дискретный вход 4')
+
+    # Создаем модуль и добавляем входы
+    module1 = BinModule(inserted_in_slot='M1', type='B001')
+    module1.add_input(input1)
+    module1.add_input(input2)
+    module1.add_input(input3)
+    module1.add_input(input4)
+    module2 = BinModule(inserted_in_slot='M2', type='B002')
+    module2.add_input(input1)
+    module2.add_input(input2)
+    module2.add_input(input3)
+    module2.add_input(input4)
+
+    bin_modules = BinModules('test')
+    bin_modules.add_module(module1)
+    bin_modules.add_module(module2)
+
+    # Получаем словарь для использования в шаблоне Jinja
+    bin_inputs = bin_modules.to_dict()
+
+    return bin_inputs

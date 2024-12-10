@@ -1,18 +1,14 @@
 # Добавляет в конец документа раздел с уставками РЗА
-from docx import Document
 
 from tables import add_table_settings
 
-def add_sect_relay(doc, name_sect):
+def add_sect_relay(doc, name_sect, type):
         # Создаем раздел
     section_relay = doc.add_paragraph(f'Уставки РЗА ({name_sect})')
     section_relay.style = 'ДОК Заголовок 1'
-
-    intro_tag = doc.add_paragraph('{% for module_key, module_value in module_dict.modules.items() %}')
-    intro_tag.style = 'TAGS'
-
+    tag1 = f'for {type}s_key, {type}s in {type}s.modules.items()'
         # Создаем подраздел
-    subsection_bin = doc.add_paragraph('{% for key_fb, functions in func_block.items() %} {{ key_fb }}')
+    subsection_bin = doc.add_paragraph(f'{name_sect} '+ '{% ' + tag1 + ' %}')
     subsection_bin.style = 'ДОК Заголовок 2'
 
         # Создаем подподраздел с тегами
@@ -21,7 +17,7 @@ def add_sect_relay(doc, name_sect):
 
     par_inputs = doc.add_paragraph('7777')
     par_inputs.style = 'ДОК Таблица Название'
-    add_table_settings(doc)
+    add_table_settings(doc, type)
 
     end_for = doc.add_paragraph('{% endfor %}{% endfor %}{% endfor %}')
     end_for.style = 'TAGS'
