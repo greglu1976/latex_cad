@@ -1,7 +1,9 @@
 import os
 import json
 
-from finder import process_xlsx_files, make_list
+from signals import process_xlsx_files, make_list
+from inputs import process_xlsx_files_inputs, make_list_inputs
+
 # Укажите путь к корневой папке
 path_to_fbs = r'H:\www\latex_cad\set_former\01. Разработка ФБ'
 
@@ -30,3 +32,10 @@ signals = make_list(df)
 # Сохранение result_list в JSON-файл
 with open('signals.json', 'w', encoding='utf-8') as json_file:
     json.dump(signals, json_file, ensure_ascii=False, indent=4)
+
+df_inputs = process_xlsx_files_inputs(xlsx_folders)
+inputs = make_list_inputs(df_inputs)
+
+# Сохранение result_list в JSON-файл
+with open('inputs.json', 'w', encoding='utf-8') as json_file:
+    json.dump(inputs, json_file, ensure_ascii=False, indent=4)

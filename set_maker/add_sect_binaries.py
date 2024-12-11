@@ -49,6 +49,22 @@ def add_sect_reg(doc):
 
 def add_sect_mtrx_outs(doc):
 
+    text1 = doc.add_paragraph('Возможна регистрация не более 200 сигналов. {% for bin_outputs_key, bin_outputs in bin_outputs.modules.items() %}')
+    text1.style = 'ДОК Текст'
+
+    par_inputs = doc.add_paragraph('Слот {{ bin_outputs.inserted_in_slot }}. Тип {{ bin_outputs.type }}')
+    par_inputs.style = 'ДОК Таблица Название'
+
+    add_table_mtrx_outs(doc)
+
+    end_for = doc.add_paragraph('{% endfor %}')
+    end_for.style = 'TAGS'
+
+    return doc
+
+
+def add_sect_mtrx_ins(doc):
+
     text1 = doc.add_paragraph('Возможна регистрация не более 200 сигналов. {% for regs_key, regs in regs.inputs.items() %}')
     text1.style = 'ДОК Текст'
 

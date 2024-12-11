@@ -323,7 +323,7 @@ def add_table_mtrx_outs(doc): # новая таблица исходящих о�
 
 
     hdr_cells = table.rows[2].cells
-    tag = f'for param_name, param_data in mtrx_outs.items()'
+    tag = f'for param_name, param_data in bin_outputs.inputs.items()'
     hdr_cells[2].text = '{%tr '+ tag + ' %}'
 
     # четвертая строка со служебными тегами
