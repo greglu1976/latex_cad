@@ -14,7 +14,7 @@ rza_funcs = create_relay()
 bin_inputs = create_binary()
 regs = create_reg()
 outs = create_binary_outs()
-print(outs)
+#print(outs)
 # Заполнение шаблона данными
 context = {
     "general_data": general_data,

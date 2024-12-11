@@ -36,9 +36,8 @@ section_mtrx = doc.add_paragraph('Выходные реле')
 section_mtrx.style = 'ДОК Заголовок 2'
 add_sect_mtrx_outs(doc)
 
-section_mtrx = doc.add_paragraph('Дискретные входы')
-section_mtrx.style = 'ДОК Заголовок 2'
-
-
+section_mtrx_ins = doc.add_paragraph('Дискретные входы')
+section_mtrx_ins.style = 'ДОК Заголовок 2'
+add_sect_mtrx_ins(doc)
 
 doc.save('templ2.docx')

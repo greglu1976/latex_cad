@@ -1,6 +1,6 @@
 # Добавляет в конец документа раздел с дискретными вх/вых
 
-from tables import add_table_settings, add_table_reg, add_table_mtrx_outs
+from tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins
 
 def add_sect_binaries(doc, name_sect, type):
 
@@ -65,15 +65,16 @@ def add_sect_mtrx_outs(doc):
 
 def add_sect_mtrx_ins(doc):
 
-    text1 = doc.add_paragraph('Возможна регистрация не более 200 сигналов. {% for regs_key, regs in regs.inputs.items() %}')
+    text1 = doc.add_paragraph('Возможна регистрация не более 200 сигналов. {% for bin_inputs_key, bin_inputs in bin_inputs.modules.items() %}')
     text1.style = 'ДОК Текст'
 
-    par_inputs = doc.add_paragraph('{{ regs.name }}')
+    par_inputs = doc.add_paragraph('Слот {{ bin_inputs.inserted_in_slot }}. Тип {{ bin_inputs.type }}')
     par_inputs.style = 'ДОК Таблица Название'
 
-    add_table_mtrx_outs(doc)
+    add_table_mtrx_ins(doc)
 
     end_for = doc.add_paragraph('{% endfor %}')
     end_for.style = 'TAGS'
 
     return doc
+

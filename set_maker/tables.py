@@ -400,11 +400,128 @@ def add_table_mtrx_outs(doc): # новая таблица исходящих о�
     #add_row_table_reports(table, ('','','','','','')) # добавляем пустую строчку, чтобы двойное подчеркивание сохранить
     return table 
 
+####################################################################################
+############################ КОНЕЦ ТАБЛИЦА ДЛЯ МАТРИЦЫ ВЫХОДНЫХ РЕЛЕ ###############
+####################################################################################
 
 
+####################################################################################
+############################ ТАБЛИЦА ДЛЯ МАТРИЦЫ ДИСКРЕТНЫХ ВХОДОВ ###############
+####################################################################################
+
+table_mtrx_ins = (Inches(2), Inches(1.7), Inches(1.7), Inches(1.7), Inches(1.7), Inches(1.7))
+
+def add_table_mtrx_ins(doc): # новая таблица исходящих отчетов
+    table = doc.add_table(rows=5, cols=6)
+    table.style = 'Стиль6'
+    table.allow_autofit = False
+
+    # Устанавливаем фиксированный макет таблицы с правильным пространством имен
+    table._tbl.xpath('./w:tblPr')[0].append(
+        parse_xml(r'<w:tblLayout xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" w:type="fixed"/>')
+    )
+
+    hdr_cells = table.rows[0].cells
+    hdr_cells[0].text = 'Дискретный вход'
+    hdr_cells[1].text = 'Назначенные сигналы'
+
+    for i in range(0,6):
+        p = hdr_cells[i].paragraphs[0]
+        p.style = 'ДОК Таблица Заголовок'
+        set_cell_vertical_alignment(hdr_cells[i], align="center")
+        p.alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    set_repeat_table_header(table.rows[0]) # повторение заголовка на след странице
+
+    hdr_cells = table.rows[1].cells # вторая строка заголовка таблицы
+    hdr_cells[1].text = '1'
+    hdr_cells[2].text = '2'
+    hdr_cells[3].text = '3'
+    hdr_cells[4].text = '4'
+    hdr_cells[5].text = '5'    
+    hdr_cells[1].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    hdr_cells[2].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    hdr_cells[3].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    hdr_cells[4].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+    hdr_cells[5].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
 
 
+    hdr_cells = table.rows[2].cells
+    tag = f'for param_name, param_data in bin_inputs.inputs.items()'
+    hdr_cells[2].text = '{%tr '+ tag + ' %}'
 
+    # четвертая строка со служебными тегами
+    hdr_cells = table.rows[3].cells
+    hdr_cells[0].text = '{{ param_data.name }}'
+
+    # Проверка существования файла signals.json
+    if os.path.exists('inputs.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('inputs.json', 'r', encoding='utf-8') as json_file:
+            choices_start = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        choices_start = ['Не определен файл',]
+
+    #choices_start = ["Не выполняется", "По переднему фронту", "По заднему фронту", "По любому изменению"]
+    par1 = hdr_cells[1].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par1,
+        choices=choices_start,
+        #alias= f"DropDown_{i}",
+        #instruction_text=f"Выберите ",
+    )
+    hdr_cells[1].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    par2 = hdr_cells[2].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par2,
+        choices=choices_start,
+    )
+    hdr_cells[2].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    par3 = hdr_cells[3].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par3,
+        choices=choices_start,
+    )
+    hdr_cells[3].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    par4 = hdr_cells[4].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par4,
+        choices=choices_start,
+    )
+    hdr_cells[4].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    par5 = hdr_cells[5].paragraphs[0]
+    add_formatted_dropdown2(
+        paragraph=par5,
+        choices=choices_start,
+    )
+    hdr_cells[5].paragraphs[0].alignment = WD_PARAGRAPH_ALIGNMENT.CENTER
+
+    # пятая строка со служебными тегами
+    hdr_cells = table.rows[4].cells
+    hdr_cells[0].text = '{%tr endfor %}'
+
+    set_repeat_table_header(table.rows[1])  # повторение заголовка на след странице
+    for i in range(0,6):
+        p = hdr_cells[i].paragraphs[0]
+        p.style = 'ДОК Таблица Заголовок'
+        #set_cell_border(hdr_cells[i], bottom={"val": "double"}) # подчеркиваем заголовок двойной чертой
+
+    # формируем финальный заголок слияниями ячеек
+    table.cell(0, 0).merge(table.cell(1, 0))
+    table.cell(0, 1).merge(table.cell(0, 5))
+
+    table.cell(2, 0).merge(table.cell(2, 4))
+    table.cell(4, 0).merge(table.cell(4, 4))
+
+    for row in table.rows:
+        for idx, width in enumerate(table_mtrx_ins):
+            row.cells[idx].width = width
+    #add_row_table_reports(table, ('','','','','','')) # добавляем пустую строчку, чтобы двойное подчеркивание сохранить
+    return table 
 
 
 
