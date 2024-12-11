@@ -37,8 +37,6 @@ def create_reg():
     module.add_input(input1)
     module.add_input(input2)
 
-
-
     # Получаем словарь для использования в шаблоне Jinja
     module_dict = module.to_dict()
 

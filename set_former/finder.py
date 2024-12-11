@@ -53,27 +53,33 @@ def process_xlsx_files(file_paths):
                         break  # Прерываем цикл, так как нашли нужное значение
 
         # Проверка значений RussianName
-        if russian_names:
-            if all(name == russian_names[0] for name in russian_names):
-                RussianName = russian_names[0]
-            else:
-                RussianName = 'ошибка'
-        else:
-            RussianName = 'ошибка'
+        RussianName = russian_names[0] if russian_names and all(name == russian_names[0] for name in russian_names) else 'ошибка'
 
-        # Фильтрация строк
-        filtered_df = signals_df.loc[
-            (signals_df['Категория (group)'] == 'status') &  # Условие для 'Категория (group)'
-            (signals_df['type'] == 'BOOL')                  # Условие для 'type'
-        ]
+        # Создаем маску для фильтрации
+        mask = (signals_df['Категория (group)'] == 'status') & (signals_df['type'] == 'BOOL')
+        # Создаем новый DataFrame с копией отфильтрованных данных
+        filtered_df = signals_df[mask].copy()
 
-        # Добавление столбца RussianNameFB с использованием .loc
-        filtered_df.loc[:, 'RussianNameFB'] = RussianName
-        # Вывод результатов
-        #print("Объединенный датафрейм Signals:")
-        #print(filtered_df)
+        filtered_df['RussianNameFB'] = RussianName
 
         # Объединяем данные из текущей папки с общим датафреймом
         total_signals_df = pd.concat([total_signals_df, filtered_df], ignore_index=True)
     #print(total_signals_df)
     return total_signals_df
+
+
+def make_list(df):
+    # Список для хранения результатов
+    result_list = []
+    # Итерация по строкам DataFrame
+    for index, row in df.iterrows():
+        # Сборка строки
+        combined_string = (
+            f"{row['RussianNameFB']} / "
+            f"{row['NodeName (рус)']}: "
+            f"{row['FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)']}"
+        )
+        # Добавление строки в список
+        result_list.append(combined_string)
+    #print(result_list)
+    return result_list

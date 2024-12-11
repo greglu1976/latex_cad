@@ -4,7 +4,7 @@ from docxtpl import DocxTemplate
 from tables import add_table_settings
 from docx import Document
 
-from add_sect_binaries import add_sect_binaries, add_sect_reg
+from add_sect_binaries import add_sect_binaries, add_sect_reg, add_sect_mtrx_outs
 from docx_handler import add_new_section, add_new_section_landscape, add_new_section_test
 
 doc = Document('origin.docx')
@@ -27,11 +27,11 @@ section_reg = doc.add_paragraph('Настройка регистрации')
 section_reg.style = 'ДОК Заголовок 1'
 add_sect_reg(doc)
 
-#========================================================================
+#=================================МАТРИЦА ВЫХОДОВ ================================
 add_new_section_landscape(doc) # Создаем раздел для матрицы вх/вых
 # Добавляем заголовок
 section_mtrx = doc.add_paragraph('Матрица дискретных входов и выходных реле')
 section_mtrx.style = 'ДОК Заголовок 1'
-add_sect_reg(doc)
+add_sect_mtrx_outs(doc)
 
 doc.save('templ2.docx')

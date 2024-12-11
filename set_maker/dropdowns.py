@@ -51,7 +51,7 @@ def add_formatted_dropdown(paragraph, choices, default="", alias="",
     paragraph._p.append(sdt)
 
 
-def add_formatted_dropdown2(paragraph, choices, default="Выберите элемент", alias="", instruction_text=""):
+def add_formatted_dropdown2(paragraph, choices, default="Не назначено", alias="", instruction_text=""):
     sdt = parse_xml(f'''
         <w:sdt xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">
             <w:sdtPr>

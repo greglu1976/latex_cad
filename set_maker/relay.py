@@ -141,3 +141,78 @@ def create_binary():
     bin_inputs = bin_modules.to_dict()
 
     return bin_inputs
+
+
+# создаем плату выходных реле
+
+def create_binary_outs():
+    properties = {
+        'Status': {
+            'description': 'Последняя поданная команда',
+            'name_in_software': 'Статус',
+            'name_in_fsu': '-',
+            'value_range': 'Включено/Отключено',
+            'unit': '-',
+            'step': '-',
+            'default_value': '0',
+            'setpoint': '',
+        },
+        'Mode': {
+            'description': 'Режим работы реле',
+            'name_in_software': 'Режим',
+            'name_in_fsu': '-',
+            'value_range': '0 = Выведено\n1 = Без фиксации\n2 = С фиксацией\n3 = Импульсный',
+            'unit': '-',
+            'step': '-',
+            'default_value': '0',
+            'setpoint': '',
+        },
+        'Filtr_Time': {
+            'description': 'Длительность импульса',
+            'name_in_software': 'Дл. имп.',
+            'name_in_fsu': 'Т1',
+            'value_range': '(0,10…10,00)',
+            'unit': 'с',
+            'step': '0,01',
+            'default_value': '1',
+            'setpoint': '',
+        },
+            'Appointment': {
+            'description': 'Назначение реле',
+            'name_in_software': 'Описание',
+            'name_in_fsu': '-',
+            'value_range': '0...31',
+            'unit': 'Символ',
+            'step': '-',
+            'default_value': '',
+            'setpoint': '',
+        },      
+    }
+
+    input1 = BinInput(properties, 'Реле 1')
+    input2 = BinInput(properties, 'Реле 2')
+    input3 = BinInput(properties, 'Реле 3')
+    input4 = BinInput(properties, 'Реле 4')
+
+    # Создаем модуль и добавляем входы
+    module1 = BinModule(inserted_in_slot='M3', type='K001')
+    module1.add_input(input1)
+    module1.add_input(input2)
+    module1.add_input(input3)
+    module1.add_input(input4)
+    module2 = BinModule(inserted_in_slot='M4', type='K002')
+    module2.add_input(input1)
+    module2.add_input(input2)
+    module2.add_input(input3)
+    module2.add_input(input4)
+
+    bin_modules = BinModules('test')
+    bin_modules.add_module(module1)
+    bin_modules.add_module(module2)
+
+    # Получаем словарь для использования в шаблоне Jinja
+    bin_inputs = bin_modules.to_dict()
+
+    return bin_inputs
+
+    
