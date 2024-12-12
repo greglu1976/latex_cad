@@ -1,6 +1,6 @@
 # Добавляет в конец документа раздел с дискретными вх/вых
 
-from tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins
+from tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins, add_table_leds
 
 def add_sect_binaries(doc, name_sect, type):
 
@@ -49,7 +49,7 @@ def add_sect_reg(doc):
 
 def add_sect_mtrx_outs(doc):
 
-    text1 = doc.add_paragraph('Возможна регистрация не более 200 сигналов. {% for bin_outputs_key, bin_outputs in bin_outputs.modules.items() %}')
+    text1 = doc.add_paragraph('Возможно подключение до пяти сигналов на одно выходное реле. {% for bin_outputs_key, bin_outputs in bin_outputs.modules.items() %}')
     text1.style = 'ДОК Текст'
 
     par_inputs = doc.add_paragraph('Слот {{ bin_outputs.inserted_in_slot }}. Тип {{ bin_outputs.type }}')
@@ -65,7 +65,7 @@ def add_sect_mtrx_outs(doc):
 
 def add_sect_mtrx_ins(doc):
 
-    text1 = doc.add_paragraph('Возможна регистрация не более 200 сигналов. {% for bin_inputs_key, bin_inputs in bin_inputs.modules.items() %}')
+    text1 = doc.add_paragraph('Для дискретного входа возможно подключение только одного сигнала. {% for bin_inputs_key, bin_inputs in bin_inputs.modules.items() %}')
     text1.style = 'ДОК Текст'
 
     par_inputs = doc.add_paragraph('Слот {{ bin_inputs.inserted_in_slot }}. Тип {{ bin_inputs.type }}')
@@ -78,3 +78,17 @@ def add_sect_mtrx_ins(doc):
 
     return doc
 
+def add_sect_leds_leds(doc):
+
+    text1 = doc.add_paragraph('Для дискретного входа возможно подключение только одного сигнала. {% for leds_key, leds in leds.modules.items() %}')
+    text1.style = 'ДОК Текст'
+
+    par_inputs = doc.add_paragraph('{{ leds.type }}')
+    par_inputs.style = 'ДОК Таблица Название'
+
+    add_table_leds(doc)
+
+    end_for = doc.add_paragraph('{% endfor %}')
+    end_for.style = 'TAGS'
+
+    return doc

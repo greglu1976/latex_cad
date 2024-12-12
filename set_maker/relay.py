@@ -144,7 +144,6 @@ def create_binary():
 
 
 # создаем плату выходных реле
-
 def create_binary_outs():
     properties = {
         'Status': {
@@ -215,4 +214,34 @@ def create_binary_outs():
 
     return bin_inputs
 
-    
+# создаем светодиоды
+
+def create_leds():
+    properties = {
+        'Data': {},
+    }
+
+    led1r = BinInput(properties, 'СД 1 (красный)')
+    led1g = BinInput(properties, 'СД 1 (зеленый)')
+    led2r = BinInput(properties, 'СД 2 (красный)')
+    led2g = BinInput(properties, 'СД 2 (зеленый)')
+
+    # Создаем модуль и добавляем входы
+    module1 = BinModule(inserted_in_slot='-', type='ЮНИТ-ИЧМ')
+    module1.add_input(led1r)
+    module1.add_input(led1g)
+    module1.add_input(led2r)
+    module1.add_input(led2g)
+
+    module2 = BinModule(inserted_in_slot='-', type='Дополнительный модуль светодиодов 1')
+    module2.add_input(led1r)
+    module2.add_input(led1g)
+    module2.add_input(led2r)
+    module2.add_input(led2g)
+
+    bin_modules = BinModules('test')
+    bin_modules.add_module(module1)
+    bin_modules.add_module(module2)
+    # Получаем словарь для использования в шаблоне Jinja
+    bin_inputs = bin_modules.to_dict()
+    return bin_inputs
