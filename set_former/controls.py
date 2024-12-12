@@ -3,9 +3,9 @@ import pandas as pd
 
 
 # Список исключений (файлы, которые нужно обрабатывать)
-include_files = ['inputs.xlsx',]
+include_files = ['control.xlsx',]
 
-def process_xlsx_files_inputs(file_paths):
+def process_xlsx_files_controls(file_paths):
 
     # Глобальный датафрейм для объединения всех Signals
     total_signals_df = pd.DataFrame()
@@ -53,7 +53,7 @@ def process_xlsx_files_inputs(file_paths):
         RussianName = russian_names[0] if russian_names and all(name == russian_names[0] for name in russian_names) else 'ошибка'
 
         # Создаем маску для фильтрации
-        mask = (signals_df['Note (Справочная информация)'] != 'внутр')
+        mask = (signals_df['Note (Справочная информация)'] != 'исключить') & (signals_df['Категория (group)'] == 'control')
         # Создаем новый DataFrame с копией отфильтрованных данных
         filtered_df = signals_df[mask].copy()
 
@@ -64,7 +64,8 @@ def process_xlsx_files_inputs(file_paths):
     #print(total_signals_df)
     return total_signals_df
 
-def make_list_inputs(df):
+
+def make_list_controls(df):
     # Список для хранения результатов
     result_list = []
     # Итерация по строкам DataFrame
@@ -84,5 +85,5 @@ def make_list_inputs(df):
 
 if __name__ == '__main__':
     file_paths = [r'H:\www\latex_cad\set_former\01. Разработка ФБ\01. ЛО ГЗ Т откл\_xlsx\funcs', r'H:\www\latex_cad\set_former\01. Разработка ФБ\17. ДЗТ 35\_xlsx\funcs',]
-    df = process_xlsx_files_inputs(file_paths)
+    df = process_xlsx_files_controls(file_paths)
     print(df)

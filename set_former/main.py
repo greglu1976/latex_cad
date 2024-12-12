@@ -3,6 +3,7 @@ import json
 
 from signals import process_xlsx_files, make_list
 from inputs import process_xlsx_files_inputs, make_list_inputs
+from controls import process_xlsx_files_controls, make_list_controls
 
 # Укажите путь к корневой папке
 path_to_fbs = r'H:\www\latex_cad\set_former\01. Разработка ФБ'
@@ -25,17 +26,19 @@ for folder in xlsx_folders:
 
 # обрабатываем папки с xlsx
 df = process_xlsx_files(xlsx_folders) # получаем суммарный датафрейм со список сигналов status, которые BOOL
-#print(df)
-
 signals = make_list(df)
-
 # Сохранение result_list в JSON-файл
 with open('signals.json', 'w', encoding='utf-8') as json_file:
     json.dump(signals, json_file, ensure_ascii=False, indent=4)
 
 df_inputs = process_xlsx_files_inputs(xlsx_folders)
 inputs = make_list_inputs(df_inputs)
-
 # Сохранение result_list в JSON-файл
 with open('inputs.json', 'w', encoding='utf-8') as json_file:
     json.dump(inputs, json_file, ensure_ascii=False, indent=4)
+
+df_controls = process_xlsx_files_controls(xlsx_folders)
+controls = make_list_controls(df_controls)
+# Сохранение result_list в JSON-файл
+with open('controls.json', 'w', encoding='utf-8') as json_file:
+    json.dump(controls, json_file, ensure_ascii=False, indent=4)
