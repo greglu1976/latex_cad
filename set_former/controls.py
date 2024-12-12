@@ -1,7 +1,6 @@
 import os
 import pandas as pd
 
-
 # Список исключений (файлы, которые нужно обрабатывать)
 include_files = ['control.xlsx',]
 

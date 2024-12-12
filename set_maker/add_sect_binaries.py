@@ -1,6 +1,6 @@
 # Добавляет в конец документа раздел с дискретными вх/вых
 
-from tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins, add_table_leds
+from tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins, add_table_leds, add_table_fks
 
 def add_sect_binaries(doc, name_sect, type):
 
@@ -87,6 +87,21 @@ def add_sect_leds_leds(doc):
     par_inputs.style = 'ДОК Таблица Название'
 
     add_table_leds(doc)
+
+    end_for = doc.add_paragraph('{% endfor %}')
+    end_for.style = 'TAGS'
+
+    return doc
+
+def add_sect_fks(doc):
+
+    text1 = doc.add_paragraph('Для функциональной клавиши возможно подключение только одного управляющего сигнала. {% for fks_key, fks in fks.modules.items() %}')
+    text1.style = 'ДОК Текст'
+
+    par_inputs = doc.add_paragraph('{{ fks.type }}')
+    par_inputs.style = 'ДОК Таблица Название'
+
+    add_table_fks(doc)
 
     end_for = doc.add_paragraph('{% endfor %}')
     end_for.style = 'TAGS'

@@ -1,0 +1,2779 @@
+{
+    "name": "Inputs",
+    "modules": {
+        "Модуль 1": {
+            "type": "B021",
+            "inserted_in_slot": "M8",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Дискретный вход 1",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Дискретный вход 2",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Дискретный вход 3",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 4": {
+                    "name": "Дискретный вход 4",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 5": {
+                    "name": "Дискретный вход 5",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 6": {
+                    "name": "Дискретный вход 6",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 7": {
+                    "name": "Дискретный вход 7",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 8": {
+                    "name": "Дискретный вход 8",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 9": {
+                    "name": "Дискретный вход 9",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 10": {
+                    "name": "Дискретный вход 10",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 11": {
+                    "name": "Дискретный вход 11",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 12": {
+                    "name": "Дискретный вход 12",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 13": {
+                    "name": "Дискретный вход 13",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 14": {
+                    "name": "Дискретный вход 14",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 2": {
+            "type": "B021",
+            "inserted_in_slot": "M9",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Дискретный вход 1",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Дискретный вход 2",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Дискретный вход 3",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 4": {
+                    "name": "Дискретный вход 4",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 5": {
+                    "name": "Дискретный вход 5",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 6": {
+                    "name": "Дискретный вход 6",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 7": {
+                    "name": "Дискретный вход 7",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 8": {
+                    "name": "Дискретный вход 8",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 9": {
+                    "name": "Дискретный вход 9",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 10": {
+                    "name": "Дискретный вход 10",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 11": {
+                    "name": "Дискретный вход 11",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 12": {
+                    "name": "Дискретный вход 12",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 13": {
+                    "name": "Дискретный вход 13",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 14": {
+                    "name": "Дискретный вход 14",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 3": {
+            "type": "B021",
+            "inserted_in_slot": "M10",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Дискретный вход 1",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Дискретный вход 2",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Дискретный вход 3",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 4": {
+                    "name": "Дискретный вход 4",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 5": {
+                    "name": "Дискретный вход 5",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 6": {
+                    "name": "Дискретный вход 6",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 7": {
+                    "name": "Дискретный вход 7",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 8": {
+                    "name": "Дискретный вход 8",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 9": {
+                    "name": "Дискретный вход 9",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 10": {
+                    "name": "Дискретный вход 10",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 11": {
+                    "name": "Дискретный вход 11",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 12": {
+                    "name": "Дискретный вход 12",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 13": {
+                    "name": "Дискретный вход 13",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 14": {
+                    "name": "Дискретный вход 14",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 4": {
+            "type": "B001",
+            "inserted_in_slot": "M11",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Дискретный вход 1",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Дискретный вход 2",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Дискретный вход 3",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 4": {
+                    "name": "Дискретный вход 4",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 5": {
+                    "name": "Дискретный вход 5",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 6": {
+                    "name": "Дискретный вход 6",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 7": {
+                    "name": "Дискретный вход 7",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 8": {
+                    "name": "Дискретный вход 8",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Статус ДВ",
+                            "name_in_software": "Статус",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Режим работы ДВ",
+                            "name_in_software": "Режим",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не активен\n1 = Активен",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Время фильтрации ДВ",
+                            "name_in_software": "Время фильтрации",
+                            "name_in_fsu": "-",
+                            "value_range": "0...20",
+                            "unit": "мс",
+                            "step": 1,
+                            "default_value": 20.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Режим инверсии ДВ",
+                            "name_in_software": "Инверсия",
+                            "name_in_fsu": "-",
+                            "value_range": "0 = Не предусмотрено\n1 = Предусмотрено",
+                            "unit": "-",
+                            "step": "-",
+                            "default_value": 0.0,
+                            "setpoint": " "
+                        },
+                        "Signal_N5": {
+                            "description": "Назначение ДВ",
+                            "name_in_software": "Описание",
+                            "name_in_fsu": "-",
+                            "value_range": "0...31",
+                            "unit": "Символ",
+                            "step": "-",
+                            "default_value": " ",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -4,8 +4,7 @@ from docxtpl import DocxTemplate
 from models.BinModule import BinModule, BinModules
 from models.BinInput import BinInput
 
-from relay import create_relay, create_binary, general_data, create_binary_outs, create_leds
-from test_reg import create_reg
+from relay import create_relay, create_binary, general_data, create_binary_outs, create_leds, create_fks, create_reg
 
 doc = DocxTemplate('templ2.docx')
 
@@ -15,6 +14,7 @@ bin_inputs = create_binary()
 regs = create_reg()
 outs = create_binary_outs()
 leds = create_leds()
+fks = create_fks()
 #print(leds)
 # Заполнение шаблона данными
 context = {
@@ -24,6 +24,7 @@ context = {
     "rza_funcs": rza_funcs,
     "regs": regs,
     "leds": leds,
+    "fks": fks,    
     }
 doc.render(context)
 
