@@ -66,88 +66,29 @@ def create_relay():
     return module_dict
 
 def create_binary():
-    properties = {
-        'Status': {
-            'description': 'Статус ДВ',
-            'name_in_software': 'Статус',
-            'name_in_fsu': '-',
-            'value_range': '0 = Не активен\n1 = Активен',
-            'unit': '-',
-            'step': '-',
-            'default_value': '0',
-            'setpoint': '',
-        },
-        'Mode': {
-            'description': 'Режим работы ДВ',
-            'name_in_software': 'Режим',
-            'name_in_fsu': '-',
-            'value_range': '0 = Не активен\n1 = Активен',
-            'unit': '-',
-            'step': '-',
-            'default_value': '0',
-            'setpoint': '',
-        },
-        'Filtr_Time': {
-            'description': 'Время фильтрации ДВ',
-            'name_in_software': 'Время фильтрации',
-            'name_in_fsu': '-',
-            'value_range': '0...20',
-            'unit': 'мс',
-            'step': '1',
-            'default_value': '20',
-            'setpoint': '',
-        },
-            'Inversion': {
-            'description': 'Режим инверсии ДВ',
-            'name_in_software': 'Инверсия',
-            'name_in_fsu': '-',
-            'value_range': '0 = Не предусмотрено\n1 = Предусмотрено',
-            'unit': '-',
-            'step': '-',
-            'default_value': '0',
-            'setpoint': '',
-        },
-            'Appointment': {
-            'description': 'Назначение ДВ',
-            'name_in_software': 'Описание',
-            'name_in_fsu': '-',
-            'value_range': '0...31',
-            'unit': 'Символ',
-            'step': '-',
-            'default_value': '',
-            'setpoint': '',
-        },      
-    }
-
-    input1 = BinInput(properties, 'Дискретный вход 1')
-    input2 = BinInput(properties, 'Дискретный вход 2')
-    input3 = BinInput(properties, 'Дискретный вход 3')
-    input4 = BinInput(properties, 'Дискретный вход 4')
-
-    # Создаем модуль и добавляем входы
-    module1 = BinModule(inserted_in_slot='M1', type='B001')
-    module1.add_input(input1)
-    module1.add_input(input2)
-    module1.add_input(input3)
-    module1.add_input(input4)
-    module2 = BinModule(inserted_in_slot='M2', type='B002')
-    module2.add_input(input1)
-    module2.add_input(input2)
-    module2.add_input(input3)
-    module2.add_input(input4)
-
-    bin_modules = BinModules('test')
-    bin_modules.add_module(module1)
-    bin_modules.add_module(module2)
-
-    # Получаем словарь для использования в шаблоне Jinja
-    bin_inputs = bin_modules.to_dict()
-
+        # Проверка существования файла bin_inputs.json
+    if os.path.exists('bin_inputs.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('bin_inputs.json', 'r', encoding='utf-8') as json_file:
+            bin_inputs = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        bin_inputs = ['Не определен файл',]
     return bin_inputs
 
+def create_binary_outs():
+        # Проверка существования файла bin_outputs.json
+    if os.path.exists('bin_outputs.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('bin_outputs.json', 'r', encoding='utf-8') as json_file:
+            bin_outputs = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        bin_outputs = ['Не определен файл',]
+    return bin_outputs
 
 # создаем плату выходных реле
-def create_binary_outs():
+def create_binary_outs_old():
     properties = {
         'Status': {
             'description': 'Последняя поданная команда',
