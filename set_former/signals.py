@@ -80,6 +80,10 @@ def make_list(df):
             f"{row['FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)']}"
         )
         # Добавление строки в список
+        # Замена << на \"
+        combined_string = combined_string.replace("<<", "'")
+        # Замена >> на \"
+        combined_string = combined_string.replace(">>", "'")
         result_list.append(combined_string)
     #print(result_list)
     return result_list
