@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import json
 
 from models.BinInput import BinInput
 from models.BinModule import BinModule, BinModules
@@ -29,13 +30,15 @@ def process_xlsx_files_settings(file_paths):
         # Список значений RussianName из листов Info
         russian_name = 'Не указано'
         descriptionFB = 'Не указано'
+        weight_fb = 10000
 
 
         # Обработка каждого файла
         for file in xlsx_files:
             file_path = os.path.join(path_to_folder, file)
             #print(file_path)
-            descriptionFunc = 'Не указано'            
+            descriptionFunc = 'Не указано'
+            weight_func = 10000           
             # Чтение файла
             xls = pd.ExcelFile(file_path)
 
@@ -43,12 +46,14 @@ def process_xlsx_files_settings(file_paths):
             for index, row in info_sheet.iterrows():
                 if row[0] == 'DescriptionFunc':
                     descriptionFunc = row[1]  # Значение во втором столбце 
-                    break
+                if row[0] == 'WeightFunc':
+                    weight_func = row[1]  # Значение во втором столбце                     
 
             # Обработка листов Signals
             if 'Signals' in xls.sheet_names:
                 signals_sheet = pd.read_excel(xls, sheet_name='Signals')
                 signals_sheet['descriptionFunc'] = descriptionFunc 
+                signals_sheet['WeightFunc'] = weight_func 
                 #print('>>>>>>>>>>>>>>', descriptionFunc)
                 signals_df = pd.concat([signals_df, signals_sheet], ignore_index=True)
             
@@ -61,6 +66,8 @@ def process_xlsx_files_settings(file_paths):
                         russian_name = row[1]  # Значение во втором столбце
                     if row[0] == 'DescriptionFB':
                         descriptionFB = row[1]  # Значение во втором столбце
+                    if row[0] == 'WeightFB':
+                        weight_fb = row[1]  # Значение во втором столбце                        
 
     # Проверка значений RussianName
     #RussianName = russian_names[0] if russian_names and all(name == russian_names[0] for name in russian_names) else 'ошибка'
@@ -71,21 +78,23 @@ def process_xlsx_files_settings(file_paths):
         filtered_df = signals_df[mask].copy()
         filtered_df['RussianNameFB'] = russian_name
         filtered_df['descriptionFB'] = descriptionFB
-      
+        filtered_df['WeightFB'] = weight_fb
+
         # Объединяем данные из текущей папки с общим датафреймом
         total_signals_df = pd.concat([total_signals_df, filtered_df], ignore_index=True)
-    #print(total_signals_df)
-    return total_signals_df
+    sorted_df =  total_signals_df.sort_values(by=['WeightFB', 'WeightFunc'], ascending=[True, True])   
+    print(sorted_df)
+    return sorted_df
 
 
 def make_list_settings(df):
-
     # Разбиение датафрейма на список датафреймов по полю RussianNameFB
     grouped_dfs = [group for _, group in df.groupby('RussianNameFB')] # Разбиваем по ФБ
     modules = BinModules('РЗА')
     for i, group_df in enumerate(grouped_dfs):
         grouped_df = [group for _, group in group_df.groupby('NodeName (рус)')]
-        module = BinModule(inserted_in_slot='-', type=group_df.iloc[0]['RussianNameFB'])
+        #print(grouped_df)
+        module = BinModule(inserted_in_slot='-', type=group_df.iloc[0]['descriptionFB'] +' (' + group_df.iloc[0]['RussianNameFB'] + ')')
         for j, func_df in enumerate(grouped_df):
             #print(f"Датафрейм {j + 1}:")
             #print(func_df)
@@ -93,32 +102,50 @@ def make_list_settings(df):
 
             properties = {}
             for index, row in func_df.iterrows():
+                unit_temp = row[8]
+                low_val = row[9]
+                high_val = row[10]
+                step_temp = row[11]
+                default_temp = row[12]
+                if unit_temp == 'мс':
+                    unit_temp = 'с'
+                    low_val = low_val/1000
+                    high_val = high_val/1000
+                    step_temp = step_temp/1000
+                    default_temp = default_temp/1000
+                # Определяем количество знаков после запятой в step_temp
+                decimal_places = str(step_temp).split('.')[-1]  # Находим часть после точки
+                num_decimal_places = len(decimal_places) if '.' in str(step_temp) else 0
+
+                # Определяем форматирование с нужным количеством знаков
+                low_val = f"{low_val:.{num_decimal_places}f}".replace('.', ',')
+                high_val = f"{high_val:.{num_decimal_places}f}".replace('.', ',')
+                step_temp = f"{step_temp:.{num_decimal_places}f}".replace('.', ',')
+                default_temp = f"{default_temp:.{num_decimal_places}f}".replace('.', ',')
+                # Меняем елочки <<>>
+                desc_temp = row[3]
+                desc_temp = desc_temp.replace("<<", "'")
+                desc_temp = desc_temp.replace(">>", "'")                
+
                 properties[f'Signal_N{index+1}'] = {  # Добавляем новый ключ в словарь
-                    'description': row[0],  # Используем текущий элемент списка signals
-                    'name_in_software': '-' if row[1] == '*' else row[1],  # проверка и замена прямо в строке
-                    'name_in_fsu': '-' if row[2] == '*' else row[2],  # проверка и замена прямо в строке
-                    'value_range': '-' if row[3] == '*' else row[3],  # проверка и замена прямо в строке
-                    'unit': '-' if row[4] == '*' else row[4],  # проверка и замена прямо в строке
-                    'step': '-' if row[5] == '*' else row[5],  # проверка и замена прямо в строке                       
-                    'default_value': '-' if row[6] == '*' else row[6],  # проверка и замена прямо в строке
-                    'setpoint': row[7],                                               
+                    'description': desc_temp,  # 
+                    'name_in_software': row[4],  # 
+                    'name_in_fsu': row[5],  # 
+                    'value_range': low_val + '...' + high_val,  # 
+                    'unit': unit_temp,  # 
+                    'step': step_temp,  #                        
+                    'default_value': default_temp,  # 
+                    'setpoint': ' ',                                               
                 }
-            input = BinInput(properties, func_df.iloc[0]['NodeName (рус)'])
-            print('================',input)
+            input_name = 'Общие уставки' if func_df.iloc[0]['descriptionFunc']=='Блок управления' else func_df.iloc[0]['descriptionFunc'] + ' (' + func_df.iloc[0]['NodeName (рус)'] + ')' 
+            input = BinInput(properties, input_name)
+            #print('================',input)
             module.add_input(input)
         #print(module)
-        #modules.add_module(module)
+        modules.add_module(module)
     #print(modules)
-        
-
-
-
-
-    return
-
-
-
-
+    
+    return modules
 
 
 
@@ -127,7 +154,12 @@ if __name__=='__main__':
     paths = [r'H:\www\latex_cad\set_former\01. Разработка ФБ\01. ЛО ГЗ Т откл\_xlsx\funcs', r'H:\www\latex_cad\set_former\01. Разработка ФБ\17. ДЗТ 35\_xlsx\funcs']
     data = process_xlsx_files_settings(paths)
     #print(data)
-    make_list_settings(data)
+    modules = make_list_settings(data)
     # Сохраняем датафрейм в Excel
     data.to_excel("output.xlsx", index=False)
+
+    module_dict = modules.to_dict()
+    #print(module_dict)
+    with open('settings.json', 'w', encoding='utf-8') as json_file:
+        json.dump(module_dict, json_file, ensure_ascii=False, indent=4)
 

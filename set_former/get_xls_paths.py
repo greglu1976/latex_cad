@@ -10,6 +10,26 @@ def extract_paths(file_content):
     lines = file_content.split('\n')
     
     
+    # Находим путь к описанию железа (не закомментированный)
+    path_to_hw_ied=''
+    path_to_hw_gen=''
+    for line in lines:
+        line = line.strip()
+        if line.startswith(r'%===h'):
+            # Извлекаем путь между фигурными скобками
+            path_to_hw_ied = Path(line.split(' ', 1)[1])
+            #print('path_to_hw_ied ============>', path_to_hw_ied)
+            break
+        # Если путь найден, создаём путь на уровень выше
+    if path_to_hw_ied:
+        hw_parent_path = path_to_hw_ied.parents[0] 
+        #print('hw_parent_path ============>', hw_parent_path)
+        # Удаляем последний сегмент пути и добавляем '\00. Общее'
+        #path_to_hw_gen = r'\\'.join(path_to_hw_ied.split(r'\\')[:-1]) + r'\00. Общее'  
+        if os.path.exists(hw_parent_path / "00. Общее" ):   
+            path_to_hw_gen = hw_parent_path / "00. Общее"
+            #print('path_to_hw_gen ============>', path_to_hw_gen)
+
     # Находим активный fbpath (не закомментированный)
     for line in lines:
         line = line.strip()
@@ -47,7 +67,7 @@ def extract_paths(file_content):
             if os.path.exists(parent_path / "_xlsx" / "funcs"):   
                 paths.append(parent_path / "_xlsx" / "funcs")
 
-    return paths
+    return paths, path_to_hw_ied, path_to_hw_gen
 
 if __name__=='__main__':
 

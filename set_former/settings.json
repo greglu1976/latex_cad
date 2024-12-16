@@ -1,0 +1,1862 @@
+{
+    "name": "РЗА",
+    "modules": {
+        "Модуль 1": {
+            "type": "Не указано (ДЗТ)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (БУ)",
+                    "properties": {
+                        "Signal_N9": {
+                            "description": "Сторона 1",
+                            "name_in_software": "Сторона1",
+                            "name_in_fsu": "-",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N10": {
+                            "description": "Сторона 2",
+                            "name_in_software": "Сторона2",
+                            "name_in_fsu": "-",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N11": {
+                            "description": "Сторона 3",
+                            "name_in_software": "Сторона3",
+                            "name_in_fsu": "-",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N12": {
+                            "description": "Схема соединения трансформаторов тока стороны 1",
+                            "name_in_software": "KсхемСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N13": {
+                            "description": "Схема соединения трансформаторов тока стороны 2",
+                            "name_in_software": "KсхемСт2",
+                            "name_in_fsu": "-",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N14": {
+                            "description": "Схема соединения трансформаторов тока стороны 3",
+                            "name_in_software": "KсхемСт3",
+                            "name_in_fsu": "-",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N15": {
+                            "description": "Базисная мощность",
+                            "name_in_software": "Sbase",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...500,0",
+                            "unit": "МВ×А",
+                            "step": "0,1",
+                            "default_value": "63,0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (Д2Г)",
+                    "properties": {
+                        "Signal_N1": {
+                            "description": "Перекрестная блокировка",
+                            "name_in_software": "Перекр_бл",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N2": {
+                            "description": "Отношение тока второй гармоники к току основной гармоники",
+                            "name_in_software": "Ih2/Ih1",
+                            "name_in_fsu": "Ih2/Ih1",
+                            "value_range": "10...50",
+                            "unit": "%",
+                            "step": "1",
+                            "default_value": "13",
+                            "setpoint": " "
+                        },
+                        "Signal_N3": {
+                            "description": "Выдержка времени на возврат",
+                            "name_in_software": "Tвоз",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,000...0,100",
+                            "unit": "с",
+                            "step": "0,001",
+                            "default_value": "0,015",
+                            "setpoint": " "
+                        },
+                        "Signal_N4": {
+                            "description": "Выдержка времени ввода перекрестной блокировки",
+                            "name_in_software": "Tперек_бл",
+                            "name_in_fsu": "T2",
+                            "value_range": "0,06...4,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "0,06",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (Д5Г)",
+                    "properties": {
+                        "Signal_N5": {
+                            "description": "Перекрестная блокировка",
+                            "name_in_software": "Перекр_бл",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N6": {
+                            "description": "Отношение тока пятой гармоники к току основной гармоники",
+                            "name_in_software": "Ih5/Ih1",
+                            "name_in_fsu": "Ih5/Ih1",
+                            "value_range": "5...40",
+                            "unit": "%",
+                            "step": "1",
+                            "default_value": "25",
+                            "setpoint": " "
+                        },
+                        "Signal_N7": {
+                            "description": "Выдержка времени на возврат",
+                            "name_in_software": "Tвоз",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,000...0,100",
+                            "unit": "с",
+                            "step": "0,001",
+                            "default_value": "0,015",
+                            "setpoint": " "
+                        },
+                        "Signal_N8": {
+                            "description": "Выдержка времени ввода перекрестной блокировки",
+                            "name_in_software": "Tперек_бл",
+                            "name_in_fsu": "T2",
+                            "value_range": "0,06...4,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "0,06",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 4": {
+                    "name": "Не указано (ДТЗт)",
+                    "properties": {
+                        "Signal_N16": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N17": {
+                            "description": "Режим блокировки",
+                            "name_in_software": "Реж_блок",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "1...4",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "4",
+                            "setpoint": " "
+                        },
+                        "Signal_N18": {
+                            "description": "Контроль от БВКЗ",
+                            "name_in_software": "Контр_БВКЗ",
+                            "name_in_fsu": "SGF3",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N19": {
+                            "description": "Начальный дифференциальный ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "-",
+                            "value_range": "0,20...0,60",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "0,30",
+                            "setpoint": " "
+                        },
+                        "Signal_N20": {
+                            "description": "Начальный дифференциальный ток срабатывания в режиме загрубления (при неисправностях в токовых цепях)",
+                            "name_in_software": "Iср_загр",
+                            "name_in_fsu": "-",
+                            "value_range": "0,20...10,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "0,30",
+                            "setpoint": " "
+                        },
+                        "Signal_N21": {
+                            "description": "Коэффициент торможения первого наклонного участка",
+                            "name_in_software": "Kт1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,20...1,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "0,40",
+                            "setpoint": " "
+                        },
+                        "Signal_N22": {
+                            "description": "Начальный тормозной ток первого наклонного участка",
+                            "name_in_software": "Iт1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,60...3,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N23": {
+                            "description": "Коэффициент торможения второго наклонного участка",
+                            "name_in_software": "Kт2",
+                            "name_in_fsu": "-",
+                            "value_range": "0,20...1,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "0,50",
+                            "setpoint": " "
+                        },
+                        "Signal_N24": {
+                            "description": "Начальный тормозной ток второго наклонного участка",
+                            "name_in_software": "Iт2",
+                            "name_in_fsu": "-",
+                            "value_range": "1,20...10,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "3,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N25": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...3,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "0,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 5": {
+                    "name": "Не указано (ДТО)",
+                    "properties": {
+                        "Signal_N26": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N27": {
+                            "description": "Дифференциальный ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "3,0...20,0",
+                            "unit": "о.е.",
+                            "step": "0,1",
+                            "default_value": "6,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N28": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...3,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "0,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 6": {
+                    "name": "Не указано (КЦТнеб)",
+                    "properties": {
+                        "Signal_N29": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N30": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "Idiff>",
+                            "value_range": "0,04...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "0,10",
+                            "setpoint": " "
+                        },
+                        "Signal_N31": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,0...110,0",
+                            "unit": "с",
+                            "step": "0,1",
+                            "default_value": "9,0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 7": {
+                    "name": "Не указано (ПарамСт1)",
+                    "properties": {
+                        "Signal_N32": {
+                            "description": "Номинальное напряжение стороны 1",
+                            "name_in_software": "Uном1",
+                            "name_in_fsu": "-",
+                            "value_range": "6,0...250,0",
+                            "unit": "кВ",
+                            "step": "0,1",
+                            "default_value": "115,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N33": {
+                            "description": "Номинальный первичный ток трансформатора тока стороны 1",
+                            "name_in_software": "IпервСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...40000,0",
+                            "unit": "А",
+                            "step": "1,0",
+                            "default_value": "1000,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N34": {
+                            "description": "Номинальный вторичный ток трансформатора тока стороны 1",
+                            "name_in_software": "IвторСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...5,0",
+                            "unit": "А",
+                            "step": "4,0",
+                            "default_value": "1,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N35": {
+                            "description": "Компенсация токов 3I0 для стороны 1",
+                            "name_in_software": "Компенс3I0ст1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,0...1,0",
+                            "unit": "-",
+                            "step": "1,0",
+                            "default_value": "0,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N36": {
+                            "description": "Векторная группа стороны 1",
+                            "name_in_software": "Nсх1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,0...11,0",
+                            "unit": "-",
+                            "step": "1,0",
+                            "default_value": "0,0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 8": {
+                    "name": "Не указано (ПарамСт2)",
+                    "properties": {
+                        "Signal_N37": {
+                            "description": "Номинальное напряжение стороны 1",
+                            "name_in_software": "Uном1",
+                            "name_in_fsu": "-",
+                            "value_range": "6,0...250,0",
+                            "unit": "кВ",
+                            "step": "0,1",
+                            "default_value": "115,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N38": {
+                            "description": "Номинальный первичный ток трансформатора тока стороны 1",
+                            "name_in_software": "IпервСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...40000,0",
+                            "unit": "А",
+                            "step": "1,0",
+                            "default_value": "1000,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N39": {
+                            "description": "Номинальный вторичный ток трансформатора тока стороны 1",
+                            "name_in_software": "IвторСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...5,0",
+                            "unit": "А",
+                            "step": "4,0",
+                            "default_value": "1,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N40": {
+                            "description": "Компенсация токов 3I0 для стороны 1",
+                            "name_in_software": "Компенс3I0ст1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,0...1,0",
+                            "unit": "-",
+                            "step": "1,0",
+                            "default_value": "0,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N41": {
+                            "description": "Векторная группа стороны 1",
+                            "name_in_software": "Nсх1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,0...11,0",
+                            "unit": "-",
+                            "step": "1,0",
+                            "default_value": "0,0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 9": {
+                    "name": "Не указано (ПарамСт3)",
+                    "properties": {
+                        "Signal_N42": {
+                            "description": "Номинальное напряжение стороны 1",
+                            "name_in_software": "Uном1",
+                            "name_in_fsu": "-",
+                            "value_range": "6,0...250,0",
+                            "unit": "кВ",
+                            "step": "0,1",
+                            "default_value": "115,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N43": {
+                            "description": "Номинальный первичный ток трансформатора тока стороны 1",
+                            "name_in_software": "IпервСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...40000,0",
+                            "unit": "А",
+                            "step": "1,0",
+                            "default_value": "1000,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N44": {
+                            "description": "Номинальный вторичный ток трансформатора тока стороны 1",
+                            "name_in_software": "IвторСт1",
+                            "name_in_fsu": "-",
+                            "value_range": "1,0...5,0",
+                            "unit": "А",
+                            "step": "4,0",
+                            "default_value": "1,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N45": {
+                            "description": "Компенсация токов 3I0 для стороны 1",
+                            "name_in_software": "Компенс3I0ст1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,0...1,0",
+                            "unit": "-",
+                            "step": "1,0",
+                            "default_value": "0,0",
+                            "setpoint": " "
+                        },
+                        "Signal_N46": {
+                            "description": "Векторная группа стороны 1",
+                            "name_in_software": "Nсх1",
+                            "name_in_fsu": "-",
+                            "value_range": "0,0...11,0",
+                            "unit": "-",
+                            "step": "1,0",
+                            "default_value": "0,0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 2": {
+            "type": "Не указано (ЗП)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ЗП ВН)",
+                    "properties": {
+                        "Signal_N81": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N82": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...5,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N83": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,0...3600,0",
+                            "unit": "с",
+                            "step": "0,1",
+                            "default_value": "9,0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЗП НН1)",
+                    "properties": {
+                        "Signal_N84": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N85": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...5,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N86": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,0...3600,0",
+                            "unit": "с",
+                            "step": "0,1",
+                            "default_value": "9,0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (ЗП НН2)",
+                    "properties": {
+                        "Signal_N87": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N88": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...5,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N89": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,0...3600,0",
+                            "unit": "с",
+                            "step": "0,1",
+                            "default_value": "9,0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 3": {
+            "type": "Не указано (ЗПО)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ЗПО)",
+                    "properties": {
+                        "Signal_N71": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N72": {
+                            "description": "Контроль тока",
+                            "name_in_software": "Контр_тока",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N73": {
+                            "description": "Контроль температуры масла",
+                            "name_in_software": "Контр_темп_масла",
+                            "name_in_fsu": "SGF3",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N74": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0...3600",
+                            "unit": "с",
+                            "step": "1",
+                            "default_value": "10",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 4": {
+            "type": "Не указано (КЦТ)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (КЦТст1)",
+                    "properties": {
+                        "Signal_N47": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N48": {
+                            "description": "Режим контроля обрыва провода",
+                            "name_in_software": "Контр_обр_пров",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N49": {
+                            "description": "Минимальное значение фазного тока",
+                            "name_in_software": "Iмин",
+                            "name_in_fsu": "Iмин<",
+                            "value_range": "0,05...1,00",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "0,10",
+                            "setpoint": " "
+                        },
+                        "Signal_N50": {
+                            "description": "Коэффициент симметрии",
+                            "name_in_software": "Kсим",
+                            "name_in_fsu": "Iмин/Iмакс<",
+                            "value_range": "0,10...0,95",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "0,50",
+                            "setpoint": " "
+                        },
+                        "Signal_N51": {
+                            "description": "Минимальная величина максимального из фазных токов",
+                            "name_in_software": "LIсим",
+                            "name_in_fsu": "Iмакс>",
+                            "value_range": "0,01...2,00",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N52": {
+                            "description": "Выдержка времени на срабатывание по критерию обрыва фазы",
+                            "name_in_software": "Tобрыв",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...100,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N53": {
+                            "description": "Выдержка времени на срабатывание по асимметрии токов",
+                            "name_in_software": "Tасим",
+                            "name_in_fsu": "T2",
+                            "value_range": "0,00...100,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N54": {
+                            "description": "Номинальный ток токового входа терминала",
+                            "name_in_software": "Iном",
+                            "name_in_fsu": "-",
+                            "value_range": "1...5",
+                            "unit": "А",
+                            "step": "4",
+                            "default_value": "1",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (КЦТст2)",
+                    "properties": {
+                        "Signal_N55": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N56": {
+                            "description": "Режим контроля обрыва провода",
+                            "name_in_software": "Контр_обр_пров",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N57": {
+                            "description": "Минимальное значение фазного тока",
+                            "name_in_software": "Iмин",
+                            "name_in_fsu": "Iмин<",
+                            "value_range": "0,05...1,00",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "0,10",
+                            "setpoint": " "
+                        },
+                        "Signal_N58": {
+                            "description": "Коэффициент симметрии",
+                            "name_in_software": "Kсим",
+                            "name_in_fsu": "Iмин/Iмакс<",
+                            "value_range": "0,10...0,95",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "0,50",
+                            "setpoint": " "
+                        },
+                        "Signal_N59": {
+                            "description": "Минимальная величина максимального из фазных токов",
+                            "name_in_software": "LIсим",
+                            "name_in_fsu": "Iмакс>",
+                            "value_range": "0,01...2,00",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N60": {
+                            "description": "Выдержка времени на срабатывание по критерию обрыва фазы",
+                            "name_in_software": "Tобрыв",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...100,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N61": {
+                            "description": "Выдержка времени на срабатывание по асимметрии токов",
+                            "name_in_software": "Tасим",
+                            "name_in_fsu": "T2",
+                            "value_range": "0,00...100,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N62": {
+                            "description": "Номинальный ток токового входа терминала",
+                            "name_in_software": "Iном",
+                            "name_in_fsu": "-",
+                            "value_range": "1...5",
+                            "unit": "А",
+                            "step": "4",
+                            "default_value": "1",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (КЦТст3)",
+                    "properties": {
+                        "Signal_N63": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N64": {
+                            "description": "Режим контроля обрыва провода",
+                            "name_in_software": "Контр_обр_пров",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N65": {
+                            "description": "Минимальное значение фазного тока",
+                            "name_in_software": "Iмин",
+                            "name_in_fsu": "Iмин<",
+                            "value_range": "0,05...1,00",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "0,10",
+                            "setpoint": " "
+                        },
+                        "Signal_N66": {
+                            "description": "Коэффициент симметрии",
+                            "name_in_software": "Kсим",
+                            "name_in_fsu": "Iмин/Iмакс<",
+                            "value_range": "0,10...0,95",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "0,50",
+                            "setpoint": " "
+                        },
+                        "Signal_N67": {
+                            "description": "Минимальная величина максимального из фазных токов",
+                            "name_in_software": "LIсим",
+                            "name_in_fsu": "Iмакс>",
+                            "value_range": "0,01...2,00",
+                            "unit": "о. е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N68": {
+                            "description": "Выдержка времени на срабатывание по критерию обрыва фазы",
+                            "name_in_software": "Tобрыв",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...100,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N69": {
+                            "description": "Выдержка времени на срабатывание по асимметрии токов",
+                            "name_in_software": "Tасим",
+                            "name_in_fsu": "T2",
+                            "value_range": "0,00...100,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        },
+                        "Signal_N70": {
+                            "description": "Номинальный ток токового входа терминала",
+                            "name_in_software": "Iном",
+                            "name_in_fsu": "-",
+                            "value_range": "1...5",
+                            "unit": "А",
+                            "step": "4",
+                            "default_value": "1",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 5": {
+            "type": "Не указано (ЛО ВН)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ЛО)",
+                    "properties": {
+                        "Signal_N121": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N122": {
+                            "description": "Длительность импульса",
+                            "name_in_software": "Тимп",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,05...60,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "0,50",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 6": {
+            "type": "Не указано (ЛО ГЗ РПН)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (БУ)",
+                    "properties": {
+                        "Signal_N106": {
+                            "description": "Выдержка времени срабатывания на блокировку",
+                            "name_in_software": "Тбл",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...30,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "5,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЛО)",
+                    "properties": {
+                        "Signal_N107": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N108": {
+                            "description": "Блокировка от низкой изоляции",
+                            "name_in_software": "Блок_от_НИ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 7": {
+            "type": "Не указано (ЛО ГЗоткл)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (БУ)",
+                    "properties": {
+                        "Signal_N100": {
+                            "description": "Выдержка времени срабатывания на блокировку",
+                            "name_in_software": "Тбл",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...30,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "5,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЛО)",
+                    "properties": {
+                        "Signal_N101": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N102": {
+                            "description": "Блокировка от низкой изоляции",
+                            "name_in_software": "Блок_от_НИ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 8": {
+            "type": "Не указано (ЛО ГЗсигн)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (БУ)",
+                    "properties": {
+                        "Signal_N105": {
+                            "description": "Выдержка времени срабатывания на блокировку",
+                            "name_in_software": "Тбл",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...30,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "5,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЛО)",
+                    "properties": {
+                        "Signal_N103": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N104": {
+                            "description": "Блокировка от низкой изоляции",
+                            "name_in_software": "Блок_от_НИ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 9": {
+            "type": "Не указано (ЛО Т)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ЗАПВ)",
+                    "properties": {
+                        "Signal_N120": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЛО)",
+                    "properties": {
+                        "Signal_N119": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 10": {
+            "type": "Не указано (ЛО ТЗ)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (БУ)",
+                    "properties": {
+                        "Signal_N109": {
+                            "description": "Выдержка времени срабатывания на блокировку",
+                            "name_in_software": "Тбл",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...30,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "5,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЛО ДТм)",
+                    "properties": {
+                        "Signal_N110": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N111": {
+                            "description": "Блокировка от низкой изоляции ДТм",
+                            "name_in_software": "Блок_от_НИ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (ЛО ДТо)",
+                    "properties": {
+                        "Signal_N114": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N115": {
+                            "description": "Блокировка от низкой изоляции ДТо",
+                            "name_in_software": "Блок_от_НИ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 4": {
+                    "name": "Не указано (ЛО РД)",
+                    "properties": {
+                        "Signal_N112": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N113": {
+                            "description": "Блокировка от низкой изоляции РД",
+                            "name_in_software": "Блок_от_НИ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 11": {
+            "type": "Не указано (ЛО ТС)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ЛО ДУм расширителя)",
+                    "properties": {
+                        "Signal_N116": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ЛО ОК)",
+                    "properties": {
+                        "Signal_N118": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (ЛО ПК)",
+                    "properties": {
+                        "Signal_N117": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 12": {
+            "type": "Не указано (Не указано)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ПС)",
+                    "properties": {
+                        "Signal_N142": {
+                            "description": "Контроль сигнала 'ГЗ сигн'",
+                            "name_in_software": "Контр_ГЗ_сигн",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N143": {
+                            "description": "Контроль сигнала 'Низ.изол. ГЗ'",
+                            "name_in_software": "Контр_Низ_изол_ГЗ",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N144": {
+                            "description": "Контроль сигнала 'ГЗ заблокирована'",
+                            "name_in_software": "Контр_ГЗ_блок",
+                            "name_in_fsu": "SGF3",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N145": {
+                            "description": "Контроль сигнала 'ТЗ сигн'",
+                            "name_in_software": "Контр_ТЗ_сигн",
+                            "name_in_fsu": "SGF4",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N146": {
+                            "description": "Контроль сигнала 'Низ.изол. ТЗ'",
+                            "name_in_software": "Контр_Низ_изол_ТЗ",
+                            "name_in_fsu": "SGF5",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N147": {
+                            "description": "Контроль сигнала 'ТЗ заблокирована'",
+                            "name_in_software": "Контр_ТЗ_блок",
+                            "name_in_fsu": "SGF6",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N148": {
+                            "description": "Контроль сигнала 'ТС сигн'",
+                            "name_in_software": "Контр_ТС_сигн",
+                            "name_in_fsu": "SGF7",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N149": {
+                            "description": "Контроль сигнала 'ОТ сигн'",
+                            "name_in_software": "Контр_ОТ_сигн",
+                            "name_in_fsu": "SGF8",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N150": {
+                            "description": "Контроль сигнала 'ОТ НН сигн'",
+                            "name_in_software": "Контр_ОТ_НН_сигн",
+                            "name_in_fsu": "SGF9",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N151": {
+                            "description": "Контроль сигнала 'Внеш. откл'",
+                            "name_in_software": "Контр_Внеш_откл",
+                            "name_in_fsu": "SGF10",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N152": {
+                            "description": "Контроль сигнала 'Вых. цепи разобраны'",
+                            "name_in_software": "Контр_Вых_цеп_разоб",
+                            "name_in_fsu": "SGF11",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N153": {
+                            "description": "Контроль сигнала 'БИ выведены'",
+                            "name_in_software": "Контр_БИ_выведены",
+                            "name_in_fsu": "SGF12",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N154": {
+                            "description": "Контроль общего внешнего сигнала",
+                            "name_in_software": "Контр_общ_внеш_сигн",
+                            "name_in_fsu": "SGF13",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (СС)",
+                    "properties": {
+                        "Signal_N129": {
+                            "description": "Контроль положения SA1",
+                            "name_in_software": "Контр_полож_SA1",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N130": {
+                            "description": "Контроль положения SA2",
+                            "name_in_software": "Контр_полож_SA2",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N131": {
+                            "description": "Контроль положения SA3",
+                            "name_in_software": "Контр_полож_SA3",
+                            "name_in_fsu": "SGF3",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N132": {
+                            "description": "Контроль положения SA4",
+                            "name_in_software": "Контр_полож_SA4",
+                            "name_in_fsu": "SGF4",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N133": {
+                            "description": "Контроль положения SG1",
+                            "name_in_software": "Контр_полож_SG1",
+                            "name_in_fsu": "SGF5",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N134": {
+                            "description": "Контроль положения SG2",
+                            "name_in_software": "Контр_полож_SG2",
+                            "name_in_fsu": "SGF6",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N135": {
+                            "description": "Контроль положения SG3",
+                            "name_in_software": "Контр_полож_SG3",
+                            "name_in_fsu": "SGF7",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N136": {
+                            "description": "Контроль опер. тока цепей ГЗ",
+                            "name_in_software": "Контр_ОТ_ГЗ",
+                            "name_in_fsu": "SGF8",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N137": {
+                            "description": "Контроль опер. тока цепей ТЗ, ТС",
+                            "name_in_software": "Контр_ОТ_ТЗ_ТС",
+                            "name_in_fsu": "SGF9",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N138": {
+                            "description": "Контроль опер. тока цепей ЗДЗ НН1",
+                            "name_in_software": "Контр_ОТ_ЗДЗ1",
+                            "name_in_fsu": "SGF10",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N139": {
+                            "description": "Контроль опер. тока цепей ЗДЗ НН2",
+                            "name_in_software": "Контр_ОТ_ЗДЗ2",
+                            "name_in_fsu": "SGF11",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N140": {
+                            "description": "Контроль опер. тока цепей УРОВ НН1",
+                            "name_in_software": "Контр_ОТ_УРОВ1",
+                            "name_in_fsu": "SGF12",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N141": {
+                            "description": "Контроль опер. тока цепей УРОВ НН2",
+                            "name_in_software": "Контр_ОТ_УРОВ2",
+                            "name_in_fsu": "SGF13",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 13": {
+            "type": "Не указано (РТПО)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (РТПО ВН)",
+                    "properties": {
+                        "Signal_N90": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N91": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (РТПО НН1)",
+                    "properties": {
+                        "Signal_N92": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N93": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (РТПО НН2)",
+                    "properties": {
+                        "Signal_N94": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N95": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 14": {
+            "type": "Не указано (ТК ЗДЗ)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ТК ЗДЗ)",
+                    "properties": {
+                        "Signal_N96": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N97": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 15": {
+            "type": "Не указано (ТО ЗПО)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ТО ЗПО ВН)",
+                    "properties": {
+                        "Signal_N75": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N76": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 2": {
+                    "name": "Не указано (ТО ЗПО НН1)",
+                    "properties": {
+                        "Signal_N77": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N78": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                },
+                "Дискретный вход 3": {
+                    "name": "Не указано (ТО ЗПО НН2)",
+                    "properties": {
+                        "Signal_N79": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N80": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 16": {
+            "type": "Не указано (ТО РПН)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (ТО РПН)",
+                    "properties": {
+                        "Signal_N98": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N99": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,10...2,00",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "1,00",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        },
+        "Модуль 17": {
+            "type": "Не указано (УРОВ ВН)",
+            "inserted_in_slot": "-",
+            "inputs": {
+                "Дискретный вход 1": {
+                    "name": "Не указано (УРОВ)",
+                    "properties": {
+                        "Signal_N123": {
+                            "description": "Ввод функции в работу",
+                            "name_in_software": "Ввод_функции",
+                            "name_in_fsu": "SGF1",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N124": {
+                            "description": "УРОВ с подхватом по току",
+                            "name_in_software": "Подхват_по_току",
+                            "name_in_fsu": "SGF2",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N125": {
+                            "description": "Действие УРОВ на вышестоящий выключатель",
+                            "name_in_software": "Действ_на_выш_выкл",
+                            "name_in_fsu": "SGF3",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N126": {
+                            "description": "Контроль по току при действии 'на себя'",
+                            "name_in_software": "Контр_тока_на_себя",
+                            "name_in_fsu": "SGF4",
+                            "value_range": "0...1",
+                            "unit": "-",
+                            "step": "1",
+                            "default_value": "0",
+                            "setpoint": " "
+                        },
+                        "Signal_N127": {
+                            "description": "Ток срабатывания",
+                            "name_in_software": "Iср",
+                            "name_in_fsu": "I>",
+                            "value_range": "0,05...0,50",
+                            "unit": "о.е.",
+                            "step": "0,01",
+                            "default_value": "0,05",
+                            "setpoint": " "
+                        },
+                        "Signal_N128": {
+                            "description": "Выдержка времени срабатывания",
+                            "name_in_software": "Tср",
+                            "name_in_fsu": "T1",
+                            "value_range": "0,00...1,00",
+                            "unit": "с",
+                            "step": "0,01",
+                            "default_value": "0,10",
+                            "setpoint": " "
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

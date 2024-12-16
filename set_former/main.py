@@ -6,15 +6,18 @@ from get_xls_paths import extract_paths
 from signals import process_xlsx_files, make_list
 from inputs import process_xlsx_files_inputs, make_list_inputs
 from controls import process_xlsx_files_controls, make_list_controls
+from settings import process_xlsx_files_settings, make_list_settings
 
 
 # Укажите путь к файлу general.tex
-path_to_fbs = r'H:\www\latex_cad\set_former\01. Разработка ФБ'
+#path_to_fbs = r'H:\www\latex_cad\set_former\01. Разработка ФБ'
 
 with open('general.tex', 'r', encoding='utf-8') as file:
     content = file.read()
-xlsx_folders = extract_paths(content)
+xlsx_folders, path_to_hw_ied, path_to_hw_gen = extract_paths(content)
 
+print('>>>', path_to_hw_ied)
+print('>>>', path_to_hw_gen)
 #for folder in xlsx_folders:
     # Подняться на один уровень вверх
     #print(folder)
@@ -56,3 +59,13 @@ controls.sort()
 # Сохранение result_list в JSON-файл
 with open('controls.json', 'w', encoding='utf-8') as json_file:
     json.dump(controls, json_file, ensure_ascii=False, indent=4)
+
+df_settings = process_xlsx_files_settings(xlsx_folders)
+settings = make_list_settings(df_settings)
+settings = settings.to_dict()
+#settings.sort()
+# Сохранение result_list в JSON-файл
+with open('settings.json', 'w', encoding='utf-8') as json_file:
+    json.dump(settings, json_file, ensure_ascii=False, indent=4)
+
+df_bin_ins_outs = ''

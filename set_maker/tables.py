@@ -87,7 +87,7 @@ def set_cell_border(cell: _Cell, **kwargs):
 ################################ ТАБЛИЦА ДЛЯ УСТАВОК ##############################
 ####################################################################################
 
-table_settings = (Inches(0.28), Inches(1.23), Inches(0.9), Inches(0.4), Inches(1.6), Inches(0.55), Inches(0.45), Inches(0.9), Inches(1.05))  #задаем ширину столбцов таблицы вывода репортов
+table_settings = (Inches(0.28), Inches(1.23), Inches(0.9), Inches(0.5), Inches(1.5), Inches(0.55), Inches(0.45), Inches(0.9), Inches(1.05))  #задаем ширину столбцов таблицы вывода репортов
 
 def add_table_settings(doc, unique_key): # новая таблица исходящих отчетов
     table = doc.add_table(rows=5, cols=9)

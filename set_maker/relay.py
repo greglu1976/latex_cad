@@ -14,7 +14,7 @@ general_data = {
     'terminal_name': 'ЮНИТ-М300-ДЗТ2'
 }
 
-def create_relay():
+def create_relay_old():
     properties = {
         'Status': {
             'description': 'Ввод функции в работу',
@@ -64,6 +64,17 @@ def create_relay():
     module_dict = bin_modules.to_dict()
 
     return module_dict
+
+def create_relay():
+    if os.path.exists('settings.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('settings.json', 'r', encoding='utf-8') as json_file:
+            bin_inputs = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        bin_inputs = ['Не определен файл',]
+    return bin_inputs    
+
 
 def create_binary():
         # Проверка существования файла bin_inputs.json
