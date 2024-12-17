@@ -7,6 +7,7 @@ from signals import process_xlsx_files, make_list
 from inputs import process_xlsx_files_inputs, make_list_inputs
 from controls import process_xlsx_files_controls, make_list_controls
 from settings import process_xlsx_files_settings, make_list_settings
+from get_inputs import process_xlsx_files_binaries
 
 
 # Укажите путь к файлу general.tex
@@ -68,4 +69,10 @@ settings = settings.to_dict()
 with open('settings.json', 'w', encoding='utf-8') as json_file:
     json.dump(settings, json_file, ensure_ascii=False, indent=4)
 
-df_bin_ins_outs = ''
+input_modules, output_modules = process_xlsx_files_binaries(path_to_hw_gen, path_to_hw_ied)
+    # сохраняем в json
+with open('bin_inputs.json', 'w', encoding='utf-8') as json_file:
+    json.dump(input_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
+    
+with open('bin_outputs.json', 'w', encoding='utf-8') as json_file:
+    json.dump(output_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
