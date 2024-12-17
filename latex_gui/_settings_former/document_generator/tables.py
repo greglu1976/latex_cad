@@ -12,10 +12,19 @@ from docx.table import _Cell
 from docx.oxml.ns import nsdecls
 from docx.oxml import parse_xml
 
-import os
+import os, sys
 import json
 
-from dropdowns import add_formatted_dropdown2
+from pathlib import Path
+
+from .dropdowns import add_formatted_dropdown2
+
+# Определяем корень проекта
+root = Path(__file__).resolve().parents[1]
+descriptions_path = root / "descriptions"
+#descriptions_path = Path(r'H:\www\latex_cad\latex_gui\_settings_former\descriptions')
+# Проверяем правильность пути
+print('==============================================================', descriptions_path)
 
 def set_vertical_cell_direction(cell: _Cell, direction: str):
     # direction: tbRl -- top to bottom, btLr -- bottom to top
@@ -331,9 +340,9 @@ def add_table_mtrx_outs(doc): # новая таблица исходящих о�
     hdr_cells[0].text = '{{ param_data.name }}'
 
     # Проверка существования файла signals.json
-    if os.path.exists('signals.json'):
+    if os.path.exists(descriptions_path / 'signals.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('signals.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'signals.json', 'r', encoding='utf-8') as json_file:
             choices_start = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -441,9 +450,9 @@ def add_table_mtrx_ins(doc): # новая таблица исходящих от
     hdr_cells[0].text = '{{ param_data.name }}'
 
     # Проверка существования файла inputs.json
-    if os.path.exists('inputs.json'):
+    if os.path.exists(descriptions_path / 'inputs.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('inputs.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'inputs.json', 'r', encoding='utf-8') as json_file:
             choices_start = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -530,9 +539,9 @@ def add_table_leds(doc): # новая таблица исходящих отче
 
 
     # Проверка существования файла inputs.json
-    if os.path.exists('signals.json'):
+    if os.path.exists(descriptions_path / 'signals.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('signals.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'signals.json', 'r', encoding='utf-8') as json_file:
             choices_start = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -607,9 +616,9 @@ def add_table_fks(doc): # новая таблица исходящих отче�
     hdr_cells[0].text = '{{ param_data.name }}'
 
     # Проверка существования файла inputs.json
-    if os.path.exists('controls.json'):
+    if os.path.exists(descriptions_path / 'controls.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('controls.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'controls.json', 'r', encoding='utf-8') as json_file:
             choices_start = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]

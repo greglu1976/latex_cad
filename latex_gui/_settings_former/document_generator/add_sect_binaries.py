@@ -1,6 +1,6 @@
 # Добавляет в конец документа раздел с дискретными вх/вых
 
-from tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins, add_table_leds, add_table_fks
+from .tables import add_table_settings, add_table_reg, add_table_mtrx_outs, add_table_mtrx_ins, add_table_leds, add_table_fks
 
 def add_sect_binaries(doc, name_sect, type):
 

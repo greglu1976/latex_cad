@@ -106,7 +106,7 @@ def process_xlsx_files_binaries(path_to_hw_gen, path_to_hw_ied):
     # Теперь в списках modules_inputs и modules_outputs образцы плат по типам
     # Нужно присвоить номер слота и собрать общий модуль
 
-    print(plates)
+    #print(plates)
     input_modules_real = []
     output_modules_real = []
     for plate in plates:
@@ -120,8 +120,8 @@ def process_xlsx_files_binaries(path_to_hw_gen, path_to_hw_ied):
                 module_to_add = copy.deepcopy(module_output)
                 module_to_add.set_slot(plate[0])
                 output_modules_real.append(module_to_add)
-    print(len(input_modules_real))
-    print(len(output_modules_real))
+    #print(len(input_modules_real))
+    #print(len(output_modules_real))
 
     # собрали платы , теперь можно формировать устройство
     input_modules = BinModules('Inputs')

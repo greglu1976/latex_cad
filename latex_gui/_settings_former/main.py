@@ -1,6 +1,43 @@
+import json
 
-from data_processor.main import start_process
+from pathlib import Path
 
-name = 'general.tex'
-signals, inputs, controls, settings, input_modules, output_modules = start_process(name)
+from .data_processor.main import start_process
+from .document_generator.test_table import starter_test_table
+from .document_generator.test_models import starter_test_models
 
+def start_all_settings(path_to_general):
+    file_name = path_to_general + "/general.tex"
+    #print(path_to_general)
+    signals, inputs, controls, settings, input_modules, output_modules = start_process(file_name)
+
+    # Определяем абсолютный путь к папке description
+    current_path = Path(__file__).resolve().parent
+    descriptions_path = current_path / "descriptions"
+    #descriptions_path = current_path / 'descriptions'
+
+    with open(descriptions_path / 'signals.json', 'w', encoding='utf-8') as json_file:
+        json.dump(signals, json_file, ensure_ascii=False, indent=4)
+    with open(descriptions_path / 'inputs.json', 'w', encoding='utf-8') as json_file:
+        json.dump(inputs, json_file, ensure_ascii=False, indent=4)
+    with open(descriptions_path / 'controls.json', 'w', encoding='utf-8') as json_file:
+        json.dump(controls, json_file, ensure_ascii=False, indent=4)
+    with open(descriptions_path / 'settings.json', 'w', encoding='utf-8') as json_file:
+        json.dump(settings, json_file, ensure_ascii=False, indent=4)
+    with open(descriptions_path / 'bin_inputs.json', 'w', encoding='utf-8') as json_file:
+        json.dump(input_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
+    with open(descriptions_path / 'bin_outputs.json', 'w', encoding='utf-8') as json_file:
+        json.dump(output_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
+
+    templates_path = current_path / 'templates'
+    doc_path = templates_path / 'origin.docx'
+    doc_path2 = templates_path / 'templ2.docx'
+
+    starter_test_table(doc_path, doc_path2)
+    #inp = input('>>>>>>>>STOP')
+    starter_test_models(doc_path2)
+    return 'ok'
+
+if __name__=='__main__':
+    name = 'general.tex'
+    start_all_settings(name)

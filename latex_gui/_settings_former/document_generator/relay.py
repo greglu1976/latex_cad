@@ -18,10 +18,10 @@ general_data = {
     'terminal_name': 'ЮНИТ-М300-ДЗТ2'
 }
 
-def create_relay():
-    if os.path.exists('settings.json'):
+def create_relay(descriptions_path):
+    if os.path.exists(descriptions_path / 'settings.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('settings.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'settings.json', 'r', encoding='utf-8') as json_file:
             bin_inputs = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -29,22 +29,22 @@ def create_relay():
     return bin_inputs    
 
 
-def create_binary():
+def create_binary(descriptions_path):
         # Проверка существования файла bin_inputs.json
-    if os.path.exists('bin_inputs.json'):
+    if os.path.exists(descriptions_path / 'bin_inputs.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('bin_inputs.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'bin_inputs.json', 'r', encoding='utf-8') as json_file:
             bin_inputs = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
         bin_inputs = ['Не определен файл',]
     return bin_inputs
 
-def create_binary_outs():
+def create_binary_outs(descriptions_path):
         # Проверка существования файла bin_outputs.json
-    if os.path.exists('bin_outputs.json'):
+    if os.path.exists(descriptions_path / 'bin_outputs.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('bin_outputs.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'bin_outputs.json', 'r', encoding='utf-8') as json_file:
             bin_outputs = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -114,11 +114,11 @@ def create_fks():
     bin_inputs = bin_modules.to_dict()
     return bin_inputs
 
-def create_reg():
+def create_reg(descriptions_path):
         # Проверка существования файла inputs.json
-    if os.path.exists('signals.json'):
+    if os.path.exists(descriptions_path / 'signals.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open('signals.json', 'r', encoding='utf-8') as json_file:
+        with open(descriptions_path / 'signals.json', 'r', encoding='utf-8') as json_file:
             signals = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -138,14 +138,14 @@ def create_reg():
     #print(properties)
 
     input1 = BinInput(properties, 'Сигналы для регистрации')
-    #input2 = BinInput(properties, 'Сигналы ФСУ')
+    input2 = BinInput(properties, 'Сигналы ФСУ')
 
     # Создаем функциональный блок  и добавляем входы(функции)
     module = BinModule(inserted_in_slot='-', type='Максимальная токовая защита (МТЗ)')
     module.add_input(input1)
-    #module.add_input(input2)
+    module.add_input(input2)
 
     # Получаем словарь для использования в шаблоне Jinja
-    module_dict = module.to_dict()
+    signals = module.to_dict()
 
-    return module_dict
+    return signals

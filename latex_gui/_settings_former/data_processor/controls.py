@@ -16,7 +16,7 @@ def process_xlsx_files_controls(file_paths):
 
         # Проверка наличия файлов
         if not xlsx_files:
-            print("В папке нет подходящих файлов.")
+            #print("В папке нет подходящих файлов.")
             continue
 
         # Датафрейм для объединения листов Signals
@@ -85,4 +85,4 @@ def make_list_controls(df):
 if __name__ == '__main__':
     file_paths = [r'H:\www\latex_cad\set_former\01. Разработка ФБ\01. ЛО ГЗ Т откл\_xlsx\funcs', r'H:\www\latex_cad\set_former\01. Разработка ФБ\17. ДЗТ 35\_xlsx\funcs',]
     df = process_xlsx_files_controls(file_paths)
-    print(df)
+    #print(df)

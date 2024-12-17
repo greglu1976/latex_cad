@@ -23,7 +23,7 @@ def process_xlsx_files_settings(file_paths):
 
         # Проверка наличия файлов
         if not xlsx_files:
-            print("В папке нет подходящих файлов.")
+            #print("В папке нет подходящих файлов.")
             continue
 
         # Датафрейм для объединения листов Signals
@@ -86,7 +86,7 @@ def process_xlsx_files_settings(file_paths):
         # Объединяем данные из текущей папки с общим датафреймом
         total_signals_df = pd.concat([total_signals_df, filtered_df], ignore_index=True)
     sorted_df =  total_signals_df.sort_values(by=['WeightFB', 'WeightFunc'], ascending=[True, True])   
-    print(sorted_df)
+    #print(sorted_df)
     return sorted_df
 
 

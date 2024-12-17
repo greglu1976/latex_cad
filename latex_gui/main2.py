@@ -27,6 +27,7 @@ from _get_abbrs.main import start_abbr
 from _renew_tables.main import start_renew_tables
 from _blanc_maker.main import start_renew_tables_blanc
 from _renew_sum_table.main import start_renew_sum_table
+from _settings_former.main import start_all_settings
 
 from add_scripts import rebuild, tex_opener, pdf_opener
 
@@ -156,7 +157,7 @@ class BackMeUp(ttk.Frame):
         _func = lambda: _renew_tables(self.getvar('folder-path'))
         add_btn = ttk.Button(
             master=bus_frm, 
-            text='Обновить таблицы (РЭ)', 
+            text='Обновить таблицы с уставками в тексте РЭ', 
             image='renew-tables', 
             compound=LEFT,
             command=_func, 
@@ -180,14 +181,25 @@ class BackMeUp(ttk.Frame):
         _func = lambda: _renew_tables_blanc(self.getvar('folder-path'))
         add_btn = ttk.Button(
             master=bus_frm, 
-            text='Обновить таблицы (бланк уставок)', 
+            text='Обновить таблицы (бланк уставок) для LaTeX PDF', 
             image='renew-tables', 
             compound=LEFT,
             command=_func, 
             bootstyle=LINK
         )
         add_btn.grid(row=7, column=0, columnspan=2, sticky=W)
-
+#===================================================================================================================
+        ## add docx settings generation button
+        _func = lambda: _generate_settings_docx(self.getvar('folder-path'))
+        add_btn = ttk.Button(
+            master=bus_frm, 
+            text='Генерация бланка уставок DOCX', 
+            image='renew-tables', 
+            compound=LEFT,
+            command=_func, 
+            bootstyle=LINK
+        )
+        add_btn.grid(row=8, column=0, columnspan=2, sticky=W)
 
         ## properties button
         _func = lambda: Messagebox.ok(message='Changing properties')
@@ -199,7 +211,7 @@ class BackMeUp(ttk.Frame):
             command=_func, 
             bootstyle=LINK
         )
-        run_newB_btn.grid(row=8, column=0, columnspan=2, sticky=W)
+        run_newB_btn.grid(row=9, column=0, columnspan=2, sticky=W)
 
 
         ## properties button
@@ -212,7 +224,7 @@ class BackMeUp(ttk.Frame):
             command=_func, 
             bootstyle=LINK
         )
-        open_pdf_btn.grid(row=9, column=0, columnspan=2, sticky=W)
+        open_pdf_btn.grid(row=10, column=0, columnspan=2, sticky=W)
 
         ## properties button
         _func = lambda: open_tex(self.getvar('folder-path'))
@@ -224,7 +236,7 @@ class BackMeUp(ttk.Frame):
             command=_func, 
             bootstyle=LINK
         )
-        open_pdf_btn.grid(row=10, column=0, columnspan=2, sticky=W)
+        open_pdf_btn.grid(row=11, column=0, columnspan=2, sticky=W)
 
 
 
@@ -335,6 +347,31 @@ class BackMeUp(ttk.Frame):
                 Messagebox.show_info(message='Успешное обновление таблиц бланка уставок', title="Информация")
                 return                         
 ################################## КОНЕЦ ОБНОВЛЯЕМ ТАБЛИЦЫ БУ ##############################################
+
+################################## ГЕНЕРАЦИЯ БЛАНКА УСТАВОК ##############################################
+        def _generate_settings_docx(filepath):
+            """Open dialogue to get filename and update variable"""
+            if filepath == '':
+                Messagebox.show_error(message='Выберите рабочую папку проекта бланка уставок (где файл general.tex)', title="Ошибка")
+                return            
+            if not os.path.isfile(filepath+'/general.tex'):
+                Messagebox.show_error(message='В указанной папке нет файла general.tex', title="Ошибка")
+                return
+                    # Получаем текущий полный путь
+            result = start_all_settings(filepath)
+            if result == 'noblancdoc':
+                Messagebox.show_error(message='В файле general.tex нет строки определения пути для РЭ', title="Ошибка")
+                return
+            if result == 'nofile':
+                Messagebox.show_error(message='Файл не найден в текущем каталоге', title="Ошибка")
+                return                              
+            if result=='ok':
+                Messagebox.show_info(message='Успешная генерация бланка уставок в формате DOCX', title="Информация")
+                return                         
+################################## КОНЕЦ ГЕНЕРАЦИЯ БЛАНКА УСТАВОК ##############################################
+
+
+
 
 ################################## НАЧАЛО ОБНОВЛЯЕМ СУММАРНУЮ ТАБЛИЦУ ##############################################
         def _renew_sum_table(filepath):
@@ -493,7 +530,7 @@ class CollapsingFrame(ttk.Frame):
 if __name__ == '__main__':
 
 
-    app = ttk.Window("GUI Latex v0.524 04.12.24")
+    app = ttk.Window("GUI Latex v0.6 17.12.24")
     #app.iconbitmap(os.path.join(PATH, 'icon.ico')) # для убунты не нужна эта строка
     BackMeUp(app)
     app.mainloop()

@@ -20,7 +20,7 @@ def process_xlsx_files(file_paths):
 
         # Проверка наличия файлов
         if not xlsx_files:
-            print("В папке нет подходящих файлов.")
+            #print("В папке нет подходящих файлов.")
             continue
 
         # Датафрейм для объединения листов Signals

@@ -15,8 +15,8 @@ def start_process(path_to_general):
         content = file.read()
     xlsx_folders, path_to_hw_ied, path_to_hw_gen = extract_paths(content)
 
-    print('>>>', path_to_hw_ied)
-    print('>>>', path_to_hw_gen)
+    #print('>>>', path_to_hw_ied)
+    #print('>>>', path_to_hw_gen)
 
     # обрабатываем папки с xlsx
     df = process_xlsx_files(xlsx_folders) # получаем суммарный датафрейм со список сигналов status, которые BOOL
