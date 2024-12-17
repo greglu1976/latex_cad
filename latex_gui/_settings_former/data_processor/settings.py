@@ -5,8 +5,8 @@ import json
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
-from models.BinInput import BinInput
-from models.BinModule import BinModule, BinModules
+from ..models.BinInput import BinInput
+from ..models.BinModule import BinModule, BinModules
 
 # Список исключений (файлы, которые не нужно обрабатывать)
 exclude_files = ['control.xlsx', 'inputs.xlsx']

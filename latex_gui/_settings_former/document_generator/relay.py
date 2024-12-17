@@ -2,26 +2,35 @@
 #            !!! ДЛЯ ТЕСТИРОВАНИЯ !!!
 
 import os, json, sys
-from pathlib import Path
+
+import pandas as pd
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.dirname(SCRIPT_DIR))
 
-from models.BinInput import BinInput
-from models.BinModule import BinModule, BinModules
+from ..models.BinInput import BinInput
+from ..models.BinModule import BinModule, BinModules
 
-general_data = {
-    'title_name_1': 'МИКРОПРОЦЕССОРНОЕ УСТРОЙСТВО',
-    'title_name_2': 'ЗАЩИТЫ И АВТОМАТИКИ ТРАНСФОРМАТОРА',
-    'title_name_3': '«ЮНИТ-М300-ДЗТ2»',
-    'code': 'ЮТКБ.656122.609 БУ6',
-    'terminal_name': 'ЮНИТ-М300-ДЗТ2'
-}
+def get_general_data(path_to_hw_ied):
+    xls = pd.ExcelFile(path_to_hw_ied / 'description.xlsx')
+    info_sheet = pd.read_excel(xls, sheet_name='Инфо')
+    # Устанавливаем столбец 'Ключ' в качестве индекса
+    info_sheet.set_index('Ключ', inplace=True)
+    # Преобразуем DataFrame в словарь, где ключ — это 'Ключ', а значение — 'Значение'
+    info_dict = info_sheet['Значение'].to_dict()
 
-def create_relay(descriptions_path):
-    if os.path.exists(descriptions_path / 'settings.json'):
+    ver_sheet = pd.read_excel(xls, sheet_name='Версии')
+    # Преобразуем столбец с датами в нужный формат
+    ver_sheet['Дата'] = ver_sheet['Дата'].dt.strftime('%d.%m.%y')
+    ver_sheet.set_index('Номер', inplace=True)
+    info_dict_ver = ver_sheet['Дата'].to_dict()
+    print(info_dict_ver)
+    return info_dict, info_dict_ver
+
+def create_relay():
+    if os.path.exists('settings.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open(descriptions_path / 'settings.json', 'r', encoding='utf-8') as json_file:
+        with open('settings.json', 'r', encoding='utf-8') as json_file:
             bin_inputs = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -29,22 +38,22 @@ def create_relay(descriptions_path):
     return bin_inputs    
 
 
-def create_binary(descriptions_path):
+def create_binary():
         # Проверка существования файла bin_inputs.json
-    if os.path.exists(descriptions_path / 'bin_inputs.json'):
+    if os.path.exists('bin_inputs.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open(descriptions_path / 'bin_inputs.json', 'r', encoding='utf-8') as json_file:
+        with open('bin_inputs.json', 'r', encoding='utf-8') as json_file:
             bin_inputs = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
         bin_inputs = ['Не определен файл',]
     return bin_inputs
 
-def create_binary_outs(descriptions_path):
+def create_binary_outs():
         # Проверка существования файла bin_outputs.json
-    if os.path.exists(descriptions_path / 'bin_outputs.json'):
+    if os.path.exists('bin_outputs.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open(descriptions_path / 'bin_outputs.json', 'r', encoding='utf-8') as json_file:
+        with open('bin_outputs.json', 'r', encoding='utf-8') as json_file:
             bin_outputs = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]
@@ -114,11 +123,11 @@ def create_fks():
     bin_inputs = bin_modules.to_dict()
     return bin_inputs
 
-def create_reg(descriptions_path):
+def create_reg():
         # Проверка существования файла inputs.json
-    if os.path.exists(descriptions_path / 'signals.json'):
+    if os.path.exists('signals.json'):
         # Если файл существует, загружаем его содержимое в список
-        with open(descriptions_path / 'signals.json', 'r', encoding='utf-8') as json_file:
+        with open('signals.json', 'r', encoding='utf-8') as json_file:
             signals = json.load(json_file)
     else:
         # Если файл не существует, инициализируем список значением ['Не определен файл',]

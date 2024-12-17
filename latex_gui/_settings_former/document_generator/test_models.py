@@ -2,22 +2,23 @@
 
 from docxtpl import DocxTemplate
 
-from .relay import create_relay, create_binary, general_data, create_binary_outs, create_leds, create_fks, create_reg
+from .relay import create_relay, create_binary, create_binary_outs, create_leds, create_fks, create_reg, get_general_data
 
 from pathlib import Path
 
-def starter_test_models(doc_path):
+def starter_test_models(path_to_hw_ied):
 
-    root = Path(__file__).resolve().parents[1]
-    descriptions_path = root / "descriptions"
-
-    doc = DocxTemplate(doc_path)
-    print('doc_path===', descriptions_path)
+    #root = Path(__file__).resolve().parents[1]
+    #descriptions_path = root / "descriptions"
+    general_data, versions = get_general_data(path_to_hw_ied)
+    #doc = DocxTemplate(doc_path)
+    doc = DocxTemplate('templ2.docx')
+    #print('doc_path===', descriptions_path)
     # забираем словарь РЗА
-    rza_funcs = create_relay(descriptions_path)
-    bin_inputs = create_binary(descriptions_path)
-    regs = create_reg(descriptions_path)
-    outs = create_binary_outs(descriptions_path)
+    rza_funcs = create_relay()
+    bin_inputs = create_binary()
+    regs = create_reg()
+    outs = create_binary_outs()
     leds = create_leds()
     fks = create_fks()
 
@@ -34,6 +35,7 @@ def starter_test_models(doc_path):
 
     # Заполнение шаблона данными
     context = {
+        "versions": versions,
         "general_data": general_data,
         "bin_inputs": bin_inputs,
         "bin_outputs": outs,

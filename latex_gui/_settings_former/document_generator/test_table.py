@@ -7,10 +7,10 @@ from .add_sect_binaries import add_sect_binaries, add_sect_reg, add_sect_mtrx_ou
 from .docx_handler import add_new_section, add_new_section_landscape
 
 from pathlib import Path
-def starter_test_table(doc_path, doc_path2):
+def starter_test_table():
 
-    doc = Document(doc_path)
-
+    #doc = Document(doc_path)
+    doc = Document('origin.docx')
     # Добавляем подразделы с дискр вх/вых в существующий раздел Конфигурация
     add_sect_binaries(doc, 'Модули дискретных входов', 'bin_input')
     add_sect_binaries(doc, 'Модули дискретных выходов', 'bin_output')
@@ -60,4 +60,5 @@ def starter_test_table(doc_path, doc_path2):
     add_sect_fks(doc)
 
     #doc_path2 = templates_path / 'templ2.docx'
-    doc.save(doc_path2)
+    #doc.save(doc_path2)
+    doc.save('templ2.docx')
