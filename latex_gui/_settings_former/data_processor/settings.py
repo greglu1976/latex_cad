@@ -85,17 +85,22 @@ def process_xlsx_files_settings(file_paths):
 
         # Объединяем данные из текущей папки с общим датафреймом
         total_signals_df = pd.concat([total_signals_df, filtered_df], ignore_index=True)
-    sorted_df =  total_signals_df.sort_values(by=['WeightFB', 'WeightFunc'], ascending=[True, True])   
+    #sorted_df =  total_signals_df.sort_values(by=['WeightFB', 'WeightFunc'], ascending=[True, True])   
     #print(sorted_df)
-    return sorted_df
+    #sorted_df.to_excel('sorted_df.xlsx', index=False, engine='openpyxl')
+    return total_signals_df
 
 
 def make_list_settings(df):
     # Разбиение датафрейма на список датафреймов по полю RussianNameFB
     grouped_dfs = [group for _, group in df.groupby('RussianNameFB')] # Разбиваем по ФБ
+    # Отсортировать список grouped_dfs по первой ячейке столбца WeightFB
+    grouped_dfs = sorted(grouped_dfs, key=lambda df: df['WeightFB'].iloc[0])
     modules = BinModules('РЗА')
     for i, group_df in enumerate(grouped_dfs):
         grouped_df = [group for _, group in group_df.groupby('NodeName (рус)')]
+        # Отсортировать список grouped_df по первой ячейке столбца WeightFunc
+        grouped_df = sorted(grouped_df, key=lambda df: df['WeightFunc'].iloc[0])
         #print(grouped_df)
         module = BinModule(inserted_in_slot='-', type=group_df.iloc[0]['descriptionFB'] +' (' + group_df.iloc[0]['RussianNameFB'] + ')')
         for j, func_df in enumerate(grouped_df):
