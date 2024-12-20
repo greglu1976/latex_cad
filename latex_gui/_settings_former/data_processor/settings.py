@@ -134,12 +134,29 @@ def make_list_settings(df):
                 desc_temp = row[3]
                 desc_temp = desc_temp.replace("<<", "'")
                 desc_temp = desc_temp.replace(">>", "'")                
+                
+                value_range = low_val + '...' + high_val
+                name_in_fsu = row[5]
+                if 'SGF' in name_in_fsu:
+                    result = {}
+                    print('====sfg>',row[6].split(',') )
+                    for pair in row[6].split(','):
+                        print('====pair>', pair)
+                        key, value = pair.split('-', 1)
+                        result[key.strip()] = value.strip()
+                    default_temp = result.get(default_temp) # выставляем значение по умолчанию
+                    # Сбор строки
+                    value_range = "\n".join(f"{key} = {value}" for key, value in result.items())
+
+
+
+
 
                 properties[f'Signal_N{index+1}'] = {  # Добавляем новый ключ в словарь
                     'description': desc_temp,  # 
                     'name_in_software': row[4],  # 
-                    'name_in_fsu': row[5],  # 
-                    'value_range': low_val + '...' + high_val,  # 
+                    'name_in_fsu': name_in_fsu,  # 
+                    'value_range': value_range,  # 
                     'unit': unit_temp,  # 
                     'step': step_temp,  #                        
                     'default_value': default_temp,  # 
