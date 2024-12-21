@@ -139,13 +139,28 @@ def make_list_settings(df):
                 name_in_fsu = row[5]
                 if 'SGF' in name_in_fsu:
                     result = {}
-                    print('====sfg>',row[6].split(',') )
-                    for pair in row[6].split(','):
-                        print('====pair>', pair)
-                        key, value = pair.split('-', 1)
-                        result[key.strip()] = value.strip()
-                    default_temp = result.get(default_temp) # выставляем значение по умолчанию
-                    # Сбор строки
+                    # Разбиваем строку по шаблону "цифра - значение"
+                    input_str = row[6]
+                    pairs = []
+                    current_pair = ''
+                    
+                    # Разбираем строку с учетом возможных запятых в значениях
+                    for i, char in enumerate(input_str):
+                        current_pair += char
+                        if char == ',' and any(next_char.isdigit() for next_char in input_str[i+1:i+3]):
+                            pairs.append(current_pair.rstrip(',').strip())
+                            current_pair = ''
+                    if current_pair:
+                        pairs.append(current_pair.strip())
+
+                    print('====pairs>', pairs)
+
+                    for pair in pairs:
+                        if '-' in pair:
+                            key, value = pair.split('-', 1)
+                            result[key.strip()] = value.strip()
+
+                    default_temp = result.get(default_temp)  # выставляем значение по умолчанию
                     value_range = "\n".join(f"{key} = {value}" for key, value in result.items())
 
 
