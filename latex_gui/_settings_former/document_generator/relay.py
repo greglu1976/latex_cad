@@ -60,8 +60,70 @@ def create_binary_outs():
         bin_outputs = ['Не определен файл',]
     return bin_outputs
 
-# создаем светодиоды
+def create_reg():
+        # Проверка существования файла inputs.json
+    if os.path.exists('signals.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('signals.json', 'r', encoding='utf-8') as json_file:
+            signals = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        signals = ['Не определен файл',]
+
+    # Создаем словарь properties в цикле
+    properties = {}
+    for index, signal in enumerate(signals):
+        properties[f'Signal_N{index+1}'] = {  # Добавляем новый ключ в словарь
+            'name': signal,  # Используем текущий элемент списка signals
+            'fsu': '-',
+            'log': '-',
+            'oscill_start': '-',
+            'oscill_reg': '-'
+        }
+
+    #print(properties)
+
+    input1 = BinInput(properties, 'Сигналы для регистрации')
+    #input2 = BinInput(properties, 'Сигналы ФСУ')
+
+    # Создаем функциональный блок  и добавляем входы(функции)
+    module = BinModule(inserted_in_slot='-', type='Максимальная токовая защита (МТЗ)')
+    module.add_input(input1)
+    #module.add_input(input2)
+
+    # Получаем словарь для использования в шаблоне Jinja
+    signals = module.to_dict()
+
+    return signals
+
 def create_leds():
+        # Проверка существования файла bin_outputs.json
+    if os.path.exists('leds.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('leds.json', 'r', encoding='utf-8') as json_file:
+            bin_outputs = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        bin_outputs = ['Не определен файл',]
+
+    return bin_outputs
+
+def create_fks():
+        # Проверка существования файла bin_outputs.json
+    if os.path.exists('fks.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('fks.json', 'r', encoding='utf-8') as json_file:
+            bin_outputs = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        bin_outputs = ['Не определен файл',]
+
+    return bin_outputs
+
+
+#########################################################################################################
+# создаем светодиоды
+def create_leds_old():
     properties = {
         'Data': {},
     }
@@ -92,7 +154,7 @@ def create_leds():
     return bin_inputs
 
 # создаем функциональные клавиши
-def create_fks():
+def create_fks_old():
     properties = {
         'Data': {},
     }
@@ -122,39 +184,3 @@ def create_fks():
     # Получаем словарь для использования в шаблоне Jinja
     bin_inputs = bin_modules.to_dict()
     return bin_inputs
-
-def create_reg():
-        # Проверка существования файла inputs.json
-    if os.path.exists('signals.json'):
-        # Если файл существует, загружаем его содержимое в список
-        with open('signals.json', 'r', encoding='utf-8') as json_file:
-            signals = json.load(json_file)
-    else:
-        # Если файл не существует, инициализируем список значением ['Не определен файл',]
-        signals = ['Не определен файл',]
-
-    # Создаем словарь properties в цикле
-    properties = {}
-    for index, signal in enumerate(signals):
-        properties[f'Signal_N{index+1}'] = {  # Добавляем новый ключ в словарь
-            'name': signal,  # Используем текущий элемент списка signals
-            'fsu': '-',
-            'log': '-',
-            'oscill_start': '-',
-            'oscill_reg': '-'
-        }
-
-    #print(properties)
-
-    input1 = BinInput(properties, 'Сигналы для регистрации')
-    input2 = BinInput(properties, 'Сигналы ФСУ')
-
-    # Создаем функциональный блок  и добавляем входы(функции)
-    module = BinModule(inserted_in_slot='-', type='Максимальная токовая защита (МТЗ)')
-    module.add_input(input1)
-    module.add_input(input2)
-
-    # Получаем словарь для использования в шаблоне Jinja
-    signals = module.to_dict()
-
-    return signals

@@ -179,6 +179,14 @@ def add_table_settings(doc, unique_key): # новая таблица исход�
         for idx, width in enumerate(table_settings):
             row.cells[idx].width = width
     #add_row_table_reports(table, ('','','','','','')) # добавляем пустую строчку, чтобы двойное подчеркивание сохранить
+
+        # Устанавливаем высоту шрифта (11 пунктов) для всех ячеек таблицы
+    for row in table.rows:
+        for cell in row.cells:
+            for paragraph in cell.paragraphs:
+                for run in paragraph.runs:
+                    run.font.size = Pt(11)  # Устанавливаем размер шрифта 12 пунктов
+
     return table
 
 ####################################################################################
@@ -282,6 +290,14 @@ def add_table_reg(doc): # новая таблица исходящих отче�
         for idx, width in enumerate(table_reg):
             row.cells[idx].width = width
     #add_row_table_reports(table, ('','','','','','')) # добавляем пустую строчку, чтобы двойное подчеркивание сохранить
+
+            # Устанавливаем высоту шрифта (11 пунктов) для всех ячеек таблицы
+    for row in table.rows:
+        for cell in row.cells:
+            for paragraph in cell.paragraphs:
+                for run in paragraph.runs:
+                    run.font.size = Pt(11)  # Устанавливаем размер шрифта 12 пунктов
+
     return table    
 
 ####################################################################################

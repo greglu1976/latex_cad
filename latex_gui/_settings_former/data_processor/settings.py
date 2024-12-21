@@ -138,9 +138,9 @@ def make_list_settings(df):
                 value_range = low_val + '...' + high_val
                 name_in_fsu = row[5]
                 if 'SGF' in name_in_fsu:
+                    step_temp = '-' # сразу уберем шаг из таблицы - заменим его на тире
                     result = {}
-                    # Разбиваем строку по шаблону "цифра - значение"
-                    input_str = row[6]
+                    input_str = row[6].replace('\n', '')
                     pairs = []
                     current_pair = ''
                     
@@ -153,7 +153,7 @@ def make_list_settings(df):
                     if current_pair:
                         pairs.append(current_pair.strip())
 
-                    print('====pairs>', pairs)
+                    #print('====pairs>', pairs)
 
                     for pair in pairs:
                         if '-' in pair:
@@ -162,10 +162,6 @@ def make_list_settings(df):
 
                     default_temp = result.get(default_temp)  # выставляем значение по умолчанию
                     value_range = "\n".join(f"{key} = {value}" for key, value in result.items())
-
-
-
-
 
                 properties[f'Signal_N{index+1}'] = {  # Добавляем новый ключ в словарь
                     'description': desc_temp,  # 

@@ -6,7 +6,7 @@ from .signals import process_xlsx_files, make_list
 from .inputs import process_xlsx_files_inputs, make_list_inputs
 from .controls import process_xlsx_files_controls, make_list_controls
 from .settings import process_xlsx_files_settings, make_list_settings
-from .get_inputs import process_xlsx_files_binaries
+from .get_inputs import process_xlsx_files_binaries, process_xlsx_files_fks_leds
 
 # Укажите путь к файлу general.tex
 #path_to_fbs = r'H:\www\latex_cad\set_former\01. Разработка ФБ'
@@ -55,4 +55,7 @@ def start_process(path_to_general):
         
     #with open('bin_outputs.json', 'w', encoding='utf-8') as json_file:
         #json.dump(output_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
-    return signals, inputs, controls, settings, input_modules, output_modules, path_to_hw_ied
+
+    led_modules, fk_modules = process_xlsx_files_fks_leds(path_to_hw_gen, path_to_hw_ied)
+
+    return signals, inputs, controls, settings, input_modules, output_modules, path_to_hw_ied, led_modules, fk_modules
