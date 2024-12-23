@@ -2,7 +2,7 @@ import json
 
 from .get_xls_paths import extract_paths
 
-from .signals import process_xlsx_files, make_list
+from .signals import process_xlsx_files, make_list, make_dict_reg
 from .inputs import process_xlsx_files_inputs, make_list_inputs
 from .controls import process_xlsx_files_controls, make_list_controls
 from .settings import process_xlsx_files_settings, make_list_settings
@@ -25,6 +25,9 @@ def start_process(path_to_general):
     # Сохранение result_list в JSON-файл
     #with open('signals.json', 'w', encoding='utf-8') as json_file:
         #json.dump(signals, json_file, ensure_ascii=False, indent=4)
+
+    reg_signals = make_dict_reg(df)
+
 
     df_inputs = process_xlsx_files_inputs(xlsx_folders)
     inputs = make_list_inputs(df_inputs)
@@ -58,4 +61,4 @@ def start_process(path_to_general):
 
     led_modules, fk_modules = process_xlsx_files_fks_leds(path_to_hw_gen, path_to_hw_ied)
 
-    return signals, inputs, controls, settings, input_modules, output_modules, path_to_hw_ied, led_modules, fk_modules
+    return signals, inputs, controls, settings, input_modules, output_modules, path_to_hw_ied, led_modules, fk_modules, reg_signals

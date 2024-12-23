@@ -2,7 +2,7 @@
 
 from docxtpl import DocxTemplate
 
-from .relay import create_relay, create_binary, create_binary_outs, create_leds, create_fks, create_reg, get_general_data
+from .relay import create_relay, create_binary, create_binary_outs, create_leds, create_fks, create_reg, get_general_data, create_reg_new
 
 from pathlib import Path
 
@@ -17,7 +17,7 @@ def starter_test_models(path_to_hw_ied):
     # забираем словарь РЗА
     rza_funcs = create_relay()
     bin_inputs = create_binary()
-    regs = create_reg()
+    regs = create_reg_new()
     outs = create_binary_outs()
     leds = create_leds()
     fks = create_fks()

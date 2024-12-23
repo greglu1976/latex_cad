@@ -9,7 +9,7 @@ from .document_generator.test_models import starter_test_models
 def start_all_settings(path_to_general):
     file_name = path_to_general + "/general.tex"
     #print(path_to_general)
-    signals, inputs, controls, settings, input_modules, output_modules, path_to_hw_ied, led_modules, fk_modules = start_process(file_name)
+    signals, inputs, controls, settings, input_modules, output_modules, path_to_hw_ied, led_modules, fk_modules, reg_signals = start_process(file_name)
 
     # Определяем абсолютный путь к папке description
     #current_path = Path(__file__).resolve().parent
@@ -32,6 +32,8 @@ def start_all_settings(path_to_general):
         json.dump(led_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
     with open('fks.json', 'w', encoding='utf-8') as json_file:
         json.dump(fk_modules.to_dict(), json_file, ensure_ascii=False, indent=4)
+    with open('reg_signals.json', 'w', encoding='utf-8') as json_file:
+        json.dump(reg_signals, json_file, ensure_ascii=False, indent=4)
     #templates_path = current_path / 'templates'
     #doc_path = templates_path / 'origin.docx'
     #doc_path2 = templates_path / 'templ2.docx'
@@ -46,7 +48,9 @@ def start_all_settings(path_to_general):
     os.remove('bin_inputs.json')
     os.remove('bin_outputs.json')
     os.remove('leds.json')
-    os.remove('fks.json')    
+    os.remove('fks.json') 
+    os.remove('reg_signals.json')
+     
     return 'ok'
 
 if __name__=='__main__':

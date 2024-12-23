@@ -1,0 +1,3404 @@
+[
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "БВКЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание БВКЗ",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "БВКЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание БВКЗ по фазе А",
+        "ShortDescription": "Срабатывание ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "БВКЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание БВКЗ по фазе В",
+        "ShortDescription": "Срабатывание ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "БВКЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание БВКЗ по фазе С",
+        "ShortDescription": "Срабатывание ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д2Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д2Г",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д2Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д2Г по фазе A",
+        "ShortDescription": "Пуск ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д2Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д2Г по фазе В",
+        "ShortDescription": "Пуск ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д2Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д2Г по фазе С",
+        "ShortDescription": "Пуск ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д5Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д5Г",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д5Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д5Г по фазе A",
+        "ShortDescription": "Пуск ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д5Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д5Г по фазе В",
+        "ShortDescription": "Пуск ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "Д5Г",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск Д5Г по фазе С",
+        "ShortDescription": "Пуск ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ДТО по фазе A",
+        "ShortDescription": "Пуск ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ДТО по фазе В",
+        "ShortDescription": "Пуск ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ДТО по фазе С",
+        "ShortDescription": "Пуск ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт по фазе A",
+        "ShortDescription": "Срабатывание ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт по фазе В",
+        "ShortDescription": "Срабатывание ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт по фазе С",
+        "ShortDescription": "Срабатывание ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт по фазе A на сигнал",
+        "ShortDescription": "Сраб. ф.А сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт по фазе В на сигнал",
+        "ShortDescription": "Сраб. ф.В сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТЗт по фазе С на сигнал",
+        "ShortDescription": "Сраб. ф.С сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТЗт",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ДТО по фазе A",
+        "ShortDescription": "Пуск ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ДТО по фазе В",
+        "ShortDescription": "Пуск ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ДТО по фазе С",
+        "ShortDescription": "Пуск ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО по фазе A",
+        "ShortDescription": "Срабатывание ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО по фазе В",
+        "ShortDescription": "Срабатывание ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО по фазе С",
+        "ShortDescription": "Срабатывание ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО по фазе A на сигнал",
+        "ShortDescription": "Сраб. ф.А сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО по фазе В на сигнал",
+        "ShortDescription": "Сраб. ф.В сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДТО по фазе С на сигнал",
+        "ShortDescription": "Сраб. ф.С сигн"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "ДТО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "КЦТнеб",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "КЦТнеб",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание фазы А",
+        "ShortDescription": "Срабатывание ф.А"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "КЦТнеб",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание фазы В",
+        "ShortDescription": "Срабатывание ф.В"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "КЦТнеб",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание фазы С",
+        "ShortDescription": "Срабатывание ф.С"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "КЦТнеб",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ДЗТ",
+        "NodeName (рус)": "КЦТнеб",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на отключение",
+        "ShortDescription": "Сраб. на откл"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ИО максимального тока",
+        "ShortDescription": "ИО Iмакс"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на отключение",
+        "ShortDescription": "Сраб. на откл"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ИО максимального тока",
+        "ShortDescription": "ИО Iмакс"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на отключение",
+        "ShortDescription": "Сраб. на откл"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ИО максимального тока",
+        "ShortDescription": "ИО Iмакс"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЗП",
+        "NodeName (рус)": "ЗП НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на отключение",
+        "ShortDescription": "Сраб. на откл"
+    },
+    {
+        "RussianNameFB": "ЗПО",
+        "NodeName (рус)": "ЗПО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЗПО",
+        "NodeName (рус)": "ЗПО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЗПО",
+        "NodeName (рус)": "ЗПО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ЗПО",
+        "NodeName (рус)": "ЗПО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ЗПО",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЗПО",
+        "NodeName (рус)": "ЗПО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ЗПО на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание при асимметрии",
+        "ShortDescription": "Сраб. асимметрия"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск при асимметрии",
+        "ShortDescription": "Пуск асимметрия"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск при обрыве провода",
+        "ShortDescription": "Пуск обрыв"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание при обрыве провода",
+        "ShortDescription": "Срабатывание обрыв"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание при асимметрии",
+        "ShortDescription": "Сраб. асимметрия"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск при асимметрии",
+        "ShortDescription": "Пуск асимметрия"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск при обрыве провода",
+        "ShortDescription": "Пуск обрыв"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание при обрыве провода",
+        "ShortDescription": "Срабатывание обрыв"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание при асимметрии",
+        "ShortDescription": "Сраб. асимметрия"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск при асимметрии",
+        "ShortDescription": "Пуск асимметрия"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск при обрыве провода",
+        "ShortDescription": "Пуск обрыв"
+    },
+    {
+        "RussianNameFB": "КЦТ",
+        "NodeName (рус)": "КЦТст3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание при обрыве провода",
+        "ShortDescription": "Срабатывание обрыв"
+    },
+    {
+        "RussianNameFB": "ЛО ВН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ВН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ВН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ЛО ВН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключить аварийно",
+        "ShortDescription": "Отключить аварийно"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗ РПН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗ РПН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗ РПН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Блокировка ГЗ РПН",
+        "ShortDescription": "Заблокировано"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗ РПН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗ РПН",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗоткл",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗоткл",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗоткл",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Блокировка ГЗоткл",
+        "ShortDescription": "Заблокировано"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗоткл",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗоткл",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗсигн",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗсигн",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗсигн",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Блокировка ГЗсигн",
+        "ShortDescription": "Заблокировано"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗсигн",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ГЗсигн",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключить аварийно",
+        "ShortDescription": "Отключить аварийно"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО НН1",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Запрет АПВ",
+        "ShortDescription": "Запрет АПВ"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключить аварийно",
+        "ShortDescription": "Отключить аварийно"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО НН2",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Запрет АПВ",
+        "ShortDescription": "Запрет АПВ"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЛО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО Т",
+        "NodeName (рус)": "ЗАПВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Запрет АПВ",
+        "ShortDescription": "Запрет АПВ"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание датчика температуры масла заблокировано",
+        "ShortDescription": "Заблокировано"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание реле давления заблокировано",
+        "ShortDescription": "Заблокировано"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание датчика температуры обмотки заблокировано",
+        "ShortDescription": "Заблокировано"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ТЗ",
+        "NodeName (рус)": "ЛО ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ДУм расширителя",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ДУм расширителя",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ДУм расширителя",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ДУм расширителя",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ПК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ПК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ПК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ПК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ОК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ОК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ОК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание на сигнал",
+        "ShortDescription": "Срабатывание сигн"
+    },
+    {
+        "RussianNameFB": "ЛО ТС",
+        "NodeName (рус)": "ЛО ОК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "КСО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Авария",
+        "ShortDescription": "Авария"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "КСО",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Низкая изоляция"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДУм РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Высокий уровень масла",
+        "ShortDescription": "Выс. ур."
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДУм РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкий уровень масла",
+        "ShortDescription": "Низк. ур."
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ГЗ РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ГЗ РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция ",
+        "ShortDescription": "Низкая изоляция"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДУм расширителя",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Высокий уровень масла",
+        "ShortDescription": "Выс. ур."
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДУм расширителя",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкий уровень масла",
+        "ShortDescription": "Низк. ур."
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнал",
+        "ShortDescription": "Сигнал"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТм",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция",
+        "ShortDescription": "Низкая изоляция"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ПК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ГЗ Т",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ГЗ Т",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнал",
+        "ShortDescription": "Сигнал"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ГЗ Т",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция ГЗоткл",
+        "ShortDescription": "Низкая изол. ГЗоткл"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ГЗ Т",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция ГЗсигн",
+        "ShortDescription": "Низкая изол. ГЗсигн"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ОК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "РД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция",
+        "ShortDescription": "Низкая изоляция"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТм РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отключение",
+        "ShortDescription": "Отключение"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнал",
+        "ShortDescription": "Сигнал"
+    },
+    {
+        "RussianNameFB": "ПДС",
+        "NodeName (рус)": "ДТо",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция",
+        "ShortDescription": "Низкая изоляция"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ ЗДЗ1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ ЗДЗ2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ УРОВ1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ УРОВ2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ ГЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ ТЗ, ТС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ ИЭУ ТН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ОТ ИЭУ ТН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность",
+        "ShortDescription": "Неисправность"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ВнешСигн1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ВнешСигн2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ВнешСигн3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "ВнешСигн4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "Дверь",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Дверь шкафа закрыта",
+        "ShortDescription": "Дверь закр."
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "Дверь",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Дверь шкафа открыта",
+        "ShortDescription": "Дверь откр."
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SG1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Рабочее положение",
+        "ShortDescription": "Рабочее положение"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SG2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Рабочее положение",
+        "ShortDescription": "Рабочее положение"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SG3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Рабочее положение",
+        "ShortDescription": "Рабочее положение"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SA1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Цепь введена",
+        "ShortDescription": "Цепь введена"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SA2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Цепь введена",
+        "ShortDescription": "Цепь введена"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SA3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Цепь введена",
+        "ShortDescription": "Цепь введена"
+    },
+    {
+        "RussianNameFB": "ПДС НКУ",
+        "NodeName (рус)": "SA4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Цепь введена",
+        "ShortDescription": "Цепь введена"
+    },
+    {
+        "RussianNameFB": "ПС",
+        "NodeName (рус)": "ПС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск предупредительной сигнализации (импульс)",
+        "ShortDescription": "Пуск (имп)"
+    },
+    {
+        "RussianNameFB": "ПС",
+        "NodeName (рус)": "ПС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск предупредительной сигнализации",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО_общ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО_общ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "РТПО",
+        "NodeName (рус)": "РТПО_общ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Управление ИЭУ",
+        "ShortDescription": "Управление ИЭУ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Комплект",
+        "ShortDescription": "Комплект"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ГЗ Т откл",
+        "ShortDescription": "ГЗоткл"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ГЗ Т сигн",
+        "ShortDescription": "ГЗсигн"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ГЗ РПН",
+        "ShortDescription": "ГЗ РПН"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ДЗТ",
+        "ShortDescription": "ДЗТ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ЗПО",
+        "ShortDescription": "ЗПО"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы УРОВ",
+        "ShortDescription": "УРОВ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Действие на В ВН",
+        "ShortDescription": "Действие на В ВН"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Действие на В НН1",
+        "ShortDescription": "Действие на В НН1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Действие на В НН2",
+        "ShortDescription": "Действие на В НН2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Управление ИЭУ",
+        "ShortDescription": "Управление ИЭУ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Комплект",
+        "ShortDescription": "Комплект"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ГЗ Т откл",
+        "ShortDescription": "ГЗоткл"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ГЗ Т сигн",
+        "ShortDescription": "ГЗсигн"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ГЗ РПН",
+        "ShortDescription": "ГЗ РПН"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ДЗТ",
+        "ShortDescription": "ДЗТ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы ЗПО",
+        "ShortDescription": "ЗПО"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Режим работы УРОВ",
+        "ShortDescription": "УРОВ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Действие на В ВН",
+        "ShortDescription": "Действие на В ВН"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Действие на В НН1",
+        "ShortDescription": "Действие на В НН1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ФК",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Действие на В НН2",
+        "ShortDescription": "Действие на В НН2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность ШС-А",
+        "ShortDescription": "Неиспр. ШСА"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность ШС-В",
+        "ShortDescription": "Неиспр. ШСВ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Потеря GOOSE",
+        "ShortDescription": "Потеря GOOSE"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Внешнее отключение",
+        "ShortDescription": "Внешнее отключение"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ДЗТ",
+        "ShortDescription": "ДЗТ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание УРОВ",
+        "ShortDescription": "УРОВ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ГЗсигн",
+        "ShortDescription": "ГЗсигн"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ГЗоткл",
+        "ShortDescription": "ГЗоткл"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ГЗ РПН",
+        "ShortDescription": "ГЗ РПН"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ТЗоткл",
+        "ShortDescription": "ТЗоткл"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ТЗсигн",
+        "ShortDescription": "ТЗсигн"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ЗПО",
+        "ShortDescription": "Пуск ЗПО"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание ЗП",
+        "ShortDescription": "ЗП"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность опер. тока ГЗ",
+        "ShortDescription": "Неиспр. ОТ ГЗ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность цепей ГЗ Т",
+        "ShortDescription": "Неиспр. ЦГЗ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность цепей ГЗ РПН",
+        "ShortDescription": "Неиспр. ЦГЗ РПН"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность опер. тока ТЗ, ТС",
+        "ShortDescription": "Неиспр. ОТ ТЗ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность цепей ТЗ",
+        "ShortDescription": "Неиспр. ЦТЗ"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Выходные цепи разобраны",
+        "ShortDescription": "Вых. цепи разобр."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "СД",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "БИ выведены",
+        "ShortDescription": "БИ выведены"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ШС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние основного канала",
+        "ShortDescription": "Осн. канал"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ШС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние резервного канала",
+        "ShortDescription": "Рез. канал"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ШС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Переполнение буфера выходных данных",
+        "ShortDescription": "Переполн. вых."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ШС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Переполнение буфера входных данных",
+        "ShortDescription": "Переполн. вх."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 1",
+        "ShortDescription": "Корр. конф.Go1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 1",
+        "ShortDescription": "Состояние Go1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 1 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 2",
+        "ShortDescription": "Корр. конф.Go2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 2",
+        "ShortDescription": "Состояние Go2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 2 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 3",
+        "ShortDescription": "Корр. конф.Go3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 3",
+        "ShortDescription": "Состояние Go3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 3 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 4",
+        "ShortDescription": "Корр. конф.Go4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 4",
+        "ShortDescription": "Состояние Go4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 4 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 5",
+        "ShortDescription": "Корр. конф.Go5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 5",
+        "ShortDescription": "Состояние Go5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 5 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 6",
+        "ShortDescription": "Корр. конф.Go6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 6",
+        "ShortDescription": "Состояние Go6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 6 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 7",
+        "ShortDescription": "Корр. конф.Go7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 7",
+        "ShortDescription": "Состояние Go7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 7 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Необходимость корректировки конфигурации на прием GOOSE 8",
+        "ShortDescription": "Корр. конф.Go8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние подписки GOOSE 8",
+        "ShortDescription": "Состояние Go8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Подписка на дублированное GOOSE 8 сообщение с признаком симуляции",
+        "ShortDescription": "Подп. симул.Go8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "БУ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Индикация местного управления",
+        "ShortDescription": "Местное"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх1",
+        "ShortDescription": "Состояние ДВх1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх2",
+        "ShortDescription": "Состояние ДВх2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх3",
+        "ShortDescription": "Состояние ДВх3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх4",
+        "ShortDescription": "Состояние ДВх4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх5",
+        "ShortDescription": "Состояние ДВх5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх6",
+        "ShortDescription": "Состояние ДВх6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх7",
+        "ShortDescription": "Состояние ДВх7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх8",
+        "ShortDescription": "Состояние ДВх8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх9",
+        "ShortDescription": "Состояние ДВх9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх10",
+        "ShortDescription": "Состояние ДВх10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх11",
+        "ShortDescription": "Состояние ДВх11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх12",
+        "ShortDescription": "Состояние ДВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх13",
+        "ShortDescription": "Состояние ДВх13"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВх9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВх14",
+        "ShortDescription": "Состояние ДВх14"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых10",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых11",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых3",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых4",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых5",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых6",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых7",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых8",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых1",
+        "ShortDescription": "Состояние ДВых1"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых2",
+        "ShortDescription": "Состояние ДВых2"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых3",
+        "ShortDescription": "Состояние ДВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых4",
+        "ShortDescription": "Состояние ДВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых5",
+        "ShortDescription": "Состояние ДВых5"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых6",
+        "ShortDescription": "Состояние ДВых6"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых7",
+        "ShortDescription": "Состояние ДВых7"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "ПлДВых9",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Состояние ДВых8",
+        "ShortDescription": "Состояние ДВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность АЦП",
+        "ShortDescription": "Неиспр. АЦП"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность ЦП",
+        "ShortDescription": "Неиспр. ЦП"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность встроенного ПО",
+        "ShortDescription": "Неиспр. ПО"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля аналоговых входов (слот М12)",
+        "ShortDescription": "Неиспр. МАнВх12"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля дискретных входов/выходов (слот М3)",
+        "ShortDescription": "Неиспр. МДВхВых3"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля дискретных входов/выходов (слот М4)",
+        "ShortDescription": "Неиспр. МДВхВых4"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля дискретных входов/выходов (слот М8)",
+        "ShortDescription": "Неиспр. МДВхВых8"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля дискретных входов/выходов (слот М9)",
+        "ShortDescription": "Неиспр. МДВхВых9"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля дискретных входов/выходов (слот М10)",
+        "ShortDescription": "Неиспр. МДВхВых10"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность модуля дискретных входов/выходов (слот М11)",
+        "ShortDescription": "Неиспр. МДВхВых11"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Установлено подключение через сервисный порт",
+        "ShortDescription": "Подкл. установлено"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Конфигурация изменена",
+        "ShortDescription": "Изм. конфигурации"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Индикация потери оперативного питания",
+        "ShortDescription": "Потеря питания"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сброс часов или памяти вследствие перезагрузки",
+        "ShortDescription": "Сброс часов"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнал готовности к работе",
+        "ShortDescription": "ГОТ."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Изменение встраиваемого ПО",
+        "ShortDescription": "Изменение ПО"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Индикация логического узла-прокси",
+        "ShortDescription": "Прокси"
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Индикация наличия оперативного питания",
+        "ShortDescription": "Нал.опер.пит."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Неисправность цепей оперативного питания",
+        "ShortDescription": "Неиспр.опер.пит."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Отказ источника питания",
+        "ShortDescription": "Отказ ист.пит."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Ошибка авторизации",
+        "ShortDescription": "Ошибка авториз."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Ошибка конфигурации",
+        "ShortDescription": "Ошибка конфиг."
+    },
+    {
+        "RussianNameFB": "СИСТ",
+        "NodeName (рус)": "Диагностика",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Индикация работы по летнему времени",
+        "ShortDescription": "Летн. время"
+    },
+    {
+        "RussianNameFB": "ТК ЗДЗ",
+        "NodeName (рус)": "ТК ЗДЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ТК ЗДЗ",
+        "NodeName (рус)": "ТК ЗДЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ТК ЗДЗ",
+        "NodeName (рус)": "ТК ЗДЗ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО ВН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО НН1",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО НН2",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО_общ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО_общ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ТО ЗПО",
+        "NodeName (рус)": "ТО ЗПО_общ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "ТО РПН",
+        "NodeName (рус)": "ТО РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "ТО РПН",
+        "NodeName (рус)": "ТО РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "ТО РПН",
+        "NodeName (рус)": "ТО РПН",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "УРОВ ВН",
+        "NodeName (рус)": "УРОВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция введена в работу",
+        "ShortDescription": "Ввод"
+    },
+    {
+        "RussianNameFB": "УРОВ ВН",
+        "NodeName (рус)": "УРОВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Функция оперативно выведена из работы",
+        "ShortDescription": "Оперативный вывод"
+    },
+    {
+        "RussianNameFB": "УРОВ ВН",
+        "NodeName (рус)": "УРОВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск",
+        "ShortDescription": "Пуск"
+    },
+    {
+        "RussianNameFB": "УРОВ ВН",
+        "NodeName (рус)": "УРОВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Пуск ИО максимального тока",
+        "ShortDescription": "ИО Iмакс"
+    },
+    {
+        "RussianNameFB": "УРОВ ВН",
+        "NodeName (рус)": "УРОВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание УРОВ",
+        "ShortDescription": "Срабатывание"
+    },
+    {
+        "RussianNameFB": "УРОВ ВН",
+        "NodeName (рус)": "УРОВ",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Срабатывание УРОВ  <<на себя>>",
+        "ShortDescription": "Сраб <<на себя>>"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнализация от ТЗ",
+        "ShortDescription": "ТЗ сигн"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнализация от ГЗ",
+        "ShortDescription": "ГЗ сигн"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция ГЗ",
+        "ShortDescription": "Низ.изол. ГЗ"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Низкая изоляция ТЗ",
+        "ShortDescription": "Низ.изол. ТЗ"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "ГЗ заблокирована",
+        "ShortDescription": "ГЗ заблокирована"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "ТЗ заблокирована",
+        "ShortDescription": "ТЗ заблокирована"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Сигнализация от ТС",
+        "ShortDescription": "ТС сигн"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Контроль оперативного тока",
+        "ShortDescription": "ОТ сигн"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Контроль оперативного тока НН",
+        "ShortDescription": "ОТ НН сигн"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Внешнее отключение",
+        "ShortDescription": "Внеш. откл"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "Выходные цепи разобраны",
+        "ShortDescription": "Вых.цепи разобраны"
+    },
+    {
+        "RussianNameFB": "ошибка",
+        "NodeName (рус)": "СС",
+        "FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)": "БИ выведены",
+        "ShortDescription": "БИ выведены"
+    }
+]

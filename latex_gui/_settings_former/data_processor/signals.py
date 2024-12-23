@@ -87,3 +87,10 @@ def make_list(df):
         result_list.append(combined_string)
     #print(result_list)
     return result_list
+
+def make_dict_reg(df):
+    result_dict = df[['RussianNameFB', 'NodeName (рус)', 'FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)', 'ShortDescription' ]].to_dict(orient='records')
+    # Сортируем список словарей по значению ключа 'RussianNameFB'
+    sorted_data = sorted(result_dict, key=lambda x: x['RussianNameFB'])
+    #print(sorted_data)
+    return sorted_data

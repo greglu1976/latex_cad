@@ -93,6 +93,7 @@ def create_reg():
 
     # Получаем словарь для использования в шаблоне Jinja
     signals = module.to_dict()
+    #print(signals)
 
     return signals
 
@@ -184,3 +185,49 @@ def create_fks_old():
     # Получаем словарь для использования в шаблоне Jinja
     bin_inputs = bin_modules.to_dict()
     return bin_inputs
+
+def create_reg_new():
+        # Проверка существования файла inputs.json
+    if os.path.exists('reg_signals.json'):
+        # Если файл существует, загружаем его содержимое в список
+        with open('reg_signals.json', 'r', encoding='utf-8') as json_file:
+            signals = json.load(json_file)
+    else:
+        # Если файл не существует, инициализируем список значением ['Не определен файл',]
+        signals = ['Не определен файл',]
+
+    # Создаем словарь properties в цикле
+    properties = {}
+    for index, signal in enumerate(signals, 1):
+        full_desc = signal.get('FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)')
+        full_desc  = full_desc.replace('<<', '"')
+        full_desc  = full_desc.replace('>>', '"')
+        short_desc = signal.get('ShortDescription')
+        short_desc  = short_desc.replace('<<', '"')
+        short_desc = short_desc.replace('>>', '"')
+        short_desc = short_desc.strip()
+        if len(short_desc)>19:
+            short_desc = 'БОЛЕЕ 19 СИМВОЛОВ '+ short_desc
+        properties[f'Signal_N{index}'] = {  # Добавляем новый ключ в словарь
+            'name': f"{signal.get('RussianNameFB')} / {signal.get('NodeName (рус)')} : {full_desc}",
+            'fsu': f"{short_desc}",
+            'log': '-',
+            'oscill_start': '-',
+            'oscill_reg': '-'
+        }
+
+    #print(properties)
+
+    input1 = BinInput(properties, 'Сигналы для регистрации')
+    #input2 = BinInput(properties, 'Сигналы ФСУ')
+
+    # Создаем функциональный блок  и добавляем входы(функции)
+    module = BinModule(inserted_in_slot='-', type='Максимальная токовая защита (МТЗ)')
+    module.add_input(input1)
+    #module.add_input(input2)
+
+    # Получаем словарь для использования в шаблоне Jinja
+    signals = module.to_dict()
+    #print(signals)
+
+    return signals
