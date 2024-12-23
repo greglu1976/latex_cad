@@ -80,7 +80,7 @@ def add_sect_mtrx_ins(doc):
 
 def add_sect_leds_leds(doc):
 
-    text1 = doc.add_paragraph('Для дискретного входа возможно подключение только одного сигнала. {% for leds_key, leds in leds.modules.items() %}')
+    text1 = doc.add_paragraph('Для светодиода возможно подключение только одного сигнала. {% for leds_key, leds in leds.modules.items() %}')
     text1.style = 'ДОК Текст'
 
     par_inputs = doc.add_paragraph('{{ leds.type }}')
