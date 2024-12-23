@@ -46,6 +46,7 @@ def starter_test_models(path_to_hw_ied):
         }
     doc.render(context)
 
-    #doc_path2 = templates_path / 'output.docx'
+    doc_name = f'БУ {general_data["terminal_name"]} v.{(list(versions.items())[-1])[0]}.docx'
     # Сохранение документа
-    doc.save('output.docx')
+    doc.save(doc_name)
+    #return general_data, versions
