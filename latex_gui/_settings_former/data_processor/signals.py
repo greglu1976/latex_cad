@@ -25,6 +25,12 @@ def process_xlsx_files(file_paths):
 
         # Датафрейм для объединения листов Signals
         signals_df = pd.DataFrame()
+        signals_df['descriptionFunc'] = '' 
+
+        # Список значений RussianName из листов Info
+        russian_name = 'Не указано'
+        descriptionFB = 'Не указано'
+        weight_fb = 10000
 
         # Список значений RussianName из листов Info
         russian_names = []
@@ -32,40 +38,54 @@ def process_xlsx_files(file_paths):
         # Обработка каждого файла
         for file in xlsx_files:
             file_path = os.path.join(path_to_folder, file)
-            
+            descriptionFunc = 'Не указано'
+            weight_func = 10000               
             # Чтение файла
             xls = pd.ExcelFile(file_path)
-            
+
+            info_sheet = pd.read_excel(xls, sheet_name='Info', header=None)  # Без заголовка
+            for index, row in info_sheet.iterrows():
+                if row[0] == 'DescriptionFunc':
+                    descriptionFunc = row[1]  # Значение во втором столбце 
+                if row[0] == 'WeightFunc':
+                    weight_func = row[1]  # Значение во втором столбце  
+
             # Обработка листов Signals
             if 'Signals' in xls.sheet_names:
                 signals_sheet = pd.read_excel(xls, sheet_name='Signals')
+                signals_sheet['descriptionFunc'] = descriptionFunc 
+                signals_sheet['WeightFunc'] = weight_func 
+                #print('>>>>>>>>>>>>>>', descriptionFunc)
                 signals_df = pd.concat([signals_df, signals_sheet], ignore_index=True)
             
             # Обработка листов Info
-            if 'Info' in xls.sheet_names:
+            if 'LLN0' in file_path:
                 info_sheet = pd.read_excel(xls, sheet_name='Info', header=None)  # Без заголовка
-                
                 # Поиск строки, где первый столбец содержит "RussianName"
                 for index, row in info_sheet.iterrows():
                     if row[0] == 'RussianName':
                         russian_name = row[1]  # Значение во втором столбце
-                        russian_names.append(russian_name)
-                        break  # Прерываем цикл, так как нашли нужное значение
-
+                    if row[0] == 'DescriptionFB':
+                        descriptionFB = row[1]  # Значение во втором столбце
+                    if row[0] == 'WeightFB':
+                        weight_fb = row[1]  # Значение во втором 
         # Проверка значений RussianName
-        RussianName = russian_names[0] if russian_names and all(name == russian_names[0] for name in russian_names) else 'ошибка'
+        #RussianName = russian_names[0] if russian_names and all(name == russian_names[0] for name in russian_names) else 'ОШИБКА'
 
         # Создаем маску для фильтрации
         mask = (signals_df['Категория (group)'] == 'status') & (signals_df['type'] == 'BOOL')
         # Создаем новый DataFrame с копией отфильтрованных данных
         filtered_df = signals_df[mask].copy()
-
-        filtered_df['RussianNameFB'] = RussianName
+        filtered_df['RussianNameFB'] = russian_name
+        filtered_df['descriptionFB'] = descriptionFB
+        filtered_df['WeightFB'] = weight_fb
 
         # Объединяем данные из текущей папки с общим датафреймом
         total_signals_df = pd.concat([total_signals_df, filtered_df], ignore_index=True)
-    #print(total_signals_df)
-    return total_signals_df
+    print(total_signals_df)
+    df = total_signals_df.sort_values(by=['WeightFB', 'WeightFunc']) # Сортируем по весам
+    df.to_excel('df.xlsx')
+    return df
 
 
 def make_list(df):
@@ -91,6 +111,6 @@ def make_list(df):
 def make_dict_reg(df):
     result_dict = df[['RussianNameFB', 'NodeName (рус)', 'FullDescription (Описание параметра для пояснения в ПО ЮНИТ Сервис)', 'ShortDescription' ]].to_dict(orient='records')
     # Сортируем список словарей по значению ключа 'RussianNameFB'
-    sorted_data = sorted(result_dict, key=lambda x: x['RussianNameFB'])
+    #sorted_data = sorted(result_dict, key=lambda x: x['RussianNameFB'])
     #print(sorted_data)
-    return sorted_data
+    return result_dict

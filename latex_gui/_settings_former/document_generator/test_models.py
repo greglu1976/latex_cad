@@ -2,7 +2,7 @@
 
 from docxtpl import DocxTemplate
 
-from .relay import create_relay, create_binary, create_binary_outs, create_leds, create_fks, create_reg, get_general_data, create_reg_new
+from .relay import create_relay, create_binary, create_binary_outs, create_leds, create_fks, get_general_data, create_reg_new
 
 from pathlib import Path
 
